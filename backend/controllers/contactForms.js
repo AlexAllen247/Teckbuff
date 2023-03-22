@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const ContactForm = require("../models/contactForm");
 
 router.get("/", async (request, response) => {
-  const contactForms = await ContactForm.find({}).find({});
+  const contactForms = await ContactForm.find({});
 
   response.json(contactForms);
 });
