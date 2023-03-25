@@ -9,7 +9,7 @@ const helmet = require("helmet");
 require("express-async-errors");
 
 const contactFormsRouter = require("./controllers/contactForms");
-const { errorHandler} = require("./utils/middleware");
+const { errorHandler } = require("./utils/middleware");
 
 logger.info("connecting to", config.MONGODB_URI);
 

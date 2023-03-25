@@ -32,7 +32,7 @@ describe("when there are some contact forms in database", () => {
 });
 
 describe("addition of a contact form", () => {
-    test("succeeds if content valid", async () => {
+  test("succeeds if content valid", async () => {
     const newContactForm = {
       email: "www.test@test.com",
       message: "This is an example message that everything works.",
