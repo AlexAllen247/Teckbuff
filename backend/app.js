@@ -9,10 +9,7 @@ const helmet = require("helmet");
 require("express-async-errors");
 
 const contactFormsRouter = require("./controllers/contactForms");
-const usersRouter = require("./controllers/users");
-const loginRouter = require("./controllers/login");
-const downloadsRouter = require("./controllers/downloads");
-const { errorHandler, userExtractor } = require("./utils/middleware");
+const { errorHandler} = require("./utils/middleware");
 
 logger.info("connecting to", config.MONGODB_URI);
 
@@ -31,10 +28,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(helmet());
 
-app.use("/api/login", loginRouter);
-app.use("/api/contactforms", userExtractor, contactFormsRouter);
-app.use("/api/users", usersRouter);
-app.use("/api/downloads", downloadsRouter);
+app.use("/api/contactforms", contactFormsRouter);
 
 if (process.env.NODE_ENV === "test") {
   const testingRouter = require("./controllers/testing");
