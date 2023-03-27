@@ -3,6 +3,7 @@ import React from "react";
 
 import ContactForm from "./components/ContactForm";
 import Notification from "./components/Notfication";
+import Footer from "./components/Footer";
 
 import contactFormService from "./services/contactForms";
 
@@ -35,6 +36,7 @@ const App = () => {
     <div>
       <Notification notification={notification} />
       <ContactForm onCreate={createForm} />
+      <Footer />
     </div>
   );
 };
