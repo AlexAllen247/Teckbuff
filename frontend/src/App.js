@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Certifications from "./components/Certifications";
 
-
 import contactFormService from "./services/contactForms";
 
 const App = () => {
