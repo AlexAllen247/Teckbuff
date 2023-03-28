@@ -4,6 +4,9 @@ import React from "react";
 import ContactForm from "./components/ContactForm";
 import Notification from "./components/Notfication";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import Certifications from "./components/Certifications";
+
 
 import contactFormService from "./services/contactForms";
 
@@ -35,6 +38,8 @@ const App = () => {
   return (
     <div>
       <Notification notification={notification} />
+      <About />
+      <Certifications />
       <ContactForm onCreate={createForm} />
       <Footer />
     </div>

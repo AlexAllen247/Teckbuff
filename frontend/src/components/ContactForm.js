@@ -47,7 +47,7 @@ const ContactForm = ({ onCreate }) => {
   };
 
   return (
-    <div style={divStyle}>
+    <section style={divStyle} className="contact form">
       <h2 style={headerStyle}>Contact Form/Formulario de contacto</h2>
 
       <Form onSubmit={handleSubmit}>
@@ -82,7 +82,7 @@ const ContactForm = ({ onCreate }) => {
           Submit
         </Button>
       </Form>
-    </div>
+    </section>
   );
 };
 

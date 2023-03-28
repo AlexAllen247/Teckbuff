@@ -18,9 +18,9 @@ const Header = () => {
     width: width <= 767 ? "100%" : "initial",
   };
   return (
-    <div style={{ textAlign: "center", backgroundColor: "#f6f0d9" }}>
+    <section style={{ textAlign: "center", backgroundColor: "#f6f0d9" }} className="header">
       <img src={Banner} alt="My Banner" style={style} />
-    </div>
+    </section>
   );
 };
 
