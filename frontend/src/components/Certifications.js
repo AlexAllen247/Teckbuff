@@ -91,7 +91,99 @@ const Certifications = () => {
         Full Stack Open TypeScript
       </a>
       </div>
-      <div className="FreeCodeCamp"></div>
+      <div className="FreeCodeCamp">
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/back-end-development-and-apis"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Back End Development and APIs
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/data-analysis-with-python-v7"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Data Analysis with Python
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/data-visualization"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Data Visualization
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/front-end-development-libraries"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Front End Development Libraries
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/information-security-v7"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Information Security
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/javascript-algorithms-and-data-structures"
+        target="_blank"
+        rel="noreferrer"
+      >
+        JavaScript Algorithms and Data Structures
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/full-stack"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Legacy Full Stack
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/information-security-and-quality-assurance"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Legacy Information Security and Quality Assurance
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/machine-learning-with-python-v7"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Machine Learning with Python
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/quality-assurance-v7"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Quality Assurance
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/relational-database-v8"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Relational Database
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/responsive-web-design"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Responsive Web Design
+      </a>
+      <a
+        href="https://www.freecodecamp.org/certification/AlexAllen247/scientific-computing-with-python-v7"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Scientific Computing with Python
+      </a>
+      </div>
     </section>
   );
 };
