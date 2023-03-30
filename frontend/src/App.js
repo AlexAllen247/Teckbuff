@@ -52,7 +52,7 @@ const App = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto mt-2">
               <Nav.Link href="/">Profile</Nav.Link>
-              <Nav.Link href="/porfolio">Porfolio</Nav.Link>
+              <Nav.Link href="/portfolio">Portfolio</Nav.Link>
               <Nav.Link href="/certifications">Certifications</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/contactforms">Contact</Nav.Link>
