@@ -4,8 +4,11 @@ const Footer = () => {
   const svgStyle = {
     marginLeft: 10,
   };
+  const sectionStyle = {
+    textAlign: "center",
+  };
   return (
-    <section className="footer">
+    <section className="footer" style={sectionStyle}>
       <h4>Copyright Alex Allen 2023</h4>
       <h4>Connect with me on:</h4>
       <a

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import { Nav, Navbar } from 'react-bootstrap';
+import { Routes, Route } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
 
 import ContactForm from "./components/ContactForm";
 import Notification from "./components/Notfication";
@@ -42,17 +42,23 @@ const App = () => {
     <div>
       <Notification notification={notification} />
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">My Website</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Link to="/">Profile</Link>
-            <Link to="/porfolio">Porfolio</Link>
-            <Link to="/certifications">Certifications</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contactforms">Contact</Link>
-          </Nav>
-        </Navbar.Collapse>
+        <div className="container-fluid">
+          <Navbar.Brand href="/">TeckBuff.com</Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto mt-2">
+              <Nav.Link href="/">Profile</Nav.Link>
+              <Nav.Link href="/porfolio">Porfolio</Nav.Link>
+              <Nav.Link href="/certifications">Certifications</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/contactforms">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
       </Navbar>
       <Routes>
         <Route path="/" element={<Profile />} />
