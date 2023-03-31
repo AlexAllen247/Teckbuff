@@ -2,9 +2,11 @@ import axios from "axios";
 
 const baseUrl = "/api/contactforms";
 
-const create = async (newObject) => {
-  const response = await axios.post(baseUrl, newObject);
-  return response.data;
+const contactFormService = {
+  create: async (newObject) => {
+    const response = await axios.post(baseUrl, newObject);
+    return response.data;
+  },
 };
 
-export default { create };
+export default contactFormService;

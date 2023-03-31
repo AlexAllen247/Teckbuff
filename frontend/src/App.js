@@ -29,9 +29,7 @@ const App = () => {
     contactFormService
       .create(contactForm)
       .then(() => {
-        notify(
-          `A new message by has been sent./Se ha enviado un nuevo mensaje.`
-        );
+        notify(`A new message by has been sent.`);
       })
       .catch((error) => {
         notify(
