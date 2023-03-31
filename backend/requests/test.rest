@@ -9,3 +9,15 @@ Content-Type: application/json
     "email": "test@test.com",
     "message": "message"
 }
+
+###
+GET http://localhost:3001/api/videos
+
+###
+
+POST http://localhost:3001/api/videos
+Content-Type: application/json
+
+{
+    "url": "test@test.com"
+}

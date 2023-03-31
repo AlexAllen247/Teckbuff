@@ -11,6 +11,7 @@ import Certifications from "./components/Certifications";
 import Profile from "./components/Profile";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
+import Videos from "./components/Videos";
 
 import contactFormService from "./services/contactForms";
 
@@ -57,6 +58,7 @@ const App = () => {
               <Nav.Link href="/certifications">Certifications</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/services">Services</Nav.Link>
+              <Nav.Link href="/videos">Videos</Nav.Link>
               <Nav.Link href="/contactforms">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -68,6 +70,7 @@ const App = () => {
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/videos" element={<Videos />} />
         <Route
           path="/contactforms"
           element={<ContactForm onCreate={createForm} />}
