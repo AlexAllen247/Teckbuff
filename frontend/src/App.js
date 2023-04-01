@@ -1,7 +1,6 @@
 import { useState } from "react";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Nav, Navbar } from "react-bootstrap";
 
 import ContactForm from "./components/ContactForm";
 import Notification from "./components/Notfication";
@@ -12,6 +11,7 @@ import Profile from "./components/Profile";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Videos from "./components/Videos";
+import NavBar from "./components/NavBar";
 
 import contactFormService from "./services/contactForms";
 
@@ -39,29 +39,10 @@ const App = () => {
       });
   };
   return (
-    <div>
+    <main>
+    <div className="app">
       <Notification notification={notification} />
-      <Navbar bg="light" expand="lg">
-        <div className="container-fluid">
-          <Navbar.Brand href="/">TeckBuff.com</Navbar.Brand>
-          <Navbar.Toggle
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto mt-2">
-              <Nav.Link href="/">Profile</Nav.Link>
-              <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="/certifications">Certifications</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/services">Services</Nav.Link>
-              <Nav.Link href="/videos">Videos</Nav.Link>
-              <Nav.Link href="/contactforms">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
-      </Navbar>
+      <NavBar />
       <Routes>
         <Route path="/" element={<Profile />} />
         <Route path="/portfolio" element={<Portfolio />} />
@@ -77,6 +58,7 @@ const App = () => {
 
       <Footer />
     </div>
+    </main>
   );
 };
 
