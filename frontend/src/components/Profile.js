@@ -37,7 +37,7 @@ const Profile = () => {
               <Card style={{ borderRadius: 50 }}>
                 <Card.Body
                   className="py-5 px-md-5"
-                  style={{ backgroundColor: "#87CEEB", borderRadius: 50 }}
+                  style={{ backgroundColor: "#0047ab", borderRadius: 50 }}
                 >
                   <img
                     className="d-block w-100"

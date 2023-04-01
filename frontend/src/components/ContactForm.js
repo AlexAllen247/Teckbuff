@@ -17,10 +17,6 @@ const ContactForm = ({ onCreate }) => {
 
   const divStyle = {
     textAlign: "center",
-    backgroundColor: "#f6f0d9",
-    color: "#035cd4",
-    fontFamily: "Niconne",
-    fontStyle: "italic",
   };
 
   const formControlStyle = {
@@ -48,7 +44,7 @@ const ContactForm = ({ onCreate }) => {
 
   return (
     <section style={divStyle} className="contact form">
-      <h2 style={headerStyle}>Contact Form/Formulario de contacto</h2>
+      <h2 style={headerStyle}>Contact Form</h2>
 
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
