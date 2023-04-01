@@ -40,24 +40,24 @@ const App = () => {
   };
   return (
     <main>
-    <div className="app">
-      <Notification notification={notification} />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Profile />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/certifications" element={<Certifications />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/videos" element={<Videos />} />
-        <Route
-          path="/contactforms"
-          element={<ContactForm onCreate={createForm} />}
-        />
-      </Routes>
+      <div className="app">
+        <Notification notification={notification} />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Profile />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route
+            path="/contactforms"
+            element={<ContactForm onCreate={createForm} />}
+          />
+        </Routes>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </main>
   );
 };

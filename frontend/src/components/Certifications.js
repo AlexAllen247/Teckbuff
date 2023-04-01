@@ -132,7 +132,13 @@ const Certifications = () => {
               <ul>
                 {issuer.certifications.map((certification) => (
                   <li key={certification.url}>
-                    <a href={certification.url}>{certification.name}</a>
+                    <a
+                      href={certification.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {certification.name}
+                    </a>
                   </li>
                 ))}
               </ul>

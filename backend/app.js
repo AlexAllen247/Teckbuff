@@ -9,7 +9,7 @@ const helmet = require("helmet");
 require("express-async-errors");
 
 const contactFormsRouter = require("./controllers/contactForms");
-const videosRouter = require("./controllers/videos")
+const videosRouter = require("./controllers/videos");
 const { errorHandler } = require("./utils/middleware");
 
 logger.info("connecting to", config.MONGODB_URI);
@@ -30,7 +30,7 @@ app.use(cookieParser());
 app.use(helmet());
 
 app.use("/api/contactforms", contactFormsRouter);
-app.use("/api/videos", videosRouter)
+app.use("/api/videos", videosRouter);
 
 if (process.env.NODE_ENV === "test") {
   const testingRouter = require("./controllers/testing");

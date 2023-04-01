@@ -35,10 +35,7 @@ const Profile = () => {
 
             <Col lg={6} className={menuColClasses}>
               <Card style={{ borderRadius: 50 }}>
-                <Card.Body
-                  className="py-5 px-md-5"
-                  style={{ backgroundColor: "#0047ab", borderRadius: 50 }}
-                >
+                <Card.Body className="py-5 px-md-5">
                   <img
                     className="d-block w-100"
                     src={ProfilePicture}
