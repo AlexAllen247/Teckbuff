@@ -165,18 +165,18 @@ const Certifications = () => {
         ))}
       </Container>
       <div>
-      <div className="row">
-        {fitnessCertifications.map((image, index) => (
-          <Col md={3} key={index}>
-            <a href={image} key={index}>
-            <Card>
-              <Card.Img variant="top" src={image} />
-            </Card>
-            </a>
-          </Col>
-        ))}
+        <div className="row">
+          {fitnessCertifications.map((image, index) => (
+            <Col md={3} key={index}>
+              <a href={image} key={index}>
+                <Card>
+                  <Card.Img variant="top" src={image} />
+                </Card>
+              </a>
+            </Col>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };

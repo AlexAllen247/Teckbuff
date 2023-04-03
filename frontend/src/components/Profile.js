@@ -28,9 +28,7 @@ const Profile = () => {
             <Col lg={6} className={menuColClasses}>
               <h2>Profile</h2>
               <h3>Alex Allen</h3>
-              <p style={pStyle}>
-                I am a Full Stack Developer and Master Trainer.
-              </p>
+              <p style={pStyle}>Full Stack Developer and Master Trainer.</p>
             </Col>
 
             <Col lg={6} className={menuColClasses}>
