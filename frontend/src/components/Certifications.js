@@ -1,7 +1,25 @@
 import React from "react";
-import { Card, Container } from "react-bootstrap";
+import { Card, Container, Col } from "react-bootstrap";
+import Image1 from "../images/Emergency First Aid at Work.jpeg";
+import Image2 from "../images/Level 2 Fitness.jpeg";
+import Image3 from "../images/Level 3 Diploma part 2.jpeg";
+import Image4 from "../images/Level 3 Diploma.jpeg";
+import Image5 from "../images/Level 3 Exercise Referral.jpeg";
+import Image6 from "../images/Level 3 part 2.jpeg";
+import Image7 from "../images/Level 3.jpeg";
+import Image8 from "../images/Level 4 Obesity and Diabetes.jpeg";
 
 const Certifications = () => {
+  const fitnessCertifications = [
+    Image1,
+    Image2,
+    Image3,
+    Image4,
+    Image5,
+    Image6,
+    Image7,
+    Image8,
+  ];
   const certificationsByIssuer = [
     {
       issuer: "Freecodecamp",
@@ -146,6 +164,19 @@ const Certifications = () => {
           </Card>
         ))}
       </Container>
+      <div>
+      <div className="row">
+        {fitnessCertifications.map((image, index) => (
+          <Col md={3} key={index}>
+            <a href={image} key={index}>
+            <Card>
+              <Card.Img variant="top" src={image} />
+            </Card>
+            </a>
+          </Col>
+        ))}
+      </div>
+    </div>
     </section>
   );
 };

@@ -12,7 +12,7 @@ import Profile from "./components/Profile";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Videos from "./components/Videos";
-import Header from "./components/Header"
+import Header from "./components/Header";
 
 import contactFormService from "./services/contactForms";
 
@@ -39,6 +39,11 @@ const App = () => {
         );
       });
   };
+
+  const navStyle = {
+    fontFamily: "Agrandir Wide Medium",
+    color: "#0047ab",
+  };
   return (
     <main>
       <div className="app">
@@ -46,21 +51,23 @@ const App = () => {
         <Notification notification={notification} />
         <Navbar bg="light" expand="lg">
           <div className="container-fluid">
-            <Navbar.Brand href="/">TeckBuff.com</Navbar.Brand>
+            <Navbar.Brand href="/" style={navStyle}>TeckBuff.com</Navbar.Brand>
             <Navbar.Toggle
               aria-controls="navbar"
               aria-expanded="false"
               aria-label="Toggle navigation"
             />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto mt-2">
-                <Nav.Link href="/">Profile</Nav.Link>
-                <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-                <Nav.Link href="/certifications">Certifications</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/services">Services</Nav.Link>
-                <Nav.Link href="/videos">Videos</Nav.Link>
-                <Nav.Link href="/contactforms">Contact</Nav.Link>
+            <Navbar.Collapse id="basic-navbar-nav justify-content-center">
+            <div className="mx-auto">
+            <Nav className="me-auto mt-2 justify-content-center">
+
+                <Nav.Link href="/" style={navStyle}>Profile</Nav.Link>
+                <Nav.Link href="/portfolio" style={navStyle}>Portfolio</Nav.Link>
+                <Nav.Link href="/certifications" style={navStyle}>Certifications</Nav.Link>
+                <Nav.Link href="/about" style={navStyle}>About</Nav.Link>
+                <Nav.Link href="/services" style={navStyle}>Services</Nav.Link>
+                <Nav.Link href="/videos" style={navStyle}>Videos</Nav.Link>
+                <Nav.Link href="/contactforms" style={navStyle}>Contact</Nav.Link>
                 <a
                   href="https://www.linkedin.com/in/alexander-allen-392225251/"
                   target="_blank"
@@ -94,6 +101,7 @@ const App = () => {
                   </svg>
                 </a>
               </Nav>
+              </div>
             </Navbar.Collapse>
           </div>
         </Navbar>
