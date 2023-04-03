@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Banner from "../images/PuebloDelRio.png";
+import Banner from "../images/teckbuffbanner.png";
 
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -19,7 +19,7 @@ const Header = () => {
   };
   return (
     <section
-      style={{ textAlign: "center", backgroundColor: "#f6f0d9" }}
+      style={{ textAlign: "center" }}
       className="header"
     >
       <img src={Banner} alt="My Banner" style={style} />

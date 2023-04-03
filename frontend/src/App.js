@@ -12,6 +12,7 @@ import Profile from "./components/Profile";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Videos from "./components/Videos";
+import Header from "./components/Header"
 
 import contactFormService from "./services/contactForms";
 
@@ -41,6 +42,7 @@ const App = () => {
   return (
     <main>
       <div className="app">
+        <Header />
         <Notification notification={notification} />
         <Navbar bg="light" expand="lg">
           <div className="container-fluid">
