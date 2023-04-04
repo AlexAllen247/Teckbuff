@@ -138,33 +138,42 @@ const Certifications = () => {
     },
   ];
 
+  const headerStyle = {
+    textAlign: "center",
+    textDecoration: "underline"
+  }
+
   return (
     <section className="certifications">
       <Container>
-        {certificationsByIssuer.map((issuer) => (
-          <Card key={issuer.issuer} className="my-3">
-            <Card.Header>
-              <h3>{issuer.issuer}</h3>
-            </Card.Header>
-            <Card.Body>
-              <ul>
-                {issuer.certifications.map((certification) => (
-                  <li key={certification.url}>
-                    <a
-                      href={certification.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {certification.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </Card.Body>
-          </Card>
-        ))}
+        <div className="tech-certifications">
+          <h2 style={headerStyle}>Tech Certifications</h2>
+          {certificationsByIssuer.map((issuer) => (
+            <Card key={issuer.issuer} className="my-3">
+              <Card.Header>
+                <h3>{issuer.issuer}</h3>
+              </Card.Header>
+              <Card.Body>
+                <ul>
+                  {issuer.certifications.map((certification) => (
+                    <li key={certification.url}>
+                      <a
+                        href={certification.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {certification.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </Card.Body>
+            </Card>
+          ))}
+        </div>
       </Container>
-      <div>
+      <div className="fitness-certifications">
+        <h2 style={headerStyle}>Fitness Certifications</h2>
         <div className="row">
           {fitnessCertifications.map((image, index) => (
             <Col md={3} key={index}>

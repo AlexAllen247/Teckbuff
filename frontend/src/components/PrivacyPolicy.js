@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   const divStyle = {
@@ -60,7 +61,7 @@ const PrivacyPolicy = () => {
       <p>
         If you have any questions or concerns about this Privacy Policy or our
         handling of your personal data, please contact us at
-        alexanderallen032@gmail.com.
+        alexanderallen032@gmail.com or use the contact form <Link to="/contactforms"> here.</Link>
       </p>
     </section>
   );
