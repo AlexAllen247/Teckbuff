@@ -10,7 +10,6 @@ import About from "./components/About";
 import Certifications from "./components/Certifications";
 import Profile from "./components/Profile";
 import Portfolio from "./components/Portfolio";
-import Services from "./components/Services";
 import Videos from "./components/Videos";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
@@ -81,9 +80,6 @@ const App = () => {
                   <NavLink to="/about" style={navStyle}>
                     About
                   </NavLink>
-                  <NavLink to="/services" style={navStyle}>
-                    Services
-                  </NavLink>
                   <NavLink to="/videos" style={navStyle}>
                     Videos
                   </NavLink>
@@ -135,7 +131,6 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/videos" element={<Videos />} />
           <Route
             path="/contactforms"
