@@ -43,7 +43,7 @@ const App = () => {
 
   const navStyle = {
     fontFamily: "Agrandir Wide Medium",
-    fontSize: 20,
+    fontSize: 26,
     color: "#0047ab",
     margin: 15,
   };

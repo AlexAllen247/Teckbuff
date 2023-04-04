@@ -11,6 +11,7 @@ const Footer = () => {
   };
   const sectionStyle = {
     textAlign: "center",
+    padding: 15
   };
   const buttonStyle = {
     margin: 10,

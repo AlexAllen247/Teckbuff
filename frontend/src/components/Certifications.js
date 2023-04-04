@@ -172,11 +172,11 @@ const Certifications = () => {
           ))}
         </div>
       </Container>
-      <div className="fitness-certifications">
+      <Container className="fitness-certifications">
         <h2 style={headerStyle}>Fitness Certifications</h2>
         <div className="row">
           {fitnessCertifications.map((image, index) => (
-            <Col md={3} key={index}>
+            <Col md={6} key={index}>
               <a href={image} key={index}>
                 <Card>
                   <Card.Img variant="top" src={image} />
@@ -185,7 +185,7 @@ const Certifications = () => {
             </Col>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };
