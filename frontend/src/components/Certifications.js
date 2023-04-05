@@ -140,8 +140,8 @@ const Certifications = () => {
 
   const headerStyle = {
     textAlign: "center",
-    textDecoration: "underline"
-  }
+    textDecoration: "underline",
+  };
 
   return (
     <section className="certifications">

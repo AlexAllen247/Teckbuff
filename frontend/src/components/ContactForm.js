@@ -42,9 +42,26 @@ const ContactForm = ({ onCreate }) => {
     marginBottom: 35,
   };
 
+  const pStyle = {
+    fontSize: 20,
+    maxWidth: 500,
+    margin: "auto",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 10,
+  };
+
   return (
     <section style={divStyle} className="contact form">
       <h2 style={headerStyle}>Contact Form</h2>
+      <p style={pStyle}>
+        If you have any questions or inquiries, please don't hesitate to reach
+        out to us using the contact form below. We'll get back to you as soon as
+        possible.
+      </p>
 
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">

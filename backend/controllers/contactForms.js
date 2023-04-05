@@ -24,7 +24,7 @@ router.post("/", async (request, response) => {
   const mailOptions = {
     from: process.env.GMAIL,
     to: process.env.GMAIL,
-    subject: "New contact form submission",
+    subject: "Teckbuff contact form submission",
     html: `
       <p>Email: ${request.body.email}</p>
       <p>Message: ${request.body.message}</p>
