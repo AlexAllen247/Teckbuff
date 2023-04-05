@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   const pStyle = {
     fontSize: 20,
+    marginTop: 10,
   };
   const menuColClasses = "mb-5 mb-lg-0";
 
@@ -28,17 +29,22 @@ const Profile = () => {
     gridGap: "10px",
   };
 
+  const headerStyle = {
+    marginTop: 10,
+    textDecoration: "underline"
+  }
+
   return (
     <section className="profile" style={sectionStyle}>
       <div className="px-4 py-5 px-md-5 text-center text-lg-start">
         <Container style={containerStyle}>
           <Row className="align-items-center">
             <Col lg={6} className={menuColClasses}>
-              <h2>Profile</h2>
-              <h3>Alex Allen</h3>
+              <h3 style={headerStyle}>Profile</h3>
+              <h2 style={headerStyle}>Alex Allen</h2>
+              <h3 style={headerStyle}>Full Stack Developer</h3>
               <p style={pStyle}>
-                Master Trainer and a Full Stack Developer proficient in these
-                technologies:
+                 Proficient in these technologies:
               </p>
               <div style={languageDivStyle}>
                 <img
@@ -102,8 +108,11 @@ const Profile = () => {
                   width="45px"
                 />
               </div>
+              <h3 style={headerStyle}>Master Trainer</h3>
               <p style={pStyle}>
-                For more information find my certifications{" "}
+                Specialising in body composition, muscular
+                development, weight management and biomechanics. For more
+                information find my certifications{" "}
                 <Link to="/certifications">here.</Link>
               </p>
             </Col>

@@ -59,7 +59,7 @@ const ContactForm = ({ onCreate }) => {
       <h2 style={headerStyle}>Contact Form</h2>
       <p style={pStyle}>
         If you have any questions or inquiries, please don't hesitate to reach
-        out to us using the contact form below. We'll get back to you as soon as
+        out using the contact form below. I'll get back to you as soon as
         possible.
       </p>
 
