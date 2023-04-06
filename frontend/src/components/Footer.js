@@ -12,6 +12,7 @@ const Footer = () => {
   const sectionStyle = {
     textAlign: "center",
     padding: 15,
+    backgroundColor: "#ffbd59"
   };
   const buttonStyle = {
     margin: 10,

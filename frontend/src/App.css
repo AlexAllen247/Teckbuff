@@ -2,3 +2,36 @@
   font-family: "Agrandir Wide Medium";
   color: #0047ab;
 }
+
+.animated-image {
+  animation: wipe 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes wipe {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    opacity: 0;
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+}
+
+.animated-card {
+  animation: fade-in 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

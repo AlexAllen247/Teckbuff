@@ -118,7 +118,7 @@ const Profile = () => {
             </Col>
 
             <Col lg={6} className={menuColClasses}>
-              <Card style={{ borderRadius: 50 }}>
+              <Card style={{ borderRadius: 50 }} className="animated-card">
                 <Card.Body className="py-5 px-md-5">
                   <img
                     className="d-block w-100"

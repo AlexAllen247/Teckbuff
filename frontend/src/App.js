@@ -55,7 +55,7 @@ const App = () => {
       <div className="app">
         <Header />
         <Notification notification={notification} />
-        <Navbar expand="lg">
+        <Navbar expand="lg" style={{backgroundColor: "#ffbd59"}}>
           <div className="container-fluid">
             <Navbar.Brand href="/" style={navStyle}>
               TeckBuff.com
