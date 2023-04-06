@@ -34,6 +34,7 @@ const Header = () => {
           />
         )}
       </div>
+      <div className="animated-line"></div>
     </section>
   );
 };

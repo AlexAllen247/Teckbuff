@@ -35,3 +35,11 @@
     opacity: 1;
   }
 }
+
+.animated-line {
+  animation: wipe 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  height: 5px;
+  background-color: #ffbd59;
+}
