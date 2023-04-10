@@ -143,13 +143,17 @@ const Certifications = () => {
     textDecoration: "underline",
   };
 
+  const cardStyle = {
+    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
+  };
+
   return (
     <section className="certifications">
       <Container>
         <div className="tech-certifications">
           <h2 style={headerStyle}>Tech Certifications</h2>
           {certificationsByIssuer.map((issuer) => (
-            <Card key={issuer.issuer} className="my-3">
+            <Card key={issuer.issuer} className="my-3" style={cardStyle}>
               <Card.Header>
                 <h3>{issuer.issuer}</h3>
               </Card.Header>
@@ -178,7 +182,7 @@ const Certifications = () => {
           {fitnessCertifications.map((image, index) => (
             <Col md={6} key={index}>
               <a href={image} key={index}>
-                <Card>
+                <Card style={cardStyle}>
                   <Card.Img variant="top" src={image} />
                 </Card>
               </a>

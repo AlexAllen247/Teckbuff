@@ -31,8 +31,8 @@ const Profile = () => {
 
   const headerStyle = {
     marginTop: 10,
-    textDecoration: "underline"
-  }
+    textDecoration: "underline",
+  };
 
   return (
     <section className="profile" style={sectionStyle}>
@@ -43,9 +43,7 @@ const Profile = () => {
               <h3 style={headerStyle}>Profile</h3>
               <h2 style={headerStyle}>Alex Allen</h2>
               <h3 style={headerStyle}>Full Stack Developer</h3>
-              <p style={pStyle}>
-                 Proficient in these technologies:
-              </p>
+              <p style={pStyle}>Proficient in these technologies:</p>
               <div style={languageDivStyle}>
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177418858-237ac6e5-9511-4bd4-9355-df59d18f2f81.svg"
@@ -110,10 +108,9 @@ const Profile = () => {
               </div>
               <h3 style={headerStyle}>Master Trainer</h3>
               <p style={pStyle}>
-                Specialising in body composition, muscular
-                development, weight management and biomechanics. For more
-                information find my certifications{" "}
-                <Link to="/certifications">here.</Link>
+                Specialising in body composition, muscular development, weight
+                management and biomechanics. For more information find my
+                certifications <Link to="/certifications">here.</Link>
               </p>
             </Col>
 
