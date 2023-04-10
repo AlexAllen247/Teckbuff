@@ -23,6 +23,7 @@ const ContactForm = ({ onCreate }) => {
     width: "50%",
     display: "block",
     margin: "0 auto",
+    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
   };
 
   const headerStyle = {

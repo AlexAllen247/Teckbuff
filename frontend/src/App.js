@@ -12,7 +12,7 @@ import Portfolio from "./components/Portfolio";
 import Videos from "./components/Videos";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
-import Navigation from "./components/Navigation"
+import Navigation from "./components/Navigation";
 
 import contactFormService from "./services/contactForms";
 
