@@ -49,12 +49,13 @@ const App = () => {
 
   const navbarSvg = {
     margin: 10,
+    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
   };
   return (
     <main>
       <div className="app">
         <Header />
-        <div style={{backgroundColor: "#ffbd59"}}></div>
+        <div style={{ backgroundColor: "#ffbd59" }}></div>
         <Notification notification={notification} />
         <Navbar expand="lg">
           <div className="container-fluid">

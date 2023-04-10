@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 
 const ProjectCard = ({ title, thumbnail, description, link, github }) => {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem", boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)" }}>
       <Card.Img variant="top" src={thumbnail} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
