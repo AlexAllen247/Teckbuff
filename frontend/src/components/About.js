@@ -8,13 +8,11 @@ const styles = {
     padding: "10px",
   },
   h1: {
-    fontWeight: "bold",
     marginBottom: "10px",
     textAlign: "center",
     textDecoration: "underline",
   },
   h2: {
-    fontWeight: "bold",
     marginBottom: "5px",
     marginTop: "20px",
     textDecoration: "underline",

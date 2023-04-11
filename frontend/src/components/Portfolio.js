@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import Image1 from "../images/hqdefault_17866.webp"
 
 const ProjectCard = ({ title, thumbnail, description, link, github }) => {
   return (
@@ -24,11 +25,11 @@ const ProjectCard = ({ title, thumbnail, description, link, github }) => {
 const Portfolio = () => {
   const projects = [
     {
-      title: "Project 1",
-      thumbnail: "https://via.placeholder.com/150",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "https://example.com",
-      github: "https://github.com/example",
+      title: "Cs50W Capstone",
+      thumbnail: Image1,
+      description: "This is a Personal Training Application. The site is not live, however you can view a youtube video of the site and see the code on github below. ",
+      link: "https://www.youtube.com/watch?v=52olNvZ_xWk&t=3s",
+      github: "https://github.com/AlexAllen247/Cs50W-Capstone",
     },
     {
       title: "Project 2",
