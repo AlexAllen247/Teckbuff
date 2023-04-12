@@ -5,13 +5,13 @@ import Image2 from "../images/PuebloDelRio3.png";
 
 const sectionStyle = {
   marginBottom: 20,
-}
+};
 
 const headerStyle = {
   marginBottom: 40,
   textAlign: "center",
   textDecoration: "underline",
-}
+};
 
 const ProjectCard = ({ title, thumbnail, description, link, github }) => {
   return (
