@@ -1,6 +1,17 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import Image1 from "../images/hqdefault_17866.webp"
+import Image1 from "../images/hqdefault_17866.webp";
+import Image2 from "../images/PuebloDelRio3.png";
+
+const sectionStyle = {
+  marginBottom: 20,
+}
+
+const headerStyle = {
+  marginBottom: 40,
+  textAlign: "center",
+  textDecoration: "underline",
+}
 
 const ProjectCard = ({ title, thumbnail, description, link, github }) => {
   return (
@@ -27,16 +38,17 @@ const Portfolio = () => {
     {
       title: "Cs50W Capstone",
       thumbnail: Image1,
-      description: "This is a Personal Training Application. The site is not live, however you can view a youtube video of the site and see the code on github below. ",
+      description:
+        "This is a Personal Training Application. The site is not live, however you can view a youtube video of the site and see the code on github below. ",
       link: "https://www.youtube.com/watch?v=52olNvZ_xWk&t=3s",
       github: "https://github.com/AlexAllen247/Cs50W-Capstone",
     },
     {
-      title: "Project 2",
-      thumbnail: "https://via.placeholder.com/150",
+      title: "Pueblo Del Rio",
+      thumbnail: Image2,
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "https://example.com",
+        "This is a website built with the MERN stack for an urbanization in Marbella. It is a user authentcated website that allows the residents to keep up to date with all that is going on in the urbanization.",
+      link: "https://pueblodelrio.es/",
       github: "https://github.com/example",
     },
     {
@@ -50,16 +62,18 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="container">
-      <h1>Portfolio</h1>
-      <div className="row">
-        {projects.map((project, index) => (
-          <div className="col-md-4" key={index}>
-            <ProjectCard {...project} />
-          </div>
-        ))}
+    <section className="portfolio" style={sectionStyle}>
+      <div className="container">
+        <h2 style={headerStyle}>Portfolio</h2>
+        <div className="row">
+          {projects.map((project, index) => (
+            <div className="col-md-4" key={index}>
+              <ProjectCard {...project} />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
