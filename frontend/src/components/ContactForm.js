@@ -17,6 +17,7 @@ const ContactForm = ({ onCreate }) => {
 
   const divStyle = {
     textAlign: "center",
+    backgroundColor: "#F5F5F5",
   };
 
   const formControlStyle = {

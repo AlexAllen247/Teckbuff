@@ -36,14 +36,6 @@ const ProjectCard = ({ title, thumbnail, description, link, github }) => {
 const Portfolio = () => {
   const projects = [
     {
-      title: "Cs50W Capstone",
-      thumbnail: Image1,
-      description:
-        "This is a Personal Training Application. The site is not live, however you can view a youtube video of the site and see the code on github below. ",
-      link: "https://www.youtube.com/watch?v=52olNvZ_xWk&t=3s",
-      github: "https://github.com/AlexAllen247/Cs50W-Capstone",
-    },
-    {
       title: "Pueblo Del Rio",
       thumbnail: Image2,
       description:
@@ -52,7 +44,15 @@ const Portfolio = () => {
       github: "https://github.com/example",
     },
     {
-      title: "Project 3",
+      title: "Cs50W Capstone",
+      thumbnail: Image1,
+      description:
+        "This is a Personal Training Application. The site is not live, however you can view a youtube video of the site and see the code on github below. ",
+      link: "https://www.youtube.com/watch?v=52olNvZ_xWk&t=3s",
+      github: "https://github.com/AlexAllen247/Cs50W-Capstone",
+    },
+    {
+      title: "Cs50x Final Project",
       thumbnail: "https://via.placeholder.com/150",
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -64,7 +64,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio" style={sectionStyle}>
       <div className="container">
-        <h2 style={headerStyle}>Portfolio</h2>
+        <h2 style={headerStyle}>Projects</h2>
         <div className="row">
           {projects.map((project, index) => (
             <div className="col-md-4" key={index}>

@@ -6,6 +6,10 @@ const styles = {
     margin: "auto",
     lineHeight: "1.6",
     padding: "10px",
+    backgroundColor: "#F5F5F5",
+    borderRadius: "20px",
+    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
+    marginBottom: 20,
   },
   h1: {
     marginBottom: "10px",

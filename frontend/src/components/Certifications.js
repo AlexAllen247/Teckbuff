@@ -141,15 +141,26 @@ const Certifications = () => {
   const headerStyle = {
     textAlign: "center",
     textDecoration: "underline",
+    margin: 30,
   };
 
   const cardStyle = {
     boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
   };
 
+  const fitCardStyle = {
+    padding: 10,
+    margin: 5,
+    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
+  };
+
+  const containerStyle = {
+    marginBottom: 30,
+  };
+
   return (
     <section className="certifications">
-      <Container>
+      <Container style={containerStyle}>
         <div className="tech-certifications">
           <h2 style={headerStyle}>Tech Certifications</h2>
           {certificationsByIssuer.map((issuer) => (
@@ -176,18 +187,20 @@ const Certifications = () => {
           ))}
         </div>
       </Container>
-      <Container className="fitness-certifications">
-        <h2 style={headerStyle}>Fitness Certifications</h2>
-        <div className="row">
-          {fitnessCertifications.map((image, index) => (
-            <Col md={6} key={index}>
-              <a href={image} key={index}>
-                <Card style={cardStyle}>
-                  <Card.Img variant="top" src={image} />
-                </Card>
-              </a>
-            </Col>
-          ))}
+      <Container style={containerStyle}>
+        <div className="fitness-certifications">
+          <h2 style={headerStyle}>Fitness Certifications</h2>
+          <div className="row">
+            {fitnessCertifications.map((image, index) => (
+              <Col md={6} key={index}>
+                <a href={image} key={index}>
+                  <Card style={fitCardStyle}>
+                    <Card.Img variant="top" src={image} />
+                  </Card>
+                </a>
+              </Col>
+            ))}
+          </div>
         </div>
       </Container>
     </section>
