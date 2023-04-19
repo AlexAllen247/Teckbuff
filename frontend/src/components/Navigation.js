@@ -50,6 +50,7 @@ const Navigation = () => {
                 href="https://www.linkedin.com/in/alexander-allen-392225251/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="LinkedIn Profile"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +68,7 @@ const Navigation = () => {
                 href="https://github.com/AlexAllen247"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Github Profile"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

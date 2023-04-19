@@ -67,17 +67,22 @@ const ContactForm = ({ onCreate }) => {
 
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
-          <Form.Label style={formLabelStyle}>Email</Form.Label>
+          <Form.Label htmlFor="email" style={formLabelStyle}>
+            Email
+          </Form.Label>
           <Form.Control
             value={email}
             onChange={({ target }) => setEmail(target.value)}
             id="email"
             placeholder="Place your email here"
             style={formControlStyle}
+            aria-label="Email"
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label style={formLabelStyle}>Message</Form.Label>
+          <Form.Label htmlFor="message" style={formLabelStyle}>
+            Message
+          </Form.Label>
           <Form.Control
             as="textarea"
             rows={5}
@@ -86,10 +91,11 @@ const ContactForm = ({ onCreate }) => {
             id="message"
             placeholder="Place your message here"
             style={formControlStyle}
+            aria-label="Message"
           />
         </Form.Group>
         <Button
-          id="create-button"
+          aria-label="Submit"
           type="submit"
           variant="primary"
           style={buttonStyle}
