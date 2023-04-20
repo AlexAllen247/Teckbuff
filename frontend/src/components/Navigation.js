@@ -28,22 +28,22 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav justify-content-center">
           <div className="mx-auto">
             <Nav className="me-auto mt-2 justify-content-center">
-              <NavLink to="/" style={navStyle}>
+              <NavLink to="/" style={navStyle} aria-label="Link to Profile page">
                 Profile
               </NavLink>
-              <NavLink to="/portfolio" style={navStyle}>
+              <NavLink to="/portfolio" style={navStyle} aria-label="Link to Portfolio Page">
                 Portfolio
               </NavLink>
-              <NavLink to="/certifications" style={navStyle}>
+              <NavLink to="/certifications" style={navStyle} aria-label="Link to Certifications page">
                 Certifications
               </NavLink>
-              <NavLink to="/about" style={navStyle}>
+              <NavLink to="/about" style={navStyle} aria-label="Link to About page">
                 About
               </NavLink>
-              <NavLink to="/videos" style={navStyle}>
+              <NavLink to="/videos" style={navStyle} aria-label="Link to Videos page">
                 Videos
               </NavLink>
-              <NavLink to="/contactforms" style={navStyle}>
+              <NavLink to="/contactforms" style={navStyle} aria-label="Link to Contact page">
                 Contact
               </NavLink>
               <a

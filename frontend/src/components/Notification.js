@@ -16,7 +16,12 @@ const Notification = ({ notification }) => {
   };
 
   return (
-    <Alert variant={variant} style={style} id="notification">
+    <Alert
+      variant={variant}
+      style={style}
+      id="notification"
+      aria-label={notification.type}
+    >
       {notification.message}
     </Alert>
   );

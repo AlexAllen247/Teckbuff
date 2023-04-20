@@ -31,6 +31,7 @@ const Header = () => {
             alt="My Banner"
             style={style}
             className="animated-image"
+            aria-label="Banner for TeckBuff.com"
           />
         )}
       </div>

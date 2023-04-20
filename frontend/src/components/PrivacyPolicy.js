@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
         If you have any questions or concerns about this Privacy Policy or our
         handling of your personal data, please contact us at
         alexanderallen032@gmail.com or use the contact form{" "}
-        <Link to="/contactforms"> here.</Link>
+        <Link to="/contactforms" aria-label="Link to Contact page"> here.</Link>
       </p>
     </section>
   );

@@ -49,61 +49,73 @@ const Profile = () => {
                   src="https://user-images.githubusercontent.com/66707636/177418858-237ac6e5-9511-4bd4-9355-df59d18f2f81.svg"
                   alt="javascript"
                   width="45px"
+                  aria-label="JavaScript"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177418998-d543d406-11ef-4c03-8c18-317ff7f467b7.svg"
                   alt="python"
                   width="45px"
+                  aria-label="Python"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177419055-26ba5165-81fe-44c4-9362-34358d0bc7c2.svg"
                   alt="html"
                   width="45px"
+                  aria-label="HTML"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177419068-409bc96f-3591-4dc9-805b-fb6ad567f982.svg"
                   alt="css"
                   width="45px"
+                  aria-label="CSS"
                 />
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                   alt="nodejs"
                   width="45px"
+                  aria-label="NodeJS"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177420913-45f3bb5c-5977-4aae-860c-37b4e98d5d5f.svg"
                   alt="django"
                   width="35px"
+                  aria-label="Django"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177421957-562cd30d-4b8b-4ca0-b672-5062abdb10f4.svg"
                   alt="sql"
                   width="35px"
+                  aria-label="SQL"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177422016-2758da9c-9482-421d-a438-7fc96f4c550a.svg"
                   alt="mongodb"
                   width="45px"
+                  aria-label="MongoDB"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177422094-23c9e1f6-5953-45ad-9df2-a171d2fcfb42.svg"
                   alt="react"
                   width="45px"
+                  aria-label="React"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177422209-8223d64b-b119-4153-99b1-31bd67365ebe.svg"
                   alt="bootstrap"
                   width="45px"
+                  aria-label="Bootstrap"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177422269-5848c9f4-60eb-4b7a-b040-345c9fbb210f.svg"
                   alt="vscode"
                   width="45px"
+                  aria-label="VSCode"
                 />
                 <img
                   src="https://user-images.githubusercontent.com/66707636/177422401-44f7f8aa-13dc-4966-b9c5-87673f0fafd3.svg"
                   alt="git"
                   width="45px"
+                  aria-label="Git"
                 />
               </div>
               <h3 style={headerStyle}>Master Trainer</h3>
@@ -127,6 +139,7 @@ const Profile = () => {
                     className="d-block w-100"
                     src={ProfilePicture}
                     alt="profile"
+                    aria-label="Profile picture"
                   />
                 </Card.Body>
               </Card>

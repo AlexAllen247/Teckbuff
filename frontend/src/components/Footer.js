@@ -24,6 +24,7 @@ const Footer = () => {
         variant="primary"
         onClick={handlePrivacyPolicyToggle}
         style={buttonStyle}
+        aria-label="Privacy Policy"
       >
         Privacy Policy
       </Button>
