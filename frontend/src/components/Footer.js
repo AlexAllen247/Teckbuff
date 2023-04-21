@@ -12,7 +12,6 @@ const Footer = () => {
   const sectionStyle = {
     textAlign: "center",
     padding: 15,
-    backgroundColor: "#ffbd59",
   };
   const buttonStyle = {
     margin: 10,
@@ -25,6 +24,7 @@ const Footer = () => {
         onClick={handlePrivacyPolicyToggle}
         style={buttonStyle}
         aria-label="Privacy Policy"
+        className="btn-custom"
       >
         Privacy Policy
       </Button>

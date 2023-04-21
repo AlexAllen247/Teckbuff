@@ -1,3 +1,5 @@
+/* App.css */
+
 .app {
   font-family: "Agrandir Wide Medium", "sans-serif";
   color: #0047ab;
@@ -41,5 +43,10 @@
   animation-fill-mode: forwards;
   opacity: 0;
   height: 5px;
-  background-color: #ffbd59;
+  background-color: #0047ab;
+}
+
+.btn-custom {
+  background-color: #0047ab;
+  color: white;
 }

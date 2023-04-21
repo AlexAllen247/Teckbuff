@@ -194,9 +194,17 @@ const Certifications = () => {
           <div className="row">
             {fitnessCertifications.map((image, index) => (
               <Col md={6} key={index}>
-                <a href={image} key={index} aria-label="View fitness certification">
+                <a
+                  href={image}
+                  key={index}
+                  aria-label="View fitness certification"
+                >
                   <Card style={fitCardStyle}>
-                    <Card.Img variant="top" src={image} aria-label="Fitness certification"/>
+                    <Card.Img
+                      variant="top"
+                      src={image}
+                      aria-label="Fitness certification"
+                    />
                   </Card>
                 </a>
               </Col>

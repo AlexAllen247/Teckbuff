@@ -99,6 +99,7 @@ const ContactForm = ({ onCreate }) => {
           type="submit"
           variant="primary"
           style={buttonStyle}
+          className="btn-custom"
         >
           Submit
         </Button>

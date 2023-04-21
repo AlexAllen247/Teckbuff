@@ -6,11 +6,9 @@ import "./App.css";
 import ContactForm from "./components/ContactForm";
 import Notification from "./components/Notification";
 import Footer from "./components/Footer";
-import About from "./components/About";
 import Certifications from "./components/Certifications";
 import Profile from "./components/Profile";
-import Portfolio from "./components/Portfolio";
-import Videos from "./components/Videos";
+import Content from "./components/Content";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
@@ -51,10 +49,8 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Profile />} />
-          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/certifications" element={<Certifications />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/videos" element={<Videos />} />
+          <Route path="/content" element={<Content />} />
           <Route
             path="/contactforms"
             element={<ContactForm onCreate={createForm} />}

@@ -1,13 +1,8 @@
 import React from "react";
 import ProfilePicture from "../images/ProfilePicture.jpg";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const Profile = () => {
-  const pStyle = {
-    fontSize: 20,
-    marginTop: 10,
-  };
   const menuColClasses = "mb-5 mb-lg-0";
 
   const containerStyle = {
@@ -22,16 +17,25 @@ const Profile = () => {
     justifyContent: "center",
     alignItems: "center",
   };
-  const languageDivStyle = {
-    display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gridTemplateRows: "repeat(3, 1fr)",
-    gridGap: "10px",
-  };
 
-  const headerStyle = {
-    marginTop: 10,
-    textDecoration: "underline",
+  const styles = {
+    h1: {
+      marginBottom: "10px",
+      textAlign: "center",
+      textDecoration: "underline",
+    },
+    h2: {
+      marginBottom: "5px",
+      marginTop: "20px",
+      textDecoration: "underline",
+    },
+    ul: {
+      marginBottom: "10px",
+      listStyleType: "none",
+    },
+    p: {
+      marginBottom: "10px",
+    },
   };
 
   return (
@@ -40,89 +44,78 @@ const Profile = () => {
         <Container style={containerStyle}>
           <Row className="align-items-center">
             <Col lg={6} className={menuColClasses}>
-              <h3 style={headerStyle}>Profile</h3>
-              <h2 style={headerStyle}>Alex Allen</h2>
-              <h3 style={headerStyle}>Full Stack Developer</h3>
-              <p style={pStyle}>Proficient in these technologies:</p>
-              <div style={languageDivStyle}>
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177418858-237ac6e5-9511-4bd4-9355-df59d18f2f81.svg"
-                  alt="javascript"
-                  width="45px"
-                  aria-label="JavaScript"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177418998-d543d406-11ef-4c03-8c18-317ff7f467b7.svg"
-                  alt="python"
-                  width="45px"
-                  aria-label="Python"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177419055-26ba5165-81fe-44c4-9362-34358d0bc7c2.svg"
-                  alt="html"
-                  width="45px"
-                  aria-label="HTML"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177419068-409bc96f-3591-4dc9-805b-fb6ad567f982.svg"
-                  alt="css"
-                  width="45px"
-                  aria-label="CSS"
-                />
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                  alt="nodejs"
-                  width="45px"
-                  aria-label="NodeJS"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177420913-45f3bb5c-5977-4aae-860c-37b4e98d5d5f.svg"
-                  alt="django"
-                  width="35px"
-                  aria-label="Django"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177421957-562cd30d-4b8b-4ca0-b672-5062abdb10f4.svg"
-                  alt="sql"
-                  width="35px"
-                  aria-label="SQL"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177422016-2758da9c-9482-421d-a438-7fc96f4c550a.svg"
-                  alt="mongodb"
-                  width="45px"
-                  aria-label="MongoDB"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177422094-23c9e1f6-5953-45ad-9df2-a171d2fcfb42.svg"
-                  alt="react"
-                  width="45px"
-                  aria-label="React"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177422209-8223d64b-b119-4153-99b1-31bd67365ebe.svg"
-                  alt="bootstrap"
-                  width="45px"
-                  aria-label="Bootstrap"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177422269-5848c9f4-60eb-4b7a-b040-345c9fbb210f.svg"
-                  alt="vscode"
-                  width="45px"
-                  aria-label="VSCode"
-                />
-                <img
-                  src="https://user-images.githubusercontent.com/66707636/177422401-44f7f8aa-13dc-4966-b9c5-87673f0fafd3.svg"
-                  alt="git"
-                  width="45px"
-                  aria-label="Git"
-                />
-              </div>
-              <h3 style={headerStyle}>Master Trainer</h3>
-              <p style={pStyle}>
-                Specialising in body composition, muscular development, weight
-                management and biomechanics. For more information find my
-                certifications <Link to="/certifications">here.</Link>
+              <h2 style={styles.h1}>Alex Allen</h2>
+              <p style={styles.p}>
+                As a versatile and highly motivated professional, I have a
+                unique combination of expertise in full stack web development
+                and the health and fitness industry. With over a decade of
+                experience in personal training and health management, I am
+                passionate about helping individuals achieve their fitness goals
+                and improve their overall well-being. My background includes a
+                successful tenure as a Master Trainer with Virgin Active, over
+                10 years as a Personal Trainer, and serving as a Director at a
+                Health and Wellness Startup called No Targets Just Routine.
+              </p>
+              <p style={styles.p}>
+                Driven by my curiosity and commitment to continuous learning, I
+                embarked on a new journey to acquire skills in full stack web
+                development during the pandemic. Since then, I have become
+                proficient in a wide range of technologies, including HTML, CSS,
+                JavaScript, React, Node.js, Express.js, Python, Django, MongoDB,
+                and SQL. This technical skill set allows me to create innovative
+                and user-friendly web applications tailored to the needs of
+                diverse clients.
+              </p>
+
+              <h3 style={styles.h2}>Key Competencies</h3>
+              <ul style={styles.ul}>
+                <li>
+                  <strong>Health and Fitness Expertise:</strong> Over a decade
+                  of experience in personal training, health management, and
+                  wellness program development.
+                </li>
+                <li>
+                  <strong>Full Stack Web Development:</strong> Proficient in
+                  front-end and back-end technologies, with a strong foundation
+                  in web design, coding, and testing.
+                </li>
+                <li>
+                  <strong>Problem Solving and Adaptability:</strong> Adept at
+                  tackling complex challenges and adapting to new situations
+                  with creativity and resourcefulness.
+                </li>
+              </ul>
+              <h3 style={styles.h2}>Notable Professional Achievements</h3>
+              <ul style={styles.ul}>
+                <li>
+                  <strong>Master Trainer at Virgin Active:</strong> Designed and
+                  implemented custom fitness programs, contributing to the
+                  success and growth of the company.
+                </li>
+                <li>
+                  <strong>Director of No Targets Just Routine:</strong> Played a
+                  pivotal role in developing and launching a health and wellness
+                  startup focused on helping individuals establish healthy
+                  habits.
+                </li>
+                <li>
+                  <strong>Full Stack Web Development:</strong> Successfully
+                  completed various web development projects, showcasing my
+                  technical expertise and ability to deliver results.
+                </li>
+              </ul>
+              <p style={styles.p}>
+                Currently, I am seeking opportunities to apply my diverse skill
+                set in full stack web development or physical fitness. I am
+                excited to connect with like-minded professionals, share
+                insights, and explore potential collaborations. Please feel free
+                to reach out if you would like to discuss how my background and
+                expertise can benefit your organization, or if you simply want
+                to connect and expand your professional network.
+              </p>
+              <p styles={styles.p}>
+                Thank you for taking the time to review my profile. I look
+                forward to connecting with you!
               </p>
             </Col>
 
