@@ -17,14 +17,13 @@ const ContactForm = ({ onCreate }) => {
 
   const divStyle = {
     textAlign: "center",
-    backgroundColor: "#F5F5F5",
   };
 
   const formControlStyle = {
     width: "50%",
     display: "block",
     margin: "0 auto",
-    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
+    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
   };
 
   const headerStyle = {

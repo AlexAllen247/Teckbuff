@@ -145,13 +145,14 @@ const Certifications = () => {
   };
 
   const cardStyle = {
-    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
+    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+    textAlign: "center",
   };
 
   const fitCardStyle = {
     padding: 10,
     margin: 5,
-    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
+    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
   };
 
   const containerStyle = {
@@ -169,7 +170,7 @@ const Certifications = () => {
                 <h3>{issuer.issuer}</h3>
               </Card.Header>
               <Card.Body>
-                <ul>
+                <ul style={{listStyleType: "none",}}>
                   {issuer.certifications.map((certification) => (
                     <li key={certification.url}>
                       <a
