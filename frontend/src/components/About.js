@@ -15,6 +15,7 @@ const About = () => {
     ul: {
       marginBottom: "10px",
       listStyleType: "none",
+      padding: 0,
     },
     p: {
       marginBottom: "10px",

@@ -15,7 +15,7 @@ const navStyle = {
 
 const Navigation = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" className="text-center">
       <div className="container-fluid">
         <Navbar.Brand href="/" style={navStyle}>
           TeckBuff.com
@@ -27,7 +27,7 @@ const Navigation = () => {
         />
         <Navbar.Collapse id="basic-navbar-nav justify-content-center">
           <div className="mx-auto">
-            <Nav className="me-auto mt-2 justify-content-center">
+            <Nav className="me-auto mt-2 justify-content-center mx-auto">
               <NavLink
                 to="/"
                 style={navStyle}

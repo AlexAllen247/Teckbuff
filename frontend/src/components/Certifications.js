@@ -159,6 +159,8 @@ const Certifications = () => {
     marginBottom: 30,
   };
 
+  const ulStyle = {listStyleType: "none", padding: 0,}
+
   return (
     <section className="certifications">
       <Container style={containerStyle}>
@@ -170,7 +172,7 @@ const Certifications = () => {
                 <h3>{issuer.issuer}</h3>
               </Card.Header>
               <Card.Body>
-                <ul style={{listStyleType: "none",}}>
+                <ul style={ulStyle}>
                   {issuer.certifications.map((certification) => (
                     <li key={certification.url}>
                       <a

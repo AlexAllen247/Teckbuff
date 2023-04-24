@@ -1,6 +1,6 @@
 import React from "react";
 import ProfilePicture from "../images/ProfilePicture.jpg";
-import { Container, Card, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import { useState } from "react";
 import About from "./About";
 
@@ -35,26 +35,21 @@ const Profile = () => {
     alignItems: "center",
   };
 
+  const imageDivStyle = {
+    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+  }
+
   return (
     <section className="profile" style={sectionStyle}>
       <div className="px-4 py-5 px-md-5 text-center text-lg-start">
         <Container style={containerStyle}>
-          <Card
-            style={{
-              borderRadius: 50,
-              boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
-            }}
-            className="animated-card"
-          >
-            <Card.Body className="py-5 px-md-5">
+          <div style={imageDivStyle}>
               <img
-                className="d-block w-100"
                 src={ProfilePicture}
                 alt="profile"
                 aria-label="Profile picture"
               />
-            </Card.Body>
-          </Card>
+            </div>
         </Container>
       </div>
       <div style={divStyle}>
