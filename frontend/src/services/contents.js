@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const baseUrl = "/api/videos";
+const baseUrl = "/api/contents";
 
-const videoService = {
+const contentService = {
   getAll: () => {
     const request = axios.get(baseUrl);
     return request.then((response) => response.data);
   },
 };
 
-export default videoService;
+export default contentService;

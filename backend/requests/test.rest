@@ -11,13 +11,18 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3001/api/videos
+GET http://localhost:3001/api/contents
+
 
 ###
 
-POST http://localhost:3001/api/videos
+POST http://localhost:3001/api/contents
 Content-Type: application/json
 
 {
-    "url": "test@test.com"
+    "title": "Tech Meet Up in the Pool Marbella",
+    "description": "The event in the Pool provided a great opportunity to connect with like-minded innovators, creatives, and entrepreneurs in the Marbella tech scene.",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7055062575700439040/",
+    "platform": "LinkedIn",
+    "image": "https://media.licdn.com/dms/image/D4E22AQFRS65KSJEcTg/feedshare-shrink_1280/0/1682057993618?e=1685577600&v=beta&t=Kz1XxkqaI8BOJFzRWm9JAdIFFFB2pTrD9FHubTJbSHg"
 }

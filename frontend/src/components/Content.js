@@ -1,23 +1,24 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import videoService from "../services/videos";
+import contentService from "../services/contents";
+import ContentCard from "./ContentCard";
 
-const Videos = () => {
-  const [video, setVideo] = useState([]);
+const Contents = () => {
+  const [content, setContent] = useState([]);
 
   useEffect(() => {
-    videoService.getAll().then((data) => {
-      setVideo(data);
+    contentService.getAll().then((data) => {
+      setContent(data);
     });
   }, []);
 
   return (
-    <section className="videos">
-      {video.map((element) => (
-        <div>{element.url}</div>
+    <section className="contents">
+      {content.map((element) => (
+        <ContentCard key={element._id} post={element} />
       ))}
     </section>
   );
 };
 
-export default Videos;
+export default Contents;
