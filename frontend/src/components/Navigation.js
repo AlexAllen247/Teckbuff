@@ -28,8 +28,15 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav justify-content-center">
           <div className="mx-auto">
             <Nav className="me-auto mt-2 justify-content-center mx-auto">
+            <NavLink
+                to="/content"
+                style={navStyle}
+                aria-label="Link to Content page"
+              >
+                Content
+              </NavLink>
               <NavLink
-                to="/"
+                to="/profile"
                 style={navStyle}
                 aria-label="Link to Profile page"
               >
@@ -41,13 +48,6 @@ const Navigation = () => {
                 aria-label="Link to Certifications page"
               >
                 Certifications
-              </NavLink>
-              <NavLink
-                to="/content"
-                style={navStyle}
-                aria-label="Link to Content page"
-              >
-                Content
               </NavLink>
               <NavLink
                 to="/contactforms"

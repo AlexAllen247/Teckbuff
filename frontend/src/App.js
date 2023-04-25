@@ -12,6 +12,7 @@ import Content from "./components/Content";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
+import LandingPage from "./components/LandingPage";
 
 import contactFormService from "./services/contactForms";
 
@@ -48,9 +49,10 @@ const App = () => {
         <Navigation />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Profile />} />
-          <Route path="/certifications" element={<Certifications />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/content" element={<Content />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/certifications" element={<Certifications />} />
           <Route
             path="/contactforms"
             element={<ContactForm onCreate={createForm} />}
