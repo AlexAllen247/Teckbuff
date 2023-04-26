@@ -159,7 +159,7 @@ const Certifications = () => {
     marginBottom: 30,
   };
 
-  const ulStyle = {listStyleType: "none", padding: 0,}
+  const ulStyle = { listStyleType: "none", padding: 0 };
 
   return (
     <section className="certifications">

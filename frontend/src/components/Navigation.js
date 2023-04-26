@@ -28,7 +28,10 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav justify-content-center">
           <div className="mx-auto">
             <Nav className="me-auto mt-2 justify-content-center mx-auto">
-            <NavLink
+              <NavLink to="/" style={navStyle} aria-label="Link to Homepage">
+                Home
+              </NavLink>
+              <NavLink
                 to="/content"
                 style={navStyle}
                 aria-label="Link to Content page"

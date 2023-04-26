@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import CookieConsent from "react-cookie-consent";
 
 import ContactForm from "./components/ContactForm";
 import Notification from "./components/Notification";
@@ -13,6 +14,7 @@ import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
 import LandingPage from "./components/LandingPage";
+import NotFound from "./components/NotFound";
 
 import contactFormService from "./services/contactForms";
 
@@ -57,8 +59,24 @@ const App = () => {
             path="/contactforms"
             element={<ContactForm onCreate={createForm} />}
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          cookieName="myCookieName"
+          style={{ background: "#333" }}
+          buttonStyle={{
+            color: "#fff",
+            background: "#e8505b",
+            fontSize: "13px",
+          }}
+        >
+          This website uses cookies to ensure you get the best experience on our
+          website. By continuing to use this site, you consent to the use of
+          cookies.
+        </CookieConsent>
       </div>
     </main>
   );

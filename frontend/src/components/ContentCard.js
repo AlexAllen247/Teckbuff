@@ -12,7 +12,13 @@ const ContentCard = ({ post }) => {
           <Col xs={2}>
             <Card.Title>{post.title}</Card.Title>
             <Card.Text>{post.description}</Card.Text>
-            <Button variant="primary" href={post.url} target="_blank" rel="noopener noreferrer" className="btn-custom">
+            <Button
+              variant="primary"
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-custom"
+            >
               View Source
             </Button>
           </Col>

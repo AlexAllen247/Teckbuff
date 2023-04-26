@@ -37,19 +37,19 @@ const Profile = () => {
 
   const imageDivStyle = {
     boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-  }
+  };
 
   return (
     <section className="profile" style={sectionStyle}>
       <div className="px-4 py-5 px-md-5 text-center text-lg-start">
         <Container style={containerStyle}>
           <div style={imageDivStyle}>
-              <img
-                src={ProfilePicture}
-                alt="profile"
-                aria-label="Profile picture"
-              />
-            </div>
+            <img
+              src={ProfilePicture}
+              alt="profile"
+              aria-label="Profile picture"
+            />
+          </div>
         </Container>
       </div>
       <div style={divStyle}>
