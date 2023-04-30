@@ -20,9 +20,9 @@ POST http://localhost:3001/api/contents
 Content-Type: application/json
 
 {
-    "title": "Tech Meet Up in the Pool Marbella",
-    "description": "The event in the Pool provided a great opportunity to connect with like-minded innovators, creatives, and entrepreneurs in the Marbella tech scene.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7055062575700439040/",
+    "title": "Delving Deeper in Ampleforth Part 2",
+    "description": "This article delves deeper into the Ampleforth protocol, looking at some of the limitations of Bitcoin and the innovation of the Buttonwood Tranche contracts.",
+    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7057592244693790720/",
     "platform": "LinkedIn",
-    "image": "https://media.licdn.com/dms/image/D4E22AQFRS65KSJEcTg/feedshare-shrink_1280/0/1682057993618?e=1685577600&v=beta&t=Kz1XxkqaI8BOJFzRWm9JAdIFFFB2pTrD9FHubTJbSHg"
+    "image": "https://media.licdn.com/dms/image/D4E22AQFif-zreG5AZg/feedshare-shrink_1280/0/1682661113342?e=1685577600&v=beta&t=pgntJMtsq6yJVp8-x-58pw1hvBTb5Mq5h530wQI-VtM"
 }
