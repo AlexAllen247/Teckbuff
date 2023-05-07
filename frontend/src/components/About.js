@@ -2,11 +2,6 @@ import React from "react";
 
 const About = () => {
   const styles = {
-    h1: {
-      marginBottom: "10px",
-      textAlign: "center",
-      textDecoration: "underline",
-    },
     h2: {
       marginBottom: "5px",
       marginTop: "20px",
@@ -23,28 +18,26 @@ const About = () => {
   };
   return (
     <section className="about">
-      <h2 style={styles.h1}>Alex Allen</h2>
       <p style={styles.p}>
-        As a versatile and highly motivated professional, I have a unique
-        combination of expertise in full stack web development and the health
-        and fitness industry. With over a decade of experience in personal
-        training and health management, I am passionate about helping
-        individuals achieve their fitness goals and improve their overall
-        well-being. My background includes a successful tenure as a Master
-        Trainer with Virgin Active, over 10 years as a Personal Trainer, and
-        serving as a Director at a Health and Wellness Startup called No Targets
-        Just Routine.
+        Hi, I'm Alex, full stack developer, multi award winning Master Trainer
+        and Teckbuff.
       </p>
       <p style={styles.p}>
-        Driven by my curiosity and commitment to continuous learning, I embarked
-        on a new journey to acquire skills in full stack web development during
-        the pandemic. Since then, I have become proficient in a wide range of
-        technologies, including HTML, CSS, JavaScript, React, Node.js,
-        Express.js, Python, Django, MongoDB, and SQL. This technical skill set
-        allows me to create innovative and user-friendly web applications
-        tailored to the needs of diverse clients.
+        Why Teckbuff? That's what my friends and family call me.
       </p>
-
+      <p style={styles.p}>
+        I am a motivated professional with a unique combination of expertise in
+        web development and the health and fitness industry.
+      </p>
+      <p style={styles.p}>
+        I am driven by commitment to create innovative and user-friendly web
+        applications tailored to the needs of diverse clients.
+      </p>
+      <p style={styles.p}>
+        I have over a decade of experience in personal training and health
+        management, and am passionate about helping individuals achieve their
+        fitness goals and improve their overall well-being.
+      </p>
       <h3 style={styles.h2}>Key Competencies</h3>
       <ul style={styles.ul}>
         <li>
@@ -63,36 +56,6 @@ const About = () => {
           resourcefulness.
         </li>
       </ul>
-      <h3 style={styles.h2}>Notable Professional Achievements</h3>
-      <ul style={styles.ul}>
-        <li>
-          <strong>Master Trainer at Virgin Active:</strong> Designed and
-          implemented custom fitness programs, contributing to the success and
-          growth of the company.
-        </li>
-        <li>
-          <strong>Director of No Targets Just Routine:</strong> Played a pivotal
-          role in developing and launching a health and wellness startup focused
-          on helping individuals establish healthy habits.
-        </li>
-        <li>
-          <strong>Full Stack Web Development:</strong> Successfully completed
-          various web development projects, showcasing my technical expertise
-          and ability to deliver results.
-        </li>
-      </ul>
-      <p style={styles.p}>
-        Currently, I am seeking opportunities to apply my diverse skill set in
-        full stack web development or physical fitness. I am excited to connect
-        with like-minded professionals, share insights, and explore potential
-        collaborations. Please feel free to reach out if you would like to
-        discuss how my background and expertise can benefit your organization,
-        or if you simply want to connect and expand your professional network.
-      </p>
-      <p styles={styles.p}>
-        Thank you for taking the time to review my profile. I look forward to
-        connecting with you!
-      </p>
     </section>
   );
 };
