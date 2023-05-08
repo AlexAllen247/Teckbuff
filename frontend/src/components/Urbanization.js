@@ -29,7 +29,7 @@ const Urbanization = () => {
         <p>
           Like what you see?{" "}
           <Link to="/contactforms" aria-label="Link to Contact page">
-            Contact us
+            Contact me
           </Link>{" "}
           to learn more about our web development services for urbanizations.
         </p>

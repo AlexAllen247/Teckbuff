@@ -37,6 +37,14 @@ const Profile = () => {
 
   const imageDivStyle = {
     boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+    height: "100%",
+    width: "100%",
+  };
+
+  const imageStyle = {
+    maxWidth: "100%",
+    maxHeight: "100%",
+    objectFit: "contain",
   };
 
   return (
@@ -48,6 +56,7 @@ const Profile = () => {
               src={ProfilePicture}
               alt="profile"
               aria-label="Profile picture"
+              style={imageStyle}
             />
           </div>
         </Container>
