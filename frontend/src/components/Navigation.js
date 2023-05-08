@@ -17,9 +17,6 @@ const Navigation = () => {
   return (
     <Navbar expand="lg" className="text-center">
       <div className="container-fluid">
-        <Navbar.Brand href="/" style={navStyle}>
-          TeckBuff.com
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbar"
           aria-expanded="false"

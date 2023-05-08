@@ -6,7 +6,7 @@ const PersonalCoaching = () => {
   return (
     <section className="personal-training">
       <Container role="region" aria-labelledby="personal-training-heading">
-        <h2>Personal Training Services</h2>
+        <h2>Online Personal Training Services</h2>
         <p>
           Interested in achieving long lasting physical changes get in contact.
         </p>

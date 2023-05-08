@@ -11,8 +11,8 @@ const Services = () => {
       <PTapp />
       <Urbanization />
       <PersonalCoaching />
-      <Ebook />
       <TechContent />
+      <Ebook />
     </section>
   );
 };
