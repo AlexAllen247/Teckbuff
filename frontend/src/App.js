@@ -9,7 +9,6 @@ import Notification from "./components/Notification";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
 import Profile from "./components/Profile";
-import Content from "./components/Content";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
@@ -52,7 +51,6 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/content" element={<Content />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route

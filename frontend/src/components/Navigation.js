@@ -32,13 +32,6 @@ const Navigation = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/content"
-                style={navStyle}
-                aria-label="Link to Content page"
-              >
-                Content
-              </NavLink>
-              <NavLink
                 to="/profile"
                 style={navStyle}
                 aria-label="Link to Profile page"
