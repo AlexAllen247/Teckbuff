@@ -15,8 +15,7 @@ const PTapp = () => {
           src="https://www.youtube.com/embed/52olNvZ_xWk"
           title="Personal Training Applications for Other Personal Trainers"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          webkitallowfullscreen
+          allowFullScreen
           aria-label="Personal Training Applications for Other Personal Trainers"
           aria-describedby="personal-training-applications-description"
           style={{ width: "100%", height: "100%" }}
