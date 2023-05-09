@@ -6,6 +6,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const helmet = require("helmet");
+const path = require("path");
 require("express-async-errors");
 
 const contactFormsRouter = require("./controllers/contactForms");
@@ -29,6 +30,10 @@ app.use(cookieParser());
 app.use(helmet());
 
 app.use("/api/contactforms", contactFormsRouter);
+
+app.all("*", (req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 if (process.env.NODE_ENV === "test") {
   const testingRouter = require("./controllers/testing");
