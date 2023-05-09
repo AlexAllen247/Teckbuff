@@ -5,37 +5,42 @@ import { Link } from "react-router-dom";
 const PTapp = () => {
   const styles = {
     personalTrainingApplication: {
-      margin: '1rem',
-      padding: '1rem',
-      boxShadow: '10px 10px 10px rgba(0, 71, 171, 0.15)',
-      fontSize: '1.2rem',
-      backgroundColor: '#ffffff',
-      borderRadius: '5px',
+      margin: "1rem",
+      padding: "1rem",
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      fontSize: "1.2rem",
+      backgroundColor: "#ffffff",
+      borderRadius: "5px",
     },
     header: {
-      fontSize: '2rem',
-      marginBottom: '1rem',
-      borderBottom: '2px solid #333333',
-      paddingBottom: '0.5rem',
+      fontSize: "2rem",
+      marginBottom: "1rem",
+      borderBottom: "2px solid #333333",
+      paddingBottom: "0.5rem",
     },
     paragraph: {
-      marginBottom: '1rem',
+      marginBottom: "1rem",
     },
     iframe: {
-      width: '100%',
-      height: '350px',
-      border: 'none',
+      width: "100%",
+      height: "350px",
+      border: "none",
     },
     linkToContact: {
-      color: '#007bff',
-      textDecoration: 'none',
+      color: "#007bff",
+      textDecoration: "none",
     },
   };
 
   return (
-    <section className="personal-training-application" style={styles.personalTrainingApplication}>
+    <section
+      className="personal-training-application"
+      style={styles.personalTrainingApplication}
+    >
       <Container>
-        <h2 style={styles.header}>Personal Training Applications for Other Personal Trainers</h2>
+        <h2 style={styles.header}>
+          Personal Training Applications for Other Personal Trainers
+        </h2>
         <p style={styles.paragraph}>
           Watch this video to see how I can build Personal Training Applications
           for other Personal Trainers.
@@ -51,7 +56,11 @@ const PTapp = () => {
         ></iframe>
         <p id="personal-training-applications-description">
           Like what you see? Get in contact{" "}
-          <Link to="/contactforms" aria-label="Link to Contact page" style={styles.linkToContact}>
+          <Link
+            to="/contactforms"
+            aria-label="Link to Contact page"
+            style={styles.linkToContact}
+          >
             here.
           </Link>
         </p>

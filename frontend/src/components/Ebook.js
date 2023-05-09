@@ -4,18 +4,18 @@ import { Container } from "react-bootstrap";
 const Ebook = () => {
   const styles = {
     eBook: {
-      margin: '1rem',
-      padding: '1rem',
-      boxShadow: '10px 10px 10px rgba(0, 71, 171, 0.15)',
-      fontSize: '1.2rem',
-      backgroundColor: '#ffffff',
-      borderRadius: '5px',
+      margin: "1rem",
+      padding: "1rem",
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      fontSize: "1.2rem",
+      backgroundColor: "#ffffff",
+      borderRadius: "5px",
     },
     header: {
-      fontSize: '2rem',
-      marginBottom: '1rem',
-      borderBottom: '2px solid #333333',
-      paddingBottom: '0.5rem',
+      fontSize: "2rem",
+      marginBottom: "1rem",
+      borderBottom: "2px solid #333333",
+      paddingBottom: "0.5rem",
     },
   };
 

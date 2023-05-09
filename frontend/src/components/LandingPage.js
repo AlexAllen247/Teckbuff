@@ -17,7 +17,7 @@ const LandingPage = () => {
             </Card>
           </Col>
           <Col md={6}>
-          <h2>TeckBuff Profile</h2>
+            <h2>TeckBuff Profile</h2>
             <Card>
               <Card.Body>
                 <Profile />

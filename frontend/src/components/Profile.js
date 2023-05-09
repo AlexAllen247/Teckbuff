@@ -10,66 +10,94 @@ const Profile = () => {
   const handleAboutToggle = () => {
     setAboutVisible((prevState) => !prevState);
   };
-  const containerStyle = {
-    marginBottom: 10,
-  };
 
-  const sectionStyle = {
-    padding: 30,
-    textAlign: "center",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-  const buttonStyle = {
-    margin: 10,
-  };
-  const divStyle = {
-    maxWidth: 600,
-    margin: "auto",
-    textAlign: "center",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const imageDivStyle = {
-    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-    height: "100%",
-    width: "100%",
-  };
-
-  const imageStyle = {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    objectFit: "contain",
+  const styles = {
+    container: {
+      marginBottom: 10,
+    },
+    section: {
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      margin: "1rem",
+      padding: "1rem",
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      fontSize: "1.2rem",
+      backgroundColor: "#ffffff",
+      borderRadius: "5px",
+    },
+    button: {
+      margin: 10,
+    },
+    div: {
+      maxWidth: 600,
+      margin: "auto",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    imageDiv: {
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      height: "100%",
+      width: "100%",
+    },
+    image: {
+      maxWidth: "100%",
+      maxHeight: "100%",
+      objectFit: "contain",
+    },
+    paragraph: {
+      marginBottom: "1rem",
+    },
   };
 
   return (
-    <section className="profile" style={sectionStyle}>
+    <section className="profile" style={styles.section}>
       <div className="px-4 py-5 px-md-5 text-center text-lg-start">
-        <Container style={containerStyle}>
-          <div style={imageDivStyle}>
+        <Container style={styles.container}>
+          <div style={styles.imageDiv}>
             <img
               src={ProfilePicture}
               alt="profile"
               aria-label="Profile picture"
-              style={imageStyle}
+              style={styles.image}
             />
           </div>
         </Container>
       </div>
-      <div style={divStyle}>
+      <div style={styles.div}>
+        <p style={styles.paragraph}>
+          Hi, I'm Alex, full stack developer, multi award winning Master Trainer
+          and Teckbuff.
+        </p>
+        <p style={styles.paragraph}>
+          Why Teckbuff? That's what my friends and family call me.
+        </p>
+        <p style={styles.paragraph}>
+          I am a motivated professional with a unique combination of expertise
+          in web development and the health and fitness industry.
+        </p>
+        <p style={styles.paragraph}>
+          I am driven by commitment to create innovative and user-friendly web
+          applications tailored to the needs of diverse clients.
+        </p>
+        <p style={styles.paragraph}>
+          I have over a decade of experience in personal training and health
+          management, and am passionate about helping individuals achieve their
+          fitness goals and improve their overall well-being.
+        </p>
         <Button
           variant="primary"
           onClick={handleAboutToggle}
-          style={buttonStyle}
+          style={styles.button}
           aria-label="About section for Alex Allen"
           className="btn-custom"
         >
-          About
+          More
         </Button>
         {isAboutVisible ? <About /> : null}
       </div>
