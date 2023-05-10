@@ -145,7 +145,7 @@ const Certifications = () => {
       margin: 30,
     },
     cardStyle: {
-      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
     },
     fitCardStyle: {

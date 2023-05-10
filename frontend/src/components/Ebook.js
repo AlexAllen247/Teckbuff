@@ -1,21 +1,23 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 
 const Ebook = () => {
   const styles = {
     section: {
       margin: "1rem",
       padding: "1rem",
-      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       fontSize: "1.2rem",
       backgroundColor: "#ffffff",
       borderRadius: "5px",
       marginBottom: "1rem",
     },
+    cardStyle: {
+      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
+      textAlign: "center",
+    },
     header: {
       fontSize: "2rem",
       marginBottom: "1rem",
-      borderBottom: "2px solid #333333",
       paddingBottom: "0.5rem",
     },
   };
@@ -23,7 +25,12 @@ const Ebook = () => {
   return (
     <section className="e-book" style={styles.section}>
       <Container>
-        <h4 style={styles.header}>Coming soon E-book</h4>
+        <Card className="my-3" style={styles.cardStyle}>
+          <Card.Header>
+            <h4 style={styles.header}>Coming soon E-book</h4>
+          </Card.Header>
+          <Card.Body></Card.Body>
+        </Card>
       </Container>
     </section>
   );

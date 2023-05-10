@@ -18,7 +18,6 @@ const Profile = () => {
     section: {
       textAlign: "center",
       display: "flex",
-      flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
       margin: "1rem",
@@ -33,12 +32,10 @@ const Profile = () => {
     },
     div: {
       maxWidth: 600,
-      margin: "auto",
-      textAlign: "center",
+      textAlign: "left",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      alignItems: "center",
     },
     imageDiv: {
       boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",

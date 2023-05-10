@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Card } from "react-bootstrap";
+import { Container, Card, Button } from "react-bootstrap";
+import { useState } from "react";
 
 const TechContent = () => {
   const articles = [
@@ -17,20 +18,28 @@ const TechContent = () => {
     },
   ];
 
+  const [expanded, setExpanded] = useState({});
+
+  const toggleArticle = (index) => {
+    setExpanded((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
   const styles = {
     techContent: {
       margin: "1rem",
       padding: "1rem",
-      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       fontSize: "1.2rem",
       backgroundColor: "#ffffff",
       borderRadius: "5px",
       marginBottom: "1rem",
     },
+    cardStyle: {
+      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
+      textAlign: "center",
+    },
     header: {
       fontSize: "2rem",
       marginBottom: "1rem",
-      borderBottom: "2px solid #333333",
       paddingBottom: "0.5rem",
     },
     iframe: {
@@ -43,23 +52,37 @@ const TechContent = () => {
   return (
     <section className="tech-content" style={styles.techContent}>
       <Container role="region" aria-labelledby="tech-content-heading">
-        <h2 id="tech-content-heading" style={styles.header}>
-          Tech Content
-        </h2>
-        {articles.map((article, index) => (
-          <Card key={index} className="article-card">
-            <Card.Body>
-              <iframe
-                src={article.embedUrl}
-                height="1310"
-                width="504"
-                allowFullScreen=""
-                title={`Embedded post ${index + 1}`}
-                style={styles.iframe}
-              ></iframe>
-            </Card.Body>
-          </Card>
-        ))}
+        <Card className="my-3" style={styles.cardStyle}>
+          <Card.Header>
+            <h2 id="tech-content-heading" style={styles.header}>
+              Tech Content
+            </h2>
+          </Card.Header>
+          <Card.Body>
+            {articles.map((article, index) => (
+              <Card key={index} className="article-card">
+                <Card.Body>
+                  {expanded[index] && (
+                    <iframe
+                      src={article.embedUrl}
+                      height="1310"
+                      width="504"
+                      allowFullScreen=""
+                      title={`Embedded post ${index + 1}`}
+                      style={styles.iframe}
+                    ></iframe>
+                  )}
+                  <Button
+                    onClick={() => toggleArticle(index)}
+                    aria-expanded={expanded[index]}
+                  >
+                    {expanded[index] ? "Hide" : "Show"}
+                  </Button>
+                </Card.Body>
+              </Card>
+            ))}
+          </Card.Body>
+        </Card>
       </Container>
     </section>
   );
