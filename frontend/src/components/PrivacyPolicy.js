@@ -2,17 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
-  const divStyle = {
-    maxWidth: 500,
-    margin: "auto",
-    textAlign: "center",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+  const styles = {
+    section: {
+      maxWidth: 500,
+      margin: "auto",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   };
   return (
-    <section className="privacy policy" style={divStyle}>
+    <section className="privacy policy" style={styles.section}>
       <h3>Privacy Policy</h3>
       <p>
         This Privacy Policy outlines the types of personal data that we collect,

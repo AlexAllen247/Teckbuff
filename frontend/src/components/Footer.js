@@ -9,20 +9,23 @@ const Footer = () => {
   const handlePrivacyPolicyToggle = () => {
     setIsPrivacyPolicyVisible((prevState) => !prevState);
   };
-  const sectionStyle = {
-    textAlign: "center",
-    padding: 15,
+  const styles = {
+    section: {
+      textAlign: "center",
+      padding: 15,
+    },
+    button: {
+      margin: 10,
+    },
   };
-  const buttonStyle = {
-    margin: 10,
-  };
+
   return (
-    <section className="footer" style={sectionStyle}>
+    <section className="footer" style={styles.section}>
       <h4>Copyright Alex Allen 2023</h4>
       <Button
         variant="primary"
         onClick={handlePrivacyPolicyToggle}
-        style={buttonStyle}
+        style={styles.button}
         aria-label="Privacy Policy"
         className="btn-custom"
       >

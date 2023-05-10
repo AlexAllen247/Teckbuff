@@ -15,50 +15,47 @@ const ContactForm = ({ onCreate }) => {
     setMessage("");
   };
 
-  const divStyle = {
-    textAlign: "center",
-  };
-
-  const formControlStyle = {
-    width: "50%",
-    display: "block",
-    margin: "0 auto",
-    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-  };
-
-  const headerStyle = {
-    textDecoration: "underline",
-    marginTop: 25,
-    marginBottom: 35,
-  };
-
-  const formLabelStyle = {
-    fontSize: 28,
-    marginBottom: 35,
-  };
-
-  const buttonStyle = {
-    padding: 15,
-    marginTop: 35,
-    marginBottom: 35,
-  };
-
-  const pStyle = {
-    fontSize: 20,
-    maxWidth: 500,
-    margin: "auto",
-    textAlign: "center",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 10,
+  const styles = {
+    div: {
+      textAlign: "center",
+    },
+    form: {
+      width: "50%",
+      display: "block",
+      margin: "0 auto",
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+    },
+    header: {
+      textDecoration: "underline",
+      marginTop: 25,
+      marginBottom: 35,
+    },
+    label: {
+      fontSize: 28,
+      marginBottom: 35,
+    },
+    button: {
+      padding: 15,
+      marginTop: 35,
+      marginBottom: 35,
+    },
+    paragraph: {
+      fontSize: 20,
+      maxWidth: 500,
+      margin: "auto",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      marginBottom: 10,
+    },
   };
 
   return (
-    <section style={divStyle} className="contact form">
-      <h2 style={headerStyle}>Contact Form</h2>
-      <p style={pStyle}>
+    <section style={styles.div} className="contact form">
+      <h2 style={styles.header}>Contact Form</h2>
+      <p style={styles.paragraph}>
         If you have any questions or inquiries, please don't hesitate to reach
         out using the contact form below. I'll get back to you as soon as
         possible.
@@ -66,7 +63,7 @@ const ContactForm = ({ onCreate }) => {
 
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
-          <Form.Label htmlFor="email" style={formLabelStyle}>
+          <Form.Label htmlFor="email" style={styles.label}>
             Email
           </Form.Label>
           <Form.Control
@@ -74,12 +71,12 @@ const ContactForm = ({ onCreate }) => {
             onChange={({ target }) => setEmail(target.value)}
             id="email"
             placeholder="Place your email here"
-            style={formControlStyle}
+            style={styles.form}
             aria-label="Email"
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label htmlFor="message" style={formLabelStyle}>
+          <Form.Label htmlFor="message" style={styles.label}>
             Message
           </Form.Label>
           <Form.Control
@@ -89,7 +86,7 @@ const ContactForm = ({ onCreate }) => {
             onChange={({ target }) => setMessage(target.value)}
             id="message"
             placeholder="Place your message here"
-            style={formControlStyle}
+            style={styles.form}
             aria-label="Message"
           />
         </Form.Group>
@@ -97,7 +94,7 @@ const ContactForm = ({ onCreate }) => {
           aria-label="Submit"
           type="submit"
           variant="primary"
-          style={buttonStyle}
+          style={styles.button}
           className="btn-custom"
         >
           Submit

@@ -18,18 +18,24 @@ const Header = () => {
     setShowImage(true);
   }, []);
 
-  const style = {
-    maxWidth: "100%",
-    width: width <= 767 ? "100%" : "initial",
+  const styles = {
+    section: {
+      textAlign: "center",
+    },
+    image: {
+      maxWidth: "100%",
+      width: width <= 767 ? "100%" : "initial",
+    },
   };
+
   return (
-    <section style={{ textAlign: "center" }} className="header">
+    <section style={styles.section} className="header">
       <div className="container">
         {showImage && (
           <img
             src={Banner}
             alt="My Banner"
-            style={style}
+            style={styles.image}
             className="animated-image"
             aria-label="Banner for TeckBuff.com"
           />

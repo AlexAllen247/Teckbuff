@@ -42,8 +42,9 @@ const Profile = () => {
     },
     imageDiv: {
       boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-      height: "100%",
-      width: "100%",
+      height: "500px",
+      maxWidth: "100%",
+      width: "auto",
     },
     image: {
       maxWidth: "100%",

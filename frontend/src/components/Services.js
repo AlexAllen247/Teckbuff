@@ -6,8 +6,16 @@ import Ebook from "./Ebook";
 import TechContent from "./TechContent";
 
 const Services = () => {
+  const styles = {
+    services: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "1rem",
+    },
+  };
+
   return (
-    <section className="services">
+    <section style={styles.services} className="services">
       <PTapp />
       <Urbanization />
       <PersonalCoaching />

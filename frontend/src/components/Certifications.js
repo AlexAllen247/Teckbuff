@@ -138,41 +138,37 @@ const Certifications = () => {
     },
   ];
 
-  const headerStyle = {
-    textAlign: "center",
-    textDecoration: "underline",
-    margin: 30,
+  const styles = {
+    headerStyle: {
+      textAlign: "center",
+      textDecoration: "underline",
+      margin: 30,
+    },
+    cardStyle: {
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      textAlign: "center",
+    },
+    fitCardStyle: {
+      padding: 10,
+      margin: 5,
+      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+    },
+    containerStyle: { marginBottom: 30 },
+    ulStyle: { listStyleType: "none", padding: 0 },
   };
-
-  const cardStyle = {
-    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-    textAlign: "center",
-  };
-
-  const fitCardStyle = {
-    padding: 10,
-    margin: 5,
-    boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-  };
-
-  const containerStyle = {
-    marginBottom: 30,
-  };
-
-  const ulStyle = { listStyleType: "none", padding: 0 };
 
   return (
     <section className="certifications">
-      <Container style={containerStyle}>
+      <Container style={styles.containerStyle}>
         <div className="tech-certifications">
-          <h2 style={headerStyle}>Tech Certifications</h2>
+          <h2 style={styles.headerStyle}>Tech Certifications</h2>
           {certificationsByIssuer.map((issuer) => (
-            <Card key={issuer.issuer} className="my-3" style={cardStyle}>
+            <Card key={issuer.issuer} className="my-3" style={styles.cardStyle}>
               <Card.Header>
                 <h3>{issuer.issuer}</h3>
               </Card.Header>
               <Card.Body>
-                <ul style={ulStyle}>
+                <ul style={styles.ulStyle}>
                   {issuer.certifications.map((certification) => (
                     <li key={certification.url}>
                       <a
@@ -191,9 +187,9 @@ const Certifications = () => {
           ))}
         </div>
       </Container>
-      <Container style={containerStyle}>
+      <Container style={styles.containerStyle}>
         <div className="fitness-certifications">
-          <h2 style={headerStyle}>Fitness Certifications</h2>
+          <h2 style={styles.headerStyle}>Fitness Certifications</h2>
           <div className="row">
             {fitnessCertifications.map((image, index) => (
               <Col md={6} key={index}>
@@ -202,7 +198,7 @@ const Certifications = () => {
                   key={index}
                   aria-label="View fitness certification"
                 >
-                  <Card style={fitCardStyle}>
+                  <Card style={styles.fitCardStyle}>
                     <Card.Img
                       variant="top"
                       src={image}

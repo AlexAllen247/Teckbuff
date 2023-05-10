@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 const Ebook = () => {
   const styles = {
-    eBook: {
+    section: {
       margin: "1rem",
       padding: "1rem",
       boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
@@ -20,7 +20,7 @@ const Ebook = () => {
   };
 
   return (
-    <section className="e-book" style={styles.eBook}>
+    <section className="e-book" style={styles.section}>
       <Container>
         <h4 style={styles.header}>Coming soon E-book</h4>
       </Container>
