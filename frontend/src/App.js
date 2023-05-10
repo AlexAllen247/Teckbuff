@@ -12,8 +12,8 @@ import Profile from "./components/Profile";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
-import LandingPage from "./components/LandingPage";
 import NotFound from "./components/NotFound";
+import Services from "./components/Services";
 
 import contactFormService from "./services/contactForms";
 
@@ -41,16 +41,25 @@ const App = () => {
       });
   };
 
+  const styles = {
+    div: {
+      backgroundColor: "#ffbd59",
+    },
+    cookie: {
+      background: "#333",
+    },
+  };
+
   return (
     <main>
       <div className="app">
         <Header />
-        <div style={{ backgroundColor: "#ffbd59" }}></div>
+        <div style={styles.div}></div>
         <Notification notification={notification} />
         <Navigation />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Services />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route
@@ -64,7 +73,7 @@ const App = () => {
           location="bottom"
           buttonText="Accept"
           cookieName="myCookieName"
-          style={{ background: "#333" }}
+          style={styles.cookie}
           buttonStyle={{
             color: "#fff",
             background: "#e8505b",

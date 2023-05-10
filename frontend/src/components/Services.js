@@ -11,6 +11,8 @@ const Services = () => {
       display: "flex",
       flexDirection: "column",
       gap: "1rem",
+      margin: "1rem",
+      padding: "1rem",
     },
   };
 

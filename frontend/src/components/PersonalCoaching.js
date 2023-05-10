@@ -7,10 +7,11 @@ const PersonalCoaching = () => {
     personalTraining: {
       margin: "1rem",
       padding: "1rem",
-      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
+      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       fontSize: "1.2rem",
       backgroundColor: "#ffffff",
       borderRadius: "5px",
+      marginBottom: "1rem",
     },
     header: {
       fontSize: "2rem",
