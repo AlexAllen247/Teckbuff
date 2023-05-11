@@ -28,7 +28,7 @@
 }
 
 .scroll-animate {
-  animation: fade-in 5s;
+  animation: fade-in 1s;
   animation-fill-mode: forwards;
 }
 

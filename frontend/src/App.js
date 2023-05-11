@@ -48,6 +48,11 @@ const App = () => {
     cookie: {
       background: "#333",
     },
+    button: {
+      color: "#fff",
+      background: "#e8505b",
+      fontSize: "13px",
+    },
   };
 
   return (
@@ -74,11 +79,7 @@ const App = () => {
           buttonText="Accept"
           cookieName="myCookieName"
           style={styles.cookie}
-          buttonStyle={{
-            color: "#fff",
-            background: "#e8505b",
-            fontSize: "13px",
-          }}
+          buttonStyle={styles.button}
         >
           This website uses cookies to ensure you get the best experience on our
           website. By continuing to use this site, you consent to the use of

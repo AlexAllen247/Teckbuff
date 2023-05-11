@@ -45,13 +45,13 @@ const PTapp = () => {
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h3 style={styles.header}>
-              Personal Training Applications for Other Personal Trainers
+              Web Applications for Health Professionals
             </h3>
           </Card.Header>
           <Card.Body>
             <p style={styles.paragraph}>
-              Watch this video to see how I can build Personal Training
-              Applications for other Personal Trainers.
+              Watch this video to see how I can build Web
+              Applications for Health Professionals.
             </p>
             <iframe
               src="https://www.youtube.com/embed/52olNvZ_xWk"

@@ -75,6 +75,7 @@ const TechContent = () => {
                   <Button
                     onClick={() => toggleArticle(index)}
                     aria-expanded={expanded[index]}
+                    className="btn-custom btn-block btn-lg"
                   >
                     {expanded[index] ? "Hide" : "Show"}
                   </Button>
