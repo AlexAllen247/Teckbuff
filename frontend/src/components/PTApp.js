@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ServiceContainer from "./ServiceContainer";
 
 const PTapp = () => {
   const styles = {
@@ -40,7 +41,7 @@ const PTapp = () => {
       className="personal-training-application"
       style={styles.personalTrainingApplication}
     >
-      <Container>
+      <ServiceContainer>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h3 style={styles.header}>
@@ -73,7 +74,7 @@ const PTapp = () => {
             </p>
           </Card.Body>
         </Card>
-      </Container>
+      </ServiceContainer>
     </section>
   );
 };

@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Card, Button } from "react-bootstrap";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Card, Button } from "react-bootstrap";
+import ServiceContainer from "./ServiceContainer";
 
 const TechContent = () => {
   const articles = [
@@ -51,7 +51,7 @@ const TechContent = () => {
 
   return (
     <section className="tech-content" style={styles.techContent}>
-      <Container role="region" aria-labelledby="tech-content-heading">
+      <ServiceContainer role="region" aria-labelledby="tech-content-heading">
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 id="tech-content-heading" style={styles.header}>
@@ -83,7 +83,7 @@ const TechContent = () => {
             ))}
           </Card.Body>
         </Card>
-      </Container>
+      </ServiceContainer>
     </section>
   );
 };

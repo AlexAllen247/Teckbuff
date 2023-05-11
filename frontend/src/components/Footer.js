@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import PrivacyPolicy from "./PrivacyPolicy";
-import { useState } from "react";
 import { Button } from "react-bootstrap";
 
 const Footer = () => {

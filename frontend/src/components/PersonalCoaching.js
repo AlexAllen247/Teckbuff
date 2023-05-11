@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ServiceContainer from "./ServiceContainer";
 
 const PersonalCoaching = () => {
   const styles = {
@@ -31,7 +32,10 @@ const PersonalCoaching = () => {
   };
   return (
     <section className="personal-training" style={styles.personalTraining}>
-      <Container role="region" aria-labelledby="personal-training-heading">
+      <ServiceContainer
+        role="region"
+        aria-labelledby="personal-training-heading"
+      >
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 style={styles.header}>Online Personal Training Services</h2>
@@ -53,7 +57,7 @@ const PersonalCoaching = () => {
             </p>
           </Card.Body>
         </Card>
-      </Container>
+      </ServiceContainer>
     </section>
   );
 };

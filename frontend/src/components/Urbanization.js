@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ServiceContainer from "./ServiceContainer";
 
 const Urbanization = () => {
   const styles = {
@@ -40,7 +41,7 @@ const Urbanization = () => {
       className="urbanization-services"
       style={styles.urbanizationServices}
     >
-      <Container>
+      <ServiceContainer>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 style={styles.header}>Web Applications for Urbanizations</h2>
@@ -79,7 +80,7 @@ const Urbanization = () => {
             </p>
           </Card.Body>
         </Card>
-      </Container>
+      </ServiceContainer>
     </section>
   );
 };

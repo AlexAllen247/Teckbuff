@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import ProfilePicture from "../images/ProfilePicture.JPG";
 import { Container, Button } from "react-bootstrap";
-import { useState } from "react";
 import About from "./About";
 
 const Profile = () => {

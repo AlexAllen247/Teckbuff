@@ -24,9 +24,12 @@
 }
 
 .animated-card {
+  opacity: 0;
+}
+
+.scroll-animate {
   animation: fade-in 5s;
   animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @keyframes fade-in {
