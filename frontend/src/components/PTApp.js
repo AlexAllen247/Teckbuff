@@ -29,9 +29,7 @@ const PTapp = () => {
   };
 
   return (
-    <section
-      className="personal-training-application"
-    >
+    <section className="personal-training-application">
       <ServiceContainer>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
@@ -41,8 +39,8 @@ const PTapp = () => {
           </Card.Header>
           <Card.Body>
             <p style={styles.paragraph}>
-              Watch this video to see how I can build Web
-              Applications for Health Professionals.
+              Watch this video to see how I can build Web Applications for
+              Health Professionals.
             </p>
             <iframe
               src="https://www.youtube.com/embed/52olNvZ_xWk"

@@ -7,9 +7,9 @@ const TechContent = () => {
   const [expanded, setExpanded] = useState({});
   const [articles, setArticles] = useState([]);
 
-  const fetchArticles = async () => {  
-      const fetchedArticles = await techContentService.getAll();
-      setArticles(fetchedArticles);
+  const fetchArticles = async () => {
+    const fetchedArticles = await techContentService.getAll();
+    setArticles(fetchedArticles);
   };
 
   const toggleArticle = (index) => {

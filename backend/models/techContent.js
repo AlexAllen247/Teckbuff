@@ -26,4 +26,3 @@ schema.set("toJSON", {
 const TechContent = mongoose.model("TechContent", schema);
 
 module.exports = TechContent;
-

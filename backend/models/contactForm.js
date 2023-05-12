@@ -25,4 +25,4 @@ schema.set("toJSON", {
 
 const ContactForm = mongoose.model("ContactForm", schema);
 
-module.exports = ContactForm
+module.exports = ContactForm;
