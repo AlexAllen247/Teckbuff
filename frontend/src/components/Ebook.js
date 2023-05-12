@@ -4,14 +4,6 @@ import ServiceContainer from "./ServiceContainer";
 
 const Ebook = () => {
   const styles = {
-    section: {
-      margin: "1rem",
-      padding: "1rem",
-      fontSize: "1.2rem",
-      backgroundColor: "#ffffff",
-      borderRadius: "5px",
-      marginBottom: "1rem",
-    },
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
@@ -24,7 +16,7 @@ const Ebook = () => {
   };
 
   return (
-    <section className="e-book" style={styles.section}>
+    <section className="e-book">
       <ServiceContainer>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>

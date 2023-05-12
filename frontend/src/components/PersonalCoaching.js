@@ -5,14 +5,6 @@ import ServiceContainer from "./ServiceContainer";
 
 const PersonalCoaching = () => {
   const styles = {
-    personalTraining: {
-      margin: "1rem",
-      padding: "1rem",
-      fontSize: "1.2rem",
-      backgroundColor: "#ffffff",
-      borderRadius: "5px",
-      marginBottom: "1rem",
-    },
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
@@ -31,7 +23,7 @@ const PersonalCoaching = () => {
     },
   };
   return (
-    <section className="personal-training" style={styles.personalTraining}>
+    <section className="personal-training">
       <ServiceContainer
         role="region"
         aria-labelledby="personal-training-heading"

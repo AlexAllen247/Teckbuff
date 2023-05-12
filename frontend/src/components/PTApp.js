@@ -5,14 +5,6 @@ import ServiceContainer from "./ServiceContainer";
 
 const PTapp = () => {
   const styles = {
-    personalTrainingApplication: {
-      margin: "1rem",
-      padding: "1rem",
-      fontSize: "1.2rem",
-      backgroundColor: "#ffffff",
-      borderRadius: "5px",
-      marginBottom: "1rem",
-    },
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
@@ -39,13 +31,12 @@ const PTapp = () => {
   return (
     <section
       className="personal-training-application"
-      style={styles.personalTrainingApplication}
     >
       <ServiceContainer>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h3 style={styles.header}>
-              Web Applications for Health Professionals
+              Web Applications for Health Professionals and Fitness Experts
             </h3>
           </Card.Header>
           <Card.Body>

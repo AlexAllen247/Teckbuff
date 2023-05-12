@@ -25,14 +25,6 @@ const TechContent = () => {
   };
 
   const styles = {
-    techContent: {
-      margin: "1rem",
-      padding: "1rem",
-      fontSize: "1.2rem",
-      backgroundColor: "#ffffff",
-      borderRadius: "5px",
-      marginBottom: "1rem",
-    },
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
@@ -50,12 +42,12 @@ const TechContent = () => {
   };
 
   return (
-    <section className="tech-content" style={styles.techContent}>
+    <section className="tech-content">
       <ServiceContainer role="region" aria-labelledby="tech-content-heading">
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 id="tech-content-heading" style={styles.header}>
-              Tech Content
+              Tech News
             </h2>
           </Card.Header>
           <Card.Body>
