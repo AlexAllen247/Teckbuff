@@ -1,28 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
 import ServiceContainer from "./ServiceContainer";
+import techContentService from "../services/techContents";
 
 const TechContent = () => {
-  const articles = [
-    {
-      embedUrl:
-        "https://www.linkedin.com/embed/feed/update/urn:li:share:7056133539909570561",
-    },
-    {
-      embedUrl:
-        "https://www.linkedin.com/embed/feed/update/urn:li:share:7057592243720708096",
-    },
-    {
-      embedUrl:
-        "https://www.linkedin.com/embed/feed/update/urn:li:share:7059457542267027456",
-    },
-  ];
-
   const [expanded, setExpanded] = useState({});
+  const [articles, setArticles] = useState([]);
+
+  const fetchArticles = async () => {  
+      const fetchedArticles = await techContentService.getAll();
+      setArticles(fetchedArticles);
+  };
 
   const toggleArticle = (index) => {
     setExpanded((prev) => ({ ...prev, [index]: !prev[index] }));
   };
+
+  useEffect(() => {
+    fetchArticles();
+  }, []);
 
   const styles = {
     cardStyle: {
@@ -39,6 +35,13 @@ const TechContent = () => {
       height: "350px",
       border: "none",
     },
+    thumbnail: {
+      width: "100px",
+      height: "auto",
+      display: "block",
+      margin: "0 auto",
+      marginBottom: "1rem",
+    },
   };
 
   return (
@@ -54,6 +57,12 @@ const TechContent = () => {
             {articles.map((article, index) => (
               <Card key={index} className="article-card">
                 <Card.Body>
+                  <img
+                    src={article.thumbnailImageUrl}
+                    alt={`Thumbnail ${index + 1}`}
+                    style={styles.thumbnail}
+                  />
+                  <p>{article.description}</p>
                   {expanded[index] && (
                     <iframe
                       src={article.embedUrl}

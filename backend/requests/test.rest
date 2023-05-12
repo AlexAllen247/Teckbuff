@@ -11,18 +11,16 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3001/api/contents
+GET http://localhost:3001/api/techcontents
 
 
 ###
 
-POST http://localhost:3001/api/contents
+POST http://localhost:3001/api/techcontents
 Content-Type: application/json
 
 {
-    "title": "Delving Deeper in Ampleforth Part 2",
-    "description": "This article delves deeper into the Ampleforth protocol, looking at some of the limitations of Bitcoin and the innovation of the Buttonwood Tranche contracts.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7057592244693790720/",
-    "platform": "LinkedIn",
-    "image": "https://media.licdn.com/dms/image/D4E22AQFif-zreG5AZg/feedshare-shrink_1280/0/1682661113342?e=1685577600&v=beta&t=pgntJMtsq6yJVp8-x-58pw1hvBTb5Mq5h530wQI-VtM"
+    "embedUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7057592244693790720/",
+    "description": "Delving Deeper in Ampleforth Part 2, read on to find out more.",
+    "thumbnailImageUrl": "https://media.licdn.com/dms/image/D4E22AQFif-zreG5AZg/feedshare-shrink_1280/0/1682661113342?e=1686787200&v=beta&t=xXEywbH77Xt3VwG1Qs1KEBwrsO_Mj3un5N2hB6AcHsc"
 }

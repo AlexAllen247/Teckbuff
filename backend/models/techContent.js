@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
 
 const schema = mongoose.Schema({
-  email: {
+  embedUrl: {
     type: String,
     required: true,
   },
-  message: {
+  thumbnailImageUrl: {
     type: String,
     required: true,
   },
-  date: {
-    type: Date,
-    default: Date.now,
+  description: {
+    type: String,
+    required: true,
   },
 });
 
@@ -23,6 +23,7 @@ schema.set("toJSON", {
   },
 });
 
-const ContactForm = mongoose.model("ContactForm", schema);
+const TechContent = mongoose.model("TechContent", schema);
 
-module.exports = ContactForm
+module.exports = TechContent;
+
