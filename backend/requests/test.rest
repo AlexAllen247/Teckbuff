@@ -20,7 +20,7 @@ POST http://localhost:3001/api/techcontents
 Content-Type: application/json
 
 {
-    "embedUrl": "https://www.linkedin.com/feed/update/urn:li:activity:7057592244693790720/",
-    "description": "Delving Deeper in Ampleforth Part 2, read on to find out more.",
-    "thumbnailImageUrl": "https://media.licdn.com/dms/image/D4E22AQFif-zreG5AZg/feedshare-shrink_1280/0/1682661113342?e=1686787200&v=beta&t=xXEywbH77Xt3VwG1Qs1KEBwrsO_Mj3un5N2hB6AcHsc"
+    "embedUrl": "https://www.linkedin.com/posts/alexander-allen-392225251_cryptocurrency-ampleforth-ampl-activity-7059457543135252480-aDqi?utm_source=share&utm_medium=member_desktop",
+    "description": "Introducing SPOT, Ampleforth's Solution to Stability in Cryptocurrency - Part 3, read on to find out more.",
+    "thumbnailImageUrl": "https://www.linkedin.com/posts/alexander-allen-392225251_cryptocurrency-ampleforth-ampl-activity-7059457543135252480-aDqi?utm_source=share&utm_medium=member_desktop"
 }

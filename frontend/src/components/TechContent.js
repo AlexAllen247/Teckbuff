@@ -1,24 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import ServiceContainer from "./ServiceContainer";
-import techContentService from "../services/techContents";
 
 const TechContent = () => {
   const [expanded, setExpanded] = useState({});
-  const [articles, setArticles] = useState([]);
-
-  const fetchArticles = async () => {
-    const fetchedArticles = await techContentService.getAll();
-    setArticles(fetchedArticles);
-  };
 
   const toggleArticle = (index) => {
     setExpanded((prev) => ({ ...prev, [index]: !prev[index] }));
   };
 
-  useEffect(() => {
-    fetchArticles();
-  }, []);
+  const articles = [
+    {
+      embedUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7056133541113331712/",
+      description: "Ampleforth: the best kept secret in Blockchain? Read on to find out more.",
+      thumbnailImageUrl: "https://media.licdn.com/dms/image/D5622AQH7w4g-wrvrgQ/feedshare-shrink_1280/0/1682313331220?e=1686787200&v=beta&t=kZmEsy2mthEXomcoLusrp-N8do8pKUNwchLROXPaxCo",
+    },
+    {
+      embedUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7057592244693790720/",
+      description: "Delving Deeper in Ampleforth Part 2, read on to find out more.",
+      thumbnailImageUrl: "https://media.licdn.com/dms/image/D4E22AQFif-zreG5AZg/feedshare-shrink_800/0/1682661113342?e=1686787200&v=beta&t=Omgb4mrlEwZ-RGzuIVCwSBohPX7duk3GNE-PfQnBiSc",
+    },
+    {
+      embedUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7059457543135252480/",
+      description: "Introducing SPOT, Ampleforth's Solution to Stability in Cryptocurrency - Part 3. Read on to find out more.",
+      thumbnailImageUrl: "https://media.licdn.com/dms/image/D5622AQEZKplhhfmAWQ/feedshare-shrink_1280/0/1683105835805?e=1686787200&v=beta&t=XsjLbzCN_67hNRVQFDTtmyeC5P0zQ3I-SaMtfTCeML0",
+    },
+    {
+      embedUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7061628499026931714/",
+      description: "Part 4: The AMPL/SPOT ecosystem: Are ‘Flatcoins’ the future? Read on to find out more.",
+      thumbnailImageUrl: "https://media.licdn.com/dms/image/D4E22AQH4_l7PvgjM_w/feedshare-shrink_800/0/1683623431726?e=1686787200&v=beta&t=c39qmzvHn5Irt6vp8KYTq9bfELCEsWrxR5zCTQRC_T8",
+    },
+    {
+      embedUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7055062575700439040/",
+      description: "Tech Meet-Up in The Pool Marbella, 20/04/23",
+      thumbnailImageUrl: "https://media.licdn.com/dms/image/D4E22AQFRS65KSJEcTg/feedshare-shrink_800/0/1682057993618?e=1686787200&v=beta&t=K36EEXaAcyeyPHgE7B-iAgw2LpgHKxkoNpwtjBVuR_k",
+    },
+    {
+      embedUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7062668556772990976/",
+      description: "British Chamber of Commerce at The Pool Marbella, 11/05.23",
+      thumbnailImageUrl: "https://media.licdn.com/dms/image/D4E22AQG0-xIauBeEqA/feedshare-shrink_800/0/1683871401256?e=1686787200&v=beta&t=Z-_MccqOR9uNNs1rkPthw1L7OQY1v1DutGhuFRKbY2w",
+    },
+  ];
 
   const styles = {
     cardStyle: {
@@ -65,12 +87,12 @@ const TechContent = () => {
                   <p>{article.description}</p>
                   {expanded[index] && (
                     <iframe
-                      src={article.embedUrl}
-                      height="1310"
-                      width="504"
-                      allowFullScreen=""
-                      title={`Embedded post ${index + 1}`}
-                      style={styles.iframe}
+                    src={article.embedUrl}
+                    height="1310"
+                    width="504"
+                    allowFullScreen=""
+                    title={`Embedded post ${index + 1}`}
+                    style={styles.iframe}
                     ></iframe>
                   )}
                   <Button

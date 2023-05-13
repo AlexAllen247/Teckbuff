@@ -28,7 +28,7 @@
 }
 
 .scroll-animate {
-  animation: fade-in 1s;
+  animation: fade-in 5s;
   animation-fill-mode: forwards;
 }
 
@@ -47,6 +47,7 @@
   opacity: 0;
   height: 5px;
   background-color: #0047ab;
+  margin-top: 20px;
 }
 
 .btn-custom {

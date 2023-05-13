@@ -13,8 +13,8 @@ const ServiceContainer = ({ children }) => {
         window.innerWidth || document.documentElement.clientWidth;
       return (
         rect.top >= 0 &&
+        rect.top <= windowHeight &&
         rect.left >= 0 &&
-        rect.bottom <= windowHeight &&
         rect.right <= windowWidth
       );
     };

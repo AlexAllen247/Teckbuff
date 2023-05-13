@@ -8,7 +8,7 @@ const Services = () => {
     services: {
       display: "flex",
       flexDirection: "column",
-      gap: "1rem",
+      gap: "2rem",
     },
   };
 
