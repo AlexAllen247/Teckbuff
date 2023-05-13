@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProfilePicture from "../images/ProfilePicture.JPG";
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Card } from "react-bootstrap";
 import About from "./About";
 
 const Profile = () => {
@@ -11,23 +11,17 @@ const Profile = () => {
   };
 
   const styles = {
-    container: {
-      marginBottom: 10,
-    },
-    section: {
+    cardStyle: {
+      boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      margin: "1rem",
-      padding: "1rem",
-      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-      fontSize: "1.2rem",
-      backgroundColor: "#ffffff",
-      borderRadius: "5px",
     },
     button: {
       margin: 10,
+    },
+    header: {
+      fontSize: "2rem",
+      marginBottom: "1rem",
+      paddingBottom: "0.5rem",
     },
     div: {
       maxWidth: 600,
@@ -37,10 +31,8 @@ const Profile = () => {
       justifyContent: "center",
     },
     imageDiv: {
-      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-      height: "500px",
-      maxWidth: "100%",
-      width: "auto",
+      width: "100%",
+      height: "350px",
     },
     image: {
       maxWidth: "100%",
@@ -50,54 +42,76 @@ const Profile = () => {
     paragraph: {
       marginBottom: "1rem",
     },
+    flexContainer: {
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      justifyContent: "space-between",
+      alignItems: "center",
+    },
+    flexItem: {
+      flexBasis: "50%",
+      flexGrow: 0,
+      flexShrink: 0,
+      width: "50%",
+    },
   };
 
   return (
-    <section className="profile" style={styles.section}>
-      <div className="px-4 py-5 px-md-5 text-center text-lg-start">
-        <Container style={styles.container}>
-          <div style={styles.imageDiv}>
-            <img
-              src={ProfilePicture}
-              alt="profile"
-              aria-label="Profile picture"
-              style={styles.image}
-            />
-          </div>
-        </Container>
-      </div>
-      <div style={styles.div}>
-        <p style={styles.paragraph}>
-          Hi, I'm Alex, full stack developer, multi award winning Master Trainer
-          and Teckbuff.
-        </p>
-        <p style={styles.paragraph}>
-          Why Teckbuff? That's what my friends and family call me.
-        </p>
-        <p style={styles.paragraph}>
-          I am a motivated professional with a unique combination of expertise
-          in web development and the health and fitness industry.
-        </p>
-        <p style={styles.paragraph}>
-          I am driven by commitment to create innovative and user-friendly web
-          applications tailored to the needs of diverse clients.
-        </p>
-        <p style={styles.paragraph}>
-          I have over a decade of experience in personal training and health
-          management, and am passionate about helping individuals achieve their
-          fitness goals and improve their overall well-being.
-        </p>
-        <Button
-          variant="primary"
-          onClick={handleAboutToggle}
-          style={styles.button}
-          aria-label="About section for Alex Allen"
-          className="btn-custom"
-        >
-          More
-        </Button>
-        {isAboutVisible ? <About /> : null}
-      </div>
+    <section className="profile">
+      <Container>
+        <Card className="my-3" style={styles.cardStyle}>
+          <Card.Header>
+            <h2 style={styles.header}>Alex Allen</h2>
+          </Card.Header>
+          <Card.Body style={styles.flexContainer}>
+            <div style={styles.flexItem}>
+              <div style={styles.imageDiv}>
+                <img
+                  src={ProfilePicture}
+                  alt="profile"
+                  aria-label="Profile picture"
+                  style={styles.image}
+                />
+              </div>
+            </div>
+            <div style={styles.flexItem}>
+              <p style={styles.paragraph}>
+                Hi, I'm Alex, full stack developer, multi award winning Master
+                Trainer and Teckbuff.
+              </p>
+              <p style={styles.paragraph}>
+                Why Teckbuff? That's what my friends and family call me.
+              </p>
+              <p style={styles.paragraph}>
+                I am a motivated professional with a unique combination of
+                expertise in web development and the health and fitness
+                industry.
+              </p>
+              <p style={styles.paragraph}>
+                I am driven by commitment to create innovative and user-friendly
+                web applications tailored to the needs of diverse clients.
+              </p>
+              <p style={styles.paragraph}>
+                I have over a decade of experience in personal training and
+                health management, and am passionate about helping individuals
+                achieve their fitness goals and improve their overall
+                well-being.
+              </p>
+              <Button
+                variant="primary"
+                onClick={handleAboutToggle}
+                style={styles.button}
+                aria-label="About section for Alex Allen"
+                className="btn-custom"
+              >
+                More
+              </Button>
+              {isAboutVisible ? <About /> : null}
+            </div>
+          </Card.Body>
+        </Card>
+      </Container>
     </section>
   );
 };
