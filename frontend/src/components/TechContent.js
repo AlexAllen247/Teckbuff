@@ -41,6 +41,10 @@ const TechContent = () => {
       margin: "0 auto",
       marginBottom: "1rem",
     },
+    paragraph: {
+      marginBottom: "1rem",
+      fontSize: 20,
+    },
   };
 
   return (
@@ -49,7 +53,7 @@ const TechContent = () => {
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 id="tech-content-heading" style={styles.header}>
-              Tech News
+              Articles
             </h2>
           </Card.Header>
           <Card.Body>
@@ -61,7 +65,7 @@ const TechContent = () => {
                     alt={`Thumbnail ${index + 1}`}
                     style={styles.thumbnail}
                   />
-                  <p>{article.description}</p>
+                  <p style={styles.paragraph}>{article.description}</p>
                   {expanded[index] && (
                     <iframe
                       src={article.embedUrl}

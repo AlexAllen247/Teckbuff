@@ -15,6 +15,7 @@ const Urbanization = () => {
     },
     paragraph: {
       marginBottom: "1rem",
+      fontSize: 20,
     },
     iframe: {
       width: "100%",

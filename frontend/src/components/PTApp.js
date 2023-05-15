@@ -15,6 +15,7 @@ const PTapp = () => {
     },
     paragraph: {
       marginBottom: "1rem",
+      fontSize: 20,
     },
     iframe: {
       width: "100%",
@@ -50,7 +51,10 @@ const PTapp = () => {
               aria-describedby="personal-training-applications-description"
               style={styles.iframe}
             ></iframe>
-            <p id="personal-training-applications-description">
+            <p
+              id="personal-training-applications-description"
+              style={styles.paragraph}
+            >
               Like what you see? Get in contact{" "}
               <Link
                 to="/contactforms"
