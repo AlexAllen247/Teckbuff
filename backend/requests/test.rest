@@ -20,7 +20,7 @@ POST http://localhost:3001/api/techcontents
 Content-Type: application/json
 
 {
-    "embedUrl": "https://www.linkedin.com/posts/alexander-allen-392225251_cryptocurrency-ampleforth-ampl-activity-7059457543135252480-aDqi?utm_source=share&utm_medium=member_desktop",
-    "description": "Introducing SPOT, Ampleforth's Solution to Stability in Cryptocurrency - Part 3, read on to find out more.",
-    "thumbnailImageUrl": "https://www.linkedin.com/posts/alexander-allen-392225251_cryptocurrency-ampleforth-ampl-activity-7059457543135252480-aDqi?utm_source=share&utm_medium=member_desktop"
+    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7062668555741212672",
+    "description":"British Chamber of Commerce at The Pool Marbella, 11/05.23",
+    "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4E22AQG0-xIauBeEqA/feedshare-shrink_800/0/1683871401256?e=1686787200&v=beta&t=Z-_MccqOR9uNNs1rkPthw1L7OQY1v1DutGhuFRKbY2w"
 }
