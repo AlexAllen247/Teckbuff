@@ -12,7 +12,7 @@ const TechContent = () => {
   const articles = [
     {
       embedUrl:
-        "https://www.linkedin.com/feed/update/urn:li:activity:7056133541113331712/",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7056133539909570561",
       description:
         "Ampleforth: the best kept secret in Blockchain? Read on to find out more.",
       thumbnailImageUrl:
@@ -20,7 +20,7 @@ const TechContent = () => {
     },
     {
       embedUrl:
-        "https://www.linkedin.com/feed/update/urn:li:activity:7057592244693790720/",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7057592243720708096",
       description:
         "Delving Deeper in Ampleforth Part 2, read on to find out more.",
       thumbnailImageUrl:
@@ -28,7 +28,7 @@ const TechContent = () => {
     },
     {
       embedUrl:
-        "https://www.linkedin.com/feed/update/urn:li:activity:7059457543135252480/",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7059457542267027456",
       description:
         "Introducing SPOT, Ampleforth's Solution to Stability in Cryptocurrency - Part 3. Read on to find out more.",
       thumbnailImageUrl:
@@ -36,7 +36,7 @@ const TechContent = () => {
     },
     {
       embedUrl:
-        "https://www.linkedin.com/feed/update/urn:li:activity:7061628499026931714/",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7061628496065781760",
       description:
         "Part 4: The AMPL/SPOT ecosystem: Are ‘Flatcoins’ the future? Read on to find out more.",
       thumbnailImageUrl:
@@ -44,14 +44,14 @@ const TechContent = () => {
     },
     {
       embedUrl:
-        "https://www.linkedin.com/feed/update/urn:li:activity:7055062575700439040/",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7055062573091561472",
       description: "Tech Meet-Up in The Pool Marbella, 20/04/23",
       thumbnailImageUrl:
         "https://media.licdn.com/dms/image/D4E22AQFRS65KSJEcTg/feedshare-shrink_800/0/1682057993618?e=1686787200&v=beta&t=K36EEXaAcyeyPHgE7B-iAgw2LpgHKxkoNpwtjBVuR_k",
     },
     {
       embedUrl:
-        "https://www.linkedin.com/feed/update/urn:li:activity:7062668556772990976/",
+        "https://www.linkedin.com/embed/feed/update/urn:li:share:7062668555741212672",
       description: "British Chamber of Commerce at The Pool Marbella, 11/05.23",
       thumbnailImageUrl:
         "https://media.licdn.com/dms/image/D4E22AQG0-xIauBeEqA/feedshare-shrink_800/0/1683871401256?e=1686787200&v=beta&t=Z-_MccqOR9uNNs1rkPthw1L7OQY1v1DutGhuFRKbY2w",
@@ -80,11 +80,6 @@ const TechContent = () => {
       margin: "0 auto",
       marginBottom: "1rem",
     },
-    articleGrid: {
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-      gap: "1rem",
-    },
   };
 
   return (
@@ -96,7 +91,7 @@ const TechContent = () => {
               Tech News
             </h2>
           </Card.Header>
-          <Card.Body style={styles.articleGrid}>
+          <Card.Body>
             {articles.map((article, index) => (
               <Card key={index} className="article-card">
                 <Card.Body>
