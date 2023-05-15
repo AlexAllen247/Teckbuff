@@ -21,6 +21,8 @@ const Urbanization = () => {
       width: "100%",
       height: "350px",
       border: "none",
+      margin: 10,
+      padding: 10,
     },
     linkToContact: {
       color: "#007bff",
@@ -38,17 +40,6 @@ const Urbanization = () => {
             </h2>
           </Card.Header>
           <Card.Body>
-            <p style={styles.paragraph}>
-              Below is a beautifully designed website for the Urbanization of
-              Pueblo Del Rio located in Marbella. Check the website out{" "}
-              <a
-                href="https://pueblodelrio.es/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here.
-              </a>
-            </p>
             <div className="website-container">
               <iframe
                 src="https://pueblodelrio.es/"
@@ -58,6 +49,19 @@ const Urbanization = () => {
               ></iframe>
             </div>
             <p style={styles.paragraph}>
+              Specializing in creating beautifully designed websites and
+              innovative web applications tailored specifically for Real Estate
+              and Urbanizations. Explore this showcase website for the
+              Urbanization of Pueblo Del Rio in Marbella{" "}
+              <a
+                href="https://pueblodelrio.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here.
+              </a>
+            </p>
+            <p style={styles.paragraph}>
               Like what you see?{" "}
               <Link
                 to="/contactforms"
@@ -66,8 +70,7 @@ const Urbanization = () => {
               >
                 Contact me
               </Link>{" "}
-              to learn more about our web development services for
-              urbanizations.
+              to learn more about web development services.
             </p>
           </Card.Body>
         </Card>

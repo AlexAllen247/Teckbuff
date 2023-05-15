@@ -21,6 +21,8 @@ const PTapp = () => {
       width: "100%",
       height: "350px",
       border: "none",
+      margin: 10,
+      padding: 10,
     },
     linkToContact: {
       color: "#007bff",
@@ -38,10 +40,6 @@ const PTapp = () => {
             </h3>
           </Card.Header>
           <Card.Body>
-            <p style={styles.paragraph}>
-              Watch this video to see how I can build Web Applications for
-              Health Professionals.
-            </p>
             <iframe
               src="https://www.youtube.com/embed/52olNvZ_xWk"
               title="Personal Training Applications for Other Personal Trainers"
@@ -51,6 +49,14 @@ const PTapp = () => {
               aria-describedby="personal-training-applications-description"
               style={styles.iframe}
             ></iframe>
+            <p style={styles.paragraph}>
+              Are you a health and fitness professional in search of tailored
+              web applications? Look no further! I specialize in developing
+              customized solutions that cater specifically to your needs. Watch
+              the video of the web application designed to streamline your
+              operations, engage your clients, and transform the way you manage
+              and grow your health and fitness business.
+            </p>
             <p
               id="personal-training-applications-description"
               style={styles.paragraph}

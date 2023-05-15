@@ -1,6 +1,7 @@
 import React from "react";
 import PTapp from "./PTApp";
 import Urbanization from "./Urbanization";
+import Consultation from "./Consultation";
 
 const Services = () => {
   const styles = {
@@ -15,6 +16,7 @@ const Services = () => {
     <section style={styles.services} className="services">
       <Urbanization />
       <PTapp />
+      <Consultation />
     </section>
   );
 };
