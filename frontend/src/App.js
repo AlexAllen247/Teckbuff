@@ -14,6 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
 import NotFound from "./components/NotFound";
 import Services from "./components/Services";
+import TechContent from "./components/TechContent";
 
 import contactFormService from "./services/contactForms";
 
@@ -66,6 +67,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Services />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/articles" element={<TechContent />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route
             path="/contactforms"

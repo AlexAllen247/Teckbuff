@@ -23,37 +23,20 @@ const Profile = () => {
       marginBottom: "1rem",
       paddingBottom: "0.5rem",
     },
-    div: {
-      maxWidth: 600,
-      textAlign: "left",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-    },
     imageDiv: {
       width: "100%",
       height: "350px",
+      marginBottom: 20,
     },
     image: {
       maxWidth: "100%",
       maxHeight: "100%",
       objectFit: "contain",
+      border: "2px solid #0047ab",
     },
     paragraph: {
       marginBottom: "1rem",
-    },
-    flexContainer: {
-      display: "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
-      justifyContent: "space-between",
-      alignItems: "center",
-    },
-    flexItem: {
-      flexBasis: "50%",
-      flexGrow: 0,
-      flexShrink: 0,
-      width: "50%",
+      fontSize: 20,
     },
   };
 
@@ -64,18 +47,16 @@ const Profile = () => {
           <Card.Header>
             <h2 style={styles.header}>Alex Allen</h2>
           </Card.Header>
-          <Card.Body style={styles.flexContainer}>
-            <div style={styles.flexItem}>
-              <div style={styles.imageDiv}>
-                <img
-                  src={ProfilePicture}
-                  alt="profile"
-                  aria-label="Profile picture"
-                  style={styles.image}
-                />
-              </div>
+          <Card.Body>
+            <div style={styles.imageDiv}>
+              <img
+                src={ProfilePicture}
+                alt="profile"
+                aria-label="Profile picture"
+                style={styles.image}
+              />
             </div>
-            <div style={styles.flexItem}>
+            <div>
               <p style={styles.paragraph}>
                 Hi, I'm Alex, full stack developer, multi award winning Master
                 Trainer and Teckbuff.

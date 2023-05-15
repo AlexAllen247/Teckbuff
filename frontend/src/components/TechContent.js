@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import ServiceContainer from "./ServiceContainer";
+import { Container, Card, Button } from "react-bootstrap";
 
 const TechContent = () => {
   const [expanded, setExpanded] = useState({});
@@ -84,7 +83,7 @@ const TechContent = () => {
 
   return (
     <section className="tech-content">
-      <ServiceContainer role="region" aria-labelledby="tech-content-heading">
+      <Container role="region" aria-labelledby="tech-content-heading">
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 id="tech-content-heading" style={styles.header}>
@@ -123,7 +122,7 @@ const TechContent = () => {
             ))}
           </Card.Body>
         </Card>
-      </ServiceContainer>
+      </Container>
     </section>
   );
 };

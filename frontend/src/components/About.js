@@ -10,24 +10,28 @@ const About = () => {
     ul: {
       marginBottom: "10px",
       listStyleType: "none",
-      padding: 0,
+      padding: 10,
+      fontSize: 20,
+    },
+    li: {
+      marginBottom: 10,
     },
   };
   return (
     <section className="about">
       <h3 style={styles.h2}>Key Competencies</h3>
       <ul style={styles.ul}>
-        <li>
+        <li style={styles.li}>
           <strong>Health and Fitness Expertise:</strong> Over a decade of
           experience in personal training, health management, and wellness
           program development.
         </li>
-        <li>
+        <li style={styles.li}>
           <strong>Full Stack Web Development:</strong> Proficient in front-end
           and back-end technologies, with a strong foundation in web design,
           coding, and testing.
         </li>
-        <li>
+        <li style={styles.li}>
           <strong>Problem Solving and Adaptability:</strong> Adept at tackling
           complex challenges and adapting to new situations with creativity and
           resourcefulness.

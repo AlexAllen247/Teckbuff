@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import ServiceContainer from "./ServiceContainer";
+import { Container, Card } from "react-bootstrap";
 
 const Ebook = () => {
   const styles = {
@@ -17,14 +16,14 @@ const Ebook = () => {
 
   return (
     <section className="e-book">
-      <ServiceContainer>
+      <Container>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h4 style={styles.header}>Coming soon E-book</h4>
           </Card.Header>
           <Card.Body></Card.Body>
         </Card>
-      </ServiceContainer>
+      </Container>
     </section>
   );
 };

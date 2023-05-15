@@ -45,6 +45,13 @@ const Navigation = () => {
                 Profile
               </NavLink>
               <NavLink
+                to="/articles"
+                style={styles.navStyle}
+                aria-label="Link to Articles and Tech Content page"
+              >
+                Articles
+              </NavLink>
+              <NavLink
                 to="/certifications"
                 style={styles.navStyle}
                 aria-label="Link to Certifications page"
