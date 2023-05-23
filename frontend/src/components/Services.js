@@ -1,6 +1,5 @@
 import React from "react";
-import PTapp from "./PTApp";
-import Urbanization from "./Urbanization";
+import WebApplications from "./WebApplications";
 import Consultation from "./Consultation";
 
 const Services = () => {
@@ -14,8 +13,7 @@ const Services = () => {
 
   return (
     <section style={styles.services} className="services">
-      <Urbanization />
-      <PTapp />
+      <WebApplications />
       <Consultation />
     </section>
   );

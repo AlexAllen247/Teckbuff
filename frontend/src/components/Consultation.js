@@ -18,7 +18,7 @@ const Consultation = () => {
       marginBottom: "1rem",
       fontSize: 20,
     },
-    iframe: {
+    image: {
       width: "100%",
       height: "100%",
       border: "none",
@@ -44,7 +44,8 @@ const Consultation = () => {
                 src={Image}
                 title="Consultation Image"
                 aria-label="Consultation Image"
-                style={styles.iframe}
+                style={styles.image}
+                loading="lazy"
               ></img>
             </div>
             <p style={styles.paragraph}>

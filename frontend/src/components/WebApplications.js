@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Urbanization = () => {
+const WebApplications = () => {
   const styles = {
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
@@ -35,9 +35,7 @@ const Urbanization = () => {
       <Container>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
-            <h2 style={styles.header}>
-              Web Applications for Real Estate and Urbanizations
-            </h2>
+            <h2 style={styles.header}>Custom Built Web Applications</h2>
           </Card.Header>
           <Card.Body>
             <div className="website-container">
@@ -50,19 +48,11 @@ const Urbanization = () => {
             </div>
             <p style={styles.paragraph}>
               Specializing in creating beautifully designed websites and
-              innovative web applications tailored specifically for Real Estate
-              and Urbanizations. Explore this showcase website for the
-              Urbanization of Pueblo Del Rio in Marbella{" "}
-              <a
-                href="https://pueblodelrio.es/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here.
-              </a>
+              innovative web applications tailored specifically for your
+              Business needs.
             </p>
             <p style={styles.paragraph}>
-              Like what you see?{" "}
+              {" "}
               <Link
                 to="/contactforms"
                 aria-label="Link to Contact page"
@@ -70,7 +60,7 @@ const Urbanization = () => {
               >
                 Contact me
               </Link>{" "}
-              to learn more about web development services.
+              to learn more about my web development services.
             </p>
           </Card.Body>
         </Card>
@@ -79,4 +69,4 @@ const Urbanization = () => {
   );
 };
 
-export default Urbanization;
+export default WebApplications;
