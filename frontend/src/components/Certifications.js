@@ -1,25 +1,7 @@
 import React from "react";
-import { Card, Container, Col } from "react-bootstrap";
-import Image1 from "../images/Emergency First Aid at Work.jpeg";
-import Image2 from "../images/Level 2 Fitness.jpeg";
-import Image3 from "../images/Level 3 Diploma part 2.jpeg";
-import Image4 from "../images/Level 3 Diploma.jpeg";
-import Image5 from "../images/Level 3 Exercise Referral.jpeg";
-import Image6 from "../images/Level 3 part 2.jpeg";
-import Image7 from "../images/Level 3.jpeg";
-import Image8 from "../images/Level 4 Obesity and Diabetes.jpeg";
+import { Card, Container } from "react-bootstrap";
 
 const Certifications = () => {
-  const fitnessCertifications = [
-    Image1,
-    Image2,
-    Image3,
-    Image4,
-    Image5,
-    Image6,
-    Image7,
-    Image8,
-  ];
   const certificationsByIssuer = [
     {
       issuer: "Freecodecamp",
@@ -148,11 +130,6 @@ const Certifications = () => {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
     },
-    fitCardStyle: {
-      padding: 10,
-      margin: 5,
-      boxShadow: "10px 10px 10px rgba(0, 71, 171, 0.15)",
-    },
     containerStyle: { marginBottom: 30 },
     ulStyle: { listStyleType: "none", padding: 0 },
   };
@@ -185,30 +162,6 @@ const Certifications = () => {
               </Card.Body>
             </Card>
           ))}
-        </div>
-      </Container>
-      <Container style={styles.containerStyle}>
-        <div className="fitness-certifications">
-          <h2 style={styles.headerStyle}>Fitness Certifications</h2>
-          <div className="row">
-            {fitnessCertifications.map((image, index) => (
-              <Col md={6} key={index}>
-                <a
-                  href={image}
-                  key={index}
-                  aria-label="View fitness certification"
-                >
-                  <Card style={styles.fitCardStyle}>
-                    <Card.Img
-                      variant="top"
-                      src={image}
-                      aria-label="Fitness certification"
-                    />
-                  </Card>
-                </a>
-              </Col>
-            ))}
-          </div>
         </div>
       </Container>
     </section>

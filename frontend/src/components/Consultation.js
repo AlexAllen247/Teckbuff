@@ -39,7 +39,7 @@ const Consultation = () => {
             <h2 style={styles.header}>Consultation Services</h2>
           </Card.Header>
           <Card.Body>
-          <div>
+            <div>
               <img
                 src={Image}
                 title="Consultation Image"
@@ -64,7 +64,8 @@ const Consultation = () => {
               >
                 Contact me
               </Link>{" "}
-              to learn more, arrange a consultation or sign up for a website 'Health Check'!
+              to learn more, arrange a consultation or sign up for a website
+              'Health Check'!
             </p>
           </Card.Body>
         </Card>

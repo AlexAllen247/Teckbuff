@@ -9,7 +9,6 @@ const Navigation = () => {
       boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
     },
     navStyle: {
-      fontFamily: "Agrandir Wide Medium",
       fontSize: 26,
       color: "#0047ab",
       margin: 15,

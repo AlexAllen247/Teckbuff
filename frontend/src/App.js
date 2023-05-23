@@ -43,6 +43,9 @@ const App = () => {
   };
 
   const styles = {
+    app: {
+      fontFamily: "Arial Unicode MS",
+    },
     div: {
       backgroundColor: "#ffbd59",
     },
