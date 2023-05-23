@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Image from "../images/WebApplicationsTeckbuff-min.png";
 
 const WebApplications = () => {
   const styles = {
@@ -17,12 +18,11 @@ const WebApplications = () => {
       marginBottom: "1rem",
       fontSize: 20,
     },
-    iframe: {
+    image: {
       width: "100%",
-      height: "350px",
+      height: "100%",
       border: "none",
-      margin: 10,
-      padding: 10,
+      marginBottom: 10,
     },
     linkToContact: {
       color: "#007bff",
@@ -39,17 +39,19 @@ const WebApplications = () => {
           </Card.Header>
           <Card.Body>
             <div className="website-container">
-              <iframe
-                src="https://pueblodelrio.es/"
-                title="Website for Pueblo Del Rio"
-                aria-label="Website for Pueblo Del Rio"
-                style={styles.iframe}
-              ></iframe>
+              <img
+                src={Image}
+                title="Web Applications"
+                aria-label="Web Applications"
+                alt="Web Applications"
+                style={styles.image}
+              ></img>
             </div>
             <p style={styles.paragraph}>
-              Specializing in creating beautifully designed websites and
-              innovative web applications tailored specifically for your
-              Business needs.
+              Websites and innovative web applications tailored specifically for
+              your business needs. Whether you're looking to improve the design,
+              functionality, or overall website performance, TeckBuff offers
+              one-on-one guidance to enhance your web presence.
             </p>
             <p style={styles.paragraph}>
               {" "}
@@ -58,9 +60,9 @@ const WebApplications = () => {
                 aria-label="Link to Contact page"
                 style={styles.linkToContact}
               >
-                Contact me
+                Contact TeckBuff
               </Link>{" "}
-              to learn more about my web development services.
+              to learn more about our web development services.
             </p>
           </Card.Body>
         </Card>

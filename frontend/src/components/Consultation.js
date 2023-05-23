@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Image from "../images/ConsultationPhoto.png";
+import Image from "../images/ConsultationTeckbuff-min.png";
 
 const Consultation = () => {
   const styles = {
@@ -22,8 +22,7 @@ const Consultation = () => {
       width: "100%",
       height: "100%",
       border: "none",
-      margin: 10,
-      padding: 10,
+      marginBottom: 10,
     },
     linkToContact: {
       color: "#007bff",
@@ -36,7 +35,7 @@ const Consultation = () => {
       <Container>
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
-            <h2 style={styles.header}>Consultation Services</h2>
+            <h2 style={styles.header}>Consultation and Writing Services</h2>
           </Card.Header>
           <Card.Body>
             <div>
@@ -48,13 +47,25 @@ const Consultation = () => {
                 loading="lazy"
               ></img>
             </div>
+            <h4 style={styles.header}>Website update</h4>
             <p style={styles.paragraph}>
-              Whether you're looking to improve the design, functionality, or
-              overall website performance, I offer one-on-one guidance to
-              enhance your web presence. My sophisticated diagnostics can
-              quickly identify possible issues if you sign up for a website
-              'Health Check'. Together we can ensure your digital platform
-              reflects your vision and engages your audience effectively.
+              If you are considering updating your website Teckbuff can offer
+              assistance to ensure your digital platform reflects your vision
+              and engages your audience effectively.
+            </p>
+            <h4 style={styles.header}>Website performance</h4>
+            <p style={styles.paragraph}>
+              Concerned about the performance of your website or web
+              applications? Sign up for a Teckbuff Web Check. Our sophisticated
+              diagnostics can quickly identify potentially troublesome issues
+              compromising performance and security.
+            </p>
+            <h4 style={styles.header}>Reports, seminars and articles</h4>
+            <p style={styles.paragraph}>
+              Teckbuff specializes in bridging the gap between business and IT.
+              Whether it be written reports, seminar briefings or articles for
+              publication, Teckbuff can provide insightful, well written briefs
+              and presentations for a general business audience.
             </p>
             <p style={styles.paragraph}>
               {" "}
@@ -63,10 +74,9 @@ const Consultation = () => {
                 aria-label="Link to Contact page"
                 style={styles.linkToContact}
               >
-                Contact me
+                Contact TeckBuff
               </Link>{" "}
-              to learn more, arrange a consultation or sign up for a website
-              'Health Check'!
+              to arrange a consultation or other services.
             </p>
           </Card.Body>
         </Card>
