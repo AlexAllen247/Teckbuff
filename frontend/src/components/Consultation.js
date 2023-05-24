@@ -63,9 +63,16 @@ const Consultation = () => {
             <h4 style={styles.header}>Reports, seminars and articles</h4>
             <p style={styles.paragraph}>
               Teckbuff specializes in bridging the gap between business and IT.
-              Whether it be written reports, seminar briefings or articles for
-              publication, Teckbuff can provide insightful, well written briefs
-              and presentations for a general business audience.
+              Whether it be written reports, seminar briefings or {" "}
+              <Link
+                to="/articles"
+                style={styles.linkToContact}
+                aria-label="Link to Articles and Tech Content page"
+              >
+                articles
+              </Link>{" "}
+              for publication, Teckbuff can provide insightful, well written
+              briefs and presentations for a general business audience.
             </p>
             <p style={styles.paragraph}>
               {" "}

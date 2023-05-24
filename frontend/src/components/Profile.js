@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProfilePicture from "../images/ProfilePicture.JPG";
+import ProfilePicture from "../images/ProfilePicture.png";
 import { Container, Button, Card } from "react-bootstrap";
 import About from "./About";
 
