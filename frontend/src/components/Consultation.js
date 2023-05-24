@@ -63,7 +63,7 @@ const Consultation = () => {
             <h4 style={styles.header}>Reports, seminars and articles</h4>
             <p style={styles.paragraph}>
               TeckBuff specializes in bridging the gap between business and IT.
-              Whether it be written reports, seminar briefings or {" "}
+              Whether it be written reports, seminar briefings or{" "}
               <Link
                 to="/articles"
                 style={styles.linkToContact}

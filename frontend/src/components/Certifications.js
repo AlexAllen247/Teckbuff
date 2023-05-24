@@ -4,7 +4,7 @@ import { Card, Container } from "react-bootstrap";
 const Certifications = () => {
   const certificationsByIssuer = [
     {
-      issuer: "FreeCodeCamp",
+      issuer: "Freecodecamp",
       certifications: [
         {
           name: "Responsive Web Design",
