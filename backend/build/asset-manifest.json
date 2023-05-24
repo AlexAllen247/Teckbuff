@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7f2f7cd4.css",
-    "main.js": "/static/js/main.b6f39b16.js",
-    "static/media/WebApplicationsTeckbuff-min.png": "/static/media/WebApplicationsTeckbuff-min.84b1dbbfc04fcfade522.png",
+    "main.js": "/static/js/main.fd120766.js",
     "static/media/ConsultationTeckbuff-min.png": "/static/media/ConsultationTeckbuff-min.5574e5d23f561a604b74.png",
-    "static/media/ProfilePicture.png": "/static/media/ProfilePicture.fa2565a7c43bfdfd5d40.png",
+    "static/media/WebApplicationPic.png": "/static/media/WebApplicationPic.52cf566b4c262e34c04d.png",
     "static/media/TeckbuffBanner.png": "/static/media/TeckbuffBanner.142526db67d3f7066186.png",
+    "static/media/ProfilePicture.JPG": "/static/media/ProfilePicture.784b86225117eea256b5.JPG",
     "index.html": "/index.html",
     "main.7f2f7cd4.css.map": "/static/css/main.7f2f7cd4.css.map",
-    "main.b6f39b16.js.map": "/static/js/main.b6f39b16.js.map"
+    "main.fd120766.js.map": "/static/js/main.fd120766.js.map"
   },
-  "entrypoints": ["static/css/main.7f2f7cd4.css", "static/js/main.b6f39b16.js"]
+  "entrypoints": ["static/css/main.7f2f7cd4.css", "static/js/main.fd120766.js"]
 }
