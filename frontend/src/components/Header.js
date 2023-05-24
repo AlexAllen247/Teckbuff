@@ -23,7 +23,6 @@ const Header = () => {
     },
     image: {
       maxWidth: "100%",
-      marginTop: 30,
       width: width <= 767 ? "100%" : "initial",
       height: width <= 767 ? "auto" : "initial",
     },

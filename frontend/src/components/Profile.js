@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProfilePicture from "../images/ProfilePicture.png";
+import ProfilePicture from "../images/ProfilePicture.JPG";
 import { Container, Button, Card } from "react-bootstrap";
 import About from "./About";
 
@@ -23,16 +23,12 @@ const Profile = () => {
       marginBottom: "1rem",
       paddingBottom: "0.5rem",
     },
-    imageDiv: {
-      width: "100%",
-      height: "350px",
-      marginBottom: 20,
-    },
     image: {
-      maxWidth: "100%",
-      maxHeight: "100%",
+      width: "40%",
+      height: "40%",
       objectFit: "contain",
       border: "2px solid #0047ab",
+      marginBottom: 20,
     },
     paragraph: {
       marginBottom: "1rem",
@@ -48,7 +44,7 @@ const Profile = () => {
             <h2 style={styles.header}>Alex Allen</h2>
           </Card.Header>
           <Card.Body>
-            <div style={styles.imageDiv}>
+            <div>
               <img
                 src={ProfilePicture}
                 alt="profile"

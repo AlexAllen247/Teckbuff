@@ -22,7 +22,7 @@ const Consultation = () => {
       width: "100%",
       height: "100%",
       border: "none",
-      marginBottom: 10,
+      marginBottom: 20,
     },
     linkToContact: {
       color: "#007bff",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Image from "../images/WebApplicationsTeckbuff-min.png";
+import Image from "../images/WebApplicationPic.png";
 
 const WebApplications = () => {
   const styles = {
@@ -19,10 +19,10 @@ const WebApplications = () => {
       fontSize: 20,
     },
     image: {
-      width: "100%",
-      height: "100%",
+      width: "80%",
+      height: "80%",
       border: "none",
-      marginBottom: 10,
+      marginBottom: 20,
     },
     linkToContact: {
       color: "#007bff",
@@ -38,7 +38,7 @@ const WebApplications = () => {
             <h2 style={styles.header}>Custom Built Web Applications</h2>
           </Card.Header>
           <Card.Body>
-            <div className="website-container">
+            <div>
               <img
                 src={Image}
                 title="Web Applications"
