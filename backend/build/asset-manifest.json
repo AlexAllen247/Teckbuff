@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f2f7cd4.css",
+    "main.js": "/static/js/main.7c882c30.js",
+    "static/media/WebApplicationsTeckbuff-min.png": "/static/media/WebApplicationsTeckbuff-min.84b1dbbfc04fcfade522.png",
+    "static/media/ConsultationTeckbuff-min.png": "/static/media/ConsultationTeckbuff-min.5574e5d23f561a604b74.png",
+    "static/media/ProfilePicture.png": "/static/media/ProfilePicture.fa2565a7c43bfdfd5d40.png",
+    "static/media/Teckbuff.png": "/static/media/Teckbuff.46b8fc96263d5d229987.png",
+    "index.html": "/index.html",
+    "main.7f2f7cd4.css.map": "/static/css/main.7f2f7cd4.css.map",
+    "main.7c882c30.js.map": "/static/js/main.7c882c30.js.map"
+  },
+  "entrypoints": ["static/css/main.7f2f7cd4.css", "static/js/main.7c882c30.js"]
+}
