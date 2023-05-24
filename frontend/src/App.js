@@ -46,15 +46,12 @@ const App = () => {
     app: {
       fontFamily: "Arial Unicode MS",
     },
-    div: {
-      backgroundColor: "#ffbd59",
-    },
     cookie: {
       background: "#333",
     },
     button: {
       color: "#fff",
-      background: "#e8505b",
+      background: "#0047ab",
       fontSize: "13px",
     },
   };
@@ -63,7 +60,6 @@ const App = () => {
     <main>
       <div className="app">
         <Header />
-        <div style={styles.div}></div>
         <Notification notification={notification} />
         <Navigation />
         <ScrollToTop />

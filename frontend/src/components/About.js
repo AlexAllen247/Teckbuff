@@ -22,11 +22,6 @@ const About = () => {
       <h3 style={styles.h2}>Key Competencies</h3>
       <ul style={styles.ul}>
         <li style={styles.li}>
-          <strong>Health and Fitness Expertise:</strong> Over a decade of
-          experience in personal training, health management, and wellness
-          program development.
-        </li>
-        <li style={styles.li}>
           <strong>Full Stack Web Development:</strong> Proficient in front-end
           and back-end technologies, with a strong foundation in web design,
           coding, and testing.
@@ -35,6 +30,11 @@ const About = () => {
           <strong>Problem Solving and Adaptability:</strong> Adept at tackling
           complex challenges and adapting to new situations with creativity and
           resourcefulness.
+        </li>
+        <li style={styles.li}>
+          <strong>Health and Fitness Expertise:</strong> Over a decade of
+          experience in personal training, health management, and wellness
+          program development.
         </li>
       </ul>
     </section>

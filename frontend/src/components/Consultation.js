@@ -49,20 +49,20 @@ const Consultation = () => {
             </div>
             <h4 style={styles.header}>Website update</h4>
             <p style={styles.paragraph}>
-              If you are considering updating your website Teckbuff can offer
+              If you are considering updating your website TeckBuff can offer
               assistance to ensure your digital platform reflects your vision
               and engages your audience effectively.
             </p>
             <h4 style={styles.header}>Website performance</h4>
             <p style={styles.paragraph}>
               Concerned about the performance of your website or web
-              applications? Sign up for a Teckbuff Web Check. Our sophisticated
+              applications? Sign up for a TeckBuff Web Check. Our sophisticated
               diagnostics can quickly identify potentially troublesome issues
               compromising performance and security.
             </p>
             <h4 style={styles.header}>Reports, seminars and articles</h4>
             <p style={styles.paragraph}>
-              Teckbuff specializes in bridging the gap between business and IT.
+              TeckBuff specializes in bridging the gap between business and IT.
               Whether it be written reports, seminar briefings or {" "}
               <Link
                 to="/articles"
@@ -71,7 +71,7 @@ const Consultation = () => {
               >
                 articles
               </Link>{" "}
-              for publication, Teckbuff can provide insightful, well written
+              for publication, TeckBuff can provide insightful, well written
               briefs and presentations for a general business audience.
             </p>
             <p style={styles.paragraph}>

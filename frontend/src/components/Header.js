@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Banner from "../images/Teckbuff.png";
+import Banner from "../images/TeckbuffBanner.png";
 
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -23,7 +23,9 @@ const Header = () => {
     },
     image: {
       maxWidth: "100%",
+      marginTop: 30,
       width: width <= 767 ? "100%" : "initial",
+      height: width <= 767 ? "auto" : "initial",
     },
   };
 

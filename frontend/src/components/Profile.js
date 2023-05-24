@@ -59,10 +59,10 @@ const Profile = () => {
             <div>
               <p style={styles.paragraph}>
                 Hi, I'm Alex, full stack developer, multi award winning Master
-                Trainer and Teckbuff.
+                Trainer and TeckBuff.
               </p>
               <p style={styles.paragraph}>
-                Why Teckbuff? That's what my friends and family call me.
+                Why TeckBuff? That's what my friends and family call me.
               </p>
               <p style={styles.paragraph}>
                 I am a motivated professional with a unique combination of
@@ -72,12 +72,6 @@ const Profile = () => {
               <p style={styles.paragraph}>
                 I am driven by commitment to create innovative and user-friendly
                 web applications tailored to the needs of diverse clients.
-              </p>
-              <p style={styles.paragraph}>
-                I have over a decade of experience in personal training and
-                health management, and am passionate about helping individuals
-                achieve their fitness goals and improve their overall
-                well-being.
               </p>
               <Button
                 variant="primary"

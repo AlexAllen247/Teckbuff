@@ -4,7 +4,7 @@ import { Card, Container } from "react-bootstrap";
 const Certifications = () => {
   const certificationsByIssuer = [
     {
-      issuer: "Freecodecamp",
+      issuer: "FreeCodeCamp",
       certifications: [
         {
           name: "Responsive Web Design",
@@ -121,11 +121,6 @@ const Certifications = () => {
   ];
 
   const styles = {
-    headerStyle: {
-      textAlign: "center",
-      textDecoration: "underline",
-      margin: 30,
-    },
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
       textAlign: "center",
@@ -138,7 +133,6 @@ const Certifications = () => {
     <section className="certifications">
       <Container style={styles.containerStyle}>
         <div className="tech-certifications">
-          <h2 style={styles.headerStyle}>Tech Certifications</h2>
           {certificationsByIssuer.map((issuer) => (
             <Card key={issuer.issuer} className="my-3" style={styles.cardStyle}>
               <Card.Header>
