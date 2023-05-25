@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Image from "../images/ConsultationTeckbuff-min.png";
+import Image from "../images/ConsultationTeckbuff.png";
 
 const Consultation = () => {
   const styles = {
@@ -19,8 +19,8 @@ const Consultation = () => {
       fontSize: 20,
     },
     image: {
-      width: "100%",
-      height: "100%",
+      width: "80%",
+      height: "80%",
       border: "none",
       marginBottom: 20,
     },
