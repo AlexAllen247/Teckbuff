@@ -1,4 +1,4 @@
-/*! For license information please see main.a58f6bfb.js.LICENSE.txt */
+/*! For license information please see main.c1d6b966.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -15351,99 +15351,94 @@
             };
           return (0, st.jsx)("section", {
             className: "contact form",
-            children: (0, st.jsxs)(mt, {
-              children: [
-                (0, st.jsx)(Zr, { notification: u }),
-                (0, st.jsxs)(Mt, {
-                  className: "my-3",
-                  style: d.cardStyle,
-                  children: [
-                    (0, st.jsx)(Mt.Header, {
-                      children: (0, st.jsx)("h2", {
-                        style: d.header,
-                        children: "Contact Form",
+            children: (0, st.jsx)(mt, {
+              children: (0, st.jsxs)(Mt, {
+                className: "my-3",
+                style: d.cardStyle,
+                children: [
+                  (0, st.jsx)(Mt.Header, {
+                    children: (0, st.jsx)("h2", {
+                      style: d.header,
+                      children: "Contact Form",
+                    }),
+                  }),
+                  (0, st.jsxs)(Mt.Body, {
+                    children: [
+                      (0, st.jsx)("p", {
+                        style: d.paragraph,
+                        children:
+                          "If you have any questions or inquiries, please don't hesitate to reach out using the contact form below. We'll get back to you as soon as possible.",
                       }),
-                    }),
-                    (0, st.jsxs)(Mt.Body, {
-                      children: [
-                        (0, st.jsx)("p", {
-                          style: d.paragraph,
-                          children:
-                            "If you have any questions or inquiries, please don't hesitate to reach out using the contact form below. We'll get back to you as soon as possible.",
-                        }),
-                        (0, st.jsxs)(zn, {
-                          onSubmit: function (e) {
-                            e.preventDefault();
-                            /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n)
-                              ? (console.log("Form submitted!"),
-                                f({ email: n, message: o }),
-                                r(""),
-                                i(""))
-                              : c(
-                                  "Please enter a valid email address.",
-                                  "alert"
-                                );
-                          },
-                          children: [
-                            (0, st.jsxs)(zn.Group, {
-                              className: "mb-3",
-                              children: [
-                                (0, st.jsx)(zn.Label, {
-                                  htmlFor: "email",
-                                  style: d.label,
-                                  children: "Email",
-                                }),
-                                (0, st.jsx)(zn.Control, {
-                                  value: n,
-                                  onChange: function (e) {
-                                    var t = e.target;
-                                    return r(t.value);
-                                  },
-                                  id: "email",
-                                  placeholder: "Place your email here",
-                                  style: d.form,
-                                  "aria-label": "Email",
-                                }),
-                              ],
-                            }),
-                            (0, st.jsxs)(zn.Group, {
-                              className: "mb-3",
-                              children: [
-                                (0, st.jsx)(zn.Label, {
-                                  htmlFor: "message",
-                                  style: d.label,
-                                  children: "Message",
-                                }),
-                                (0, st.jsx)(zn.Control, {
-                                  as: "textarea",
-                                  rows: 5,
-                                  value: o,
-                                  onChange: function (e) {
-                                    var t = e.target;
-                                    return i(t.value);
-                                  },
-                                  id: "message",
-                                  placeholder: "Place your message here",
-                                  style: d.form,
-                                  "aria-label": "Message",
-                                }),
-                              ],
-                            }),
-                            (0, st.jsx)(Hn, {
-                              "aria-label": "Submit",
-                              type: "submit",
-                              variant: "primary",
-                              style: d.button,
-                              className: "btn-custom",
-                              children: "Submit",
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  ],
-                }),
-              ],
+                      (0, st.jsx)(Zr, { notification: u }),
+                      (0, st.jsxs)(zn, {
+                        onSubmit: function (e) {
+                          e.preventDefault();
+                          /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n)
+                            ? (console.log("Form submitted!"),
+                              f({ email: n, message: o }),
+                              r(""),
+                              i(""))
+                            : c("Please enter a valid email address.", "alert");
+                        },
+                        children: [
+                          (0, st.jsxs)(zn.Group, {
+                            className: "mb-3",
+                            children: [
+                              (0, st.jsx)(zn.Label, {
+                                htmlFor: "email",
+                                style: d.label,
+                                children: "Email",
+                              }),
+                              (0, st.jsx)(zn.Control, {
+                                value: n,
+                                onChange: function (e) {
+                                  var t = e.target;
+                                  return r(t.value);
+                                },
+                                id: "email",
+                                placeholder: "Place your email here",
+                                style: d.form,
+                                "aria-label": "Email",
+                              }),
+                            ],
+                          }),
+                          (0, st.jsxs)(zn.Group, {
+                            className: "mb-3",
+                            children: [
+                              (0, st.jsx)(zn.Label, {
+                                htmlFor: "message",
+                                style: d.label,
+                                children: "Message",
+                              }),
+                              (0, st.jsx)(zn.Control, {
+                                as: "textarea",
+                                rows: 5,
+                                value: o,
+                                onChange: function (e) {
+                                  var t = e.target;
+                                  return i(t.value);
+                                },
+                                id: "message",
+                                placeholder: "Place your message here",
+                                style: d.form,
+                                "aria-label": "Message",
+                              }),
+                            ],
+                          }),
+                          (0, st.jsx)(Hn, {
+                            "aria-label": "Submit",
+                            type: "submit",
+                            variant: "primary",
+                            style: d.button,
+                            className: "btn-custom",
+                            children: "Submit",
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
             }),
           });
         };
@@ -18421,4 +18416,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.a58f6bfb.js.map
+//# sourceMappingURL=main.c1d6b966.js.map
