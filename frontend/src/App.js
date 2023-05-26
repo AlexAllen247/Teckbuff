@@ -1,11 +1,9 @@
-import { useState } from "react";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import CookieConsent from "react-cookie-consent";
 
 import ContactForm from "./components/ContactForm";
-import Notification from "./components/Notification";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";
 import Profile from "./components/Profile";
@@ -16,32 +14,7 @@ import NotFound from "./components/NotFound";
 import Services from "./components/Services";
 import TechContent from "./components/TechContent";
 
-import contactFormService from "./services/contactForms";
-
 const App = () => {
-  const [notification, setNotification] = useState(null);
-
-  const notify = (message, type = "info") => {
-    setNotification({ message, type });
-    setTimeout(() => {
-      setNotification(null);
-    }, 3000);
-  };
-
-  const createForm = async (contactForm) => {
-    contactFormService
-      .create(contactForm)
-      .then(() => {
-        notify(`A new message by has been sent.`);
-      })
-      .catch((error) => {
-        notify(
-          "Creating a message failed: " + error.response.data.error,
-          "alert"
-        );
-      });
-  };
-
   const styles = {
     app: {
       fontFamily: "Arial Unicode MS",
@@ -60,7 +33,6 @@ const App = () => {
     <main>
       <div className="app">
         <Header />
-        <Notification notification={notification} />
         <Navigation />
         <ScrollToTop />
         <Routes>
@@ -68,10 +40,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/articles" element={<TechContent />} />
           <Route path="/certifications" element={<Certifications />} />
-          <Route
-            path="/contactforms"
-            element={<ContactForm onCreate={createForm} />}
-          />
+          <Route path="/contactforms" element={<ContactForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

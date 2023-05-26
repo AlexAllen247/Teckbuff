@@ -12,6 +12,17 @@ router.get("/", async (request, response) => {
 });
 
 router.post("/", async (request, response) => {
+  const { email, message } = request.body;
+
+  if (!isValidEmail(email)) {
+    return response
+      .status(400)
+      .json({ error: "Please enter a valid email address." });
+  }
+
+  if (!message || message.trim() === "") {
+    return response.status(400).json({ error: "Message cannot be empty." });
+  }
   const contactForm = new ContactForm({ ...request.body });
 
   const savedContactForm = await contactForm.save();
@@ -24,25 +35,37 @@ router.post("/", async (request, response) => {
     },
   });
 
-  const mailOptions = {
-    from: process.env.GMAIL,
-    to: process.env.GMAIL,
-    subject: "Teckbuff contact form submission",
-    html: `
+  try {
+    const mailOptions = {
+      from: process.env.GMAIL,
+      to: process.env.GMAIL,
+      subject: "Teckbuff contact form submission",
+      html: `
       <p>Email: ${request.body.email}</p>
       <p>Message: ${request.body.message}</p>
     `,
-  };
+    };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
-  });
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log("Email sent: " + info.response);
+      }
+    });
 
-  response.status(201).json(savedContactForm);
+    response.status(201).json(savedContactForm);
+  } catch (error) {
+    console.error(error);
+    response
+      .status(500)
+      .json({ error: "An error occurred while saving the contact form." });
+  }
 });
+
+const isValidEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
 
 module.exports = router;

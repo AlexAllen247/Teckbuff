@@ -1,14 +1,43 @@
 import React, { useState } from "react";
 import { Button, Form, Container, Card } from "react-bootstrap";
+import Notification from "./Notification";
+import contactFormService from "../services/contactForms";
 
-const ContactForm = ({ onCreate }) => {
+const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [notification, setNotification] = useState(null);
+
+  const notify = (message, type = "info") => {
+    setNotification({ message, type });
+    setTimeout(() => {
+      setNotification(null);
+    }, 3000);
+  };
+
+  const createForm = async (contactForm) => {
+    contactFormService
+      .create(contactForm)
+      .then(() => {
+        notify(`A new message by has been sent.`);
+      })
+      .catch((error) => {
+        notify(
+          "Creating a message failed: " + error.response.data.error,
+          "alert"
+        );
+      });
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      notify("Please enter a valid email address.", "alert");
+      return;
+    }
     console.log("Form submitted!");
-    onCreate({ email, message });
+    createForm({ email, message });
     setEmail("");
     setMessage("");
   };
@@ -49,6 +78,7 @@ const ContactForm = ({ onCreate }) => {
   return (
     <section className="contact form">
       <Container>
+        <Notification notification={notification} />
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 style={styles.header}>Contact Form</h2>
@@ -56,7 +86,7 @@ const ContactForm = ({ onCreate }) => {
           <Card.Body>
             <p style={styles.paragraph}>
               If you have any questions or inquiries, please don't hesitate to
-              reach out using the contact form below. I'll get back to you as
+              reach out using the contact form below. We'll get back to you as
               soon as possible.
             </p>
 
