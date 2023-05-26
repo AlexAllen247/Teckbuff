@@ -6,7 +6,7 @@ POST http://localhost:3001/api/contactforms
 Content-Type: application/json
 
 {
-    "email": "test",
+    "email": "test@message.com",
     "message": "message"
 }
 

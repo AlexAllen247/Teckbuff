@@ -78,7 +78,6 @@ const ContactForm = () => {
   return (
     <section className="contact form">
       <Container>
-        <Notification notification={notification} />
         <Card className="my-3" style={styles.cardStyle}>
           <Card.Header>
             <h2 style={styles.header}>Contact Form</h2>
@@ -89,7 +88,7 @@ const ContactForm = () => {
               reach out using the contact form below. We'll get back to you as
               soon as possible.
             </p>
-
+            <Notification notification={notification} />
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3">
                 <Form.Label htmlFor="email" style={styles.label}>

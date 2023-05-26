@@ -25,17 +25,17 @@ router.post("/", async (request, response) => {
   }
   const contactForm = new ContactForm({ ...request.body });
 
-  const savedContactForm = await contactForm.save();
-
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.GMAIL,
-      pass: process.env.GMAIL_PASS,
-    },
-  });
-
   try {
+    const savedContactForm = await contactForm.save();
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL,
+        pass: process.env.GMAIL_PASS,
+      },
+    });
+
     const mailOptions = {
       from: process.env.GMAIL,
       to: process.env.GMAIL,
