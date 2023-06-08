@@ -57,7 +57,7 @@ const TechContent = () => {
             </h2>
           </Card.Header>
           <Card.Body>
-            {articles.map((article, index) => (
+            {[...articles].reverse().map((article, index) => (
               <Card key={index} className="article-card">
                 <Card.Body>
                   <img
