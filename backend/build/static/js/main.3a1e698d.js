@@ -1,4 +1,4 @@
-/*! For license information please see main.c1d6b966.js.LICENSE.txt */
+/*! For license information please see main.3a1e698d.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -18241,7 +18241,7 @@
             a = S((0, t.useState)([]), 2),
             o = a[0],
             i = a[1],
-            l = (function () {
+            u = (function () {
               var e = tt(
                 Ze().mark(function e() {
                   var t;
@@ -18264,9 +18264,9 @@
               };
             })();
           (0, t.useEffect)(function () {
-            l();
+            u();
           }, []);
-          var u = {
+          var s = {
             cardStyle: {
               boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
               textAlign: "center",
@@ -18293,63 +18293,65 @@
               "aria-labelledby": "tech-content-heading",
               children: (0, st.jsxs)(Mt, {
                 className: "my-3",
-                style: u.cardStyle,
+                style: s.cardStyle,
                 children: [
                   (0, st.jsx)(Mt.Header, {
                     children: (0, st.jsx)("h2", {
                       id: "tech-content-heading",
-                      style: u.header,
+                      style: s.header,
                       children: "Articles",
                     }),
                   }),
                   (0, st.jsx)(Mt.Body, {
-                    children: o.map(function (e, t) {
-                      return (0, st.jsx)(
-                        Mt,
-                        {
-                          className: "article-card",
-                          children: (0, st.jsxs)(Mt.Body, {
-                            children: [
-                              (0, st.jsx)("img", {
-                                src: e.thumbnailImageUrl,
-                                alt: "Thumbnail ".concat(t + 1),
-                                style: u.thumbnail,
-                              }),
-                              (0, st.jsx)("p", {
-                                style: u.paragraph,
-                                children: e.description,
-                              }),
-                              n[t] &&
-                                (0, st.jsx)("iframe", {
-                                  src: e.embedUrl,
-                                  height: "1310",
-                                  width: "504",
-                                  allowFullScreen: "",
-                                  title: "Embedded post ".concat(t + 1),
-                                  style: u.iframe,
+                    children: l(o)
+                      .reverse()
+                      .map(function (e, t) {
+                        return (0, st.jsx)(
+                          Mt,
+                          {
+                            className: "article-card",
+                            children: (0, st.jsxs)(Mt.Body, {
+                              children: [
+                                (0, st.jsx)("img", {
+                                  src: e.thumbnailImageUrl,
+                                  alt: "Thumbnail ".concat(t + 1),
+                                  style: s.thumbnail,
                                 }),
-                              (0, st.jsx)(Hn, {
-                                onClick: function () {
-                                  return (function (e) {
-                                    r(function (t) {
-                                      return at(
-                                        at({}, t),
-                                        {},
-                                        nt({}, e, !t[e])
-                                      );
-                                    });
-                                  })(t);
-                                },
-                                "aria-expanded": n[t],
-                                className: "btn-custom btn-block btn-lg",
-                                children: n[t] ? "Hide" : "Show",
-                              }),
-                            ],
-                          }),
-                        },
-                        t
-                      );
-                    }),
+                                (0, st.jsx)("p", {
+                                  style: s.paragraph,
+                                  children: e.description,
+                                }),
+                                n[t] &&
+                                  (0, st.jsx)("iframe", {
+                                    src: e.embedUrl,
+                                    height: "1310",
+                                    width: "504",
+                                    allowFullScreen: "",
+                                    title: "Embedded post ".concat(t + 1),
+                                    style: s.iframe,
+                                  }),
+                                (0, st.jsx)(Hn, {
+                                  onClick: function () {
+                                    return (function (e) {
+                                      r(function (t) {
+                                        return at(
+                                          at({}, t),
+                                          {},
+                                          nt({}, e, !t[e])
+                                        );
+                                      });
+                                    })(t);
+                                  },
+                                  "aria-expanded": n[t],
+                                  className: "btn-custom btn-block btn-lg",
+                                  children: n[t] ? "Hide" : "Show",
+                                }),
+                              ],
+                            }),
+                          },
+                          t
+                        );
+                      }),
                   }),
                 ],
               }),
@@ -18416,4 +18418,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.c1d6b966.js.map
+//# sourceMappingURL=main.3a1e698d.js.map
