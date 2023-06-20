@@ -1,4 +1,4 @@
-/*! For license information please see main.3a1e698d.js.LICENSE.txt */
+/*! For license information please see main.b94d7a69.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -18266,26 +18266,29 @@
           (0, t.useEffect)(function () {
             u();
           }, []);
-          var s = {
-            cardStyle: {
-              boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
-              textAlign: "center",
-            },
-            header: {
-              fontSize: "2rem",
-              marginBottom: "1rem",
-              paddingBottom: "0.5rem",
-            },
-            iframe: { width: "100%", height: "350px", border: "none" },
-            thumbnail: {
-              width: "100px",
-              height: "auto",
-              display: "block",
-              margin: "0 auto",
-              marginBottom: "1rem",
-            },
-            paragraph: { marginBottom: "1rem", fontSize: 20 },
-          };
+          var s = l(o).sort(function (e, t) {
+              return e.priority - t.priority;
+            }),
+            c = {
+              cardStyle: {
+                boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
+                textAlign: "center",
+              },
+              header: {
+                fontSize: "2rem",
+                marginBottom: "1rem",
+                paddingBottom: "0.5rem",
+              },
+              iframe: { width: "100%", height: "350px", border: "none" },
+              thumbnail: {
+                width: "100px",
+                height: "auto",
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "1rem",
+              },
+              paragraph: { marginBottom: "1rem", fontSize: 20 },
+            };
           return (0, st.jsx)("section", {
             className: "tech-content",
             children: (0, st.jsx)(mt, {
@@ -18293,65 +18296,63 @@
               "aria-labelledby": "tech-content-heading",
               children: (0, st.jsxs)(Mt, {
                 className: "my-3",
-                style: s.cardStyle,
+                style: c.cardStyle,
                 children: [
                   (0, st.jsx)(Mt.Header, {
                     children: (0, st.jsx)("h2", {
                       id: "tech-content-heading",
-                      style: s.header,
+                      style: c.header,
                       children: "Articles",
                     }),
                   }),
                   (0, st.jsx)(Mt.Body, {
-                    children: l(o)
-                      .reverse()
-                      .map(function (e, t) {
-                        return (0, st.jsx)(
-                          Mt,
-                          {
-                            className: "article-card",
-                            children: (0, st.jsxs)(Mt.Body, {
-                              children: [
-                                (0, st.jsx)("img", {
-                                  src: e.thumbnailImageUrl,
-                                  alt: "Thumbnail ".concat(t + 1),
-                                  style: s.thumbnail,
+                    children: s.map(function (e, t) {
+                      return (0, st.jsx)(
+                        Mt,
+                        {
+                          className: "article-card",
+                          children: (0, st.jsxs)(Mt.Body, {
+                            children: [
+                              (0, st.jsx)("img", {
+                                src: e.thumbnailImageUrl,
+                                alt: "Thumbnail ".concat(t + 1),
+                                style: c.thumbnail,
+                              }),
+                              (0, st.jsx)("p", {
+                                style: c.paragraph,
+                                children: e.description,
+                              }),
+                              n[t] &&
+                                (0, st.jsx)("iframe", {
+                                  src: e.embedUrl,
+                                  height: "1310",
+                                  width: "504",
+                                  allowFullScreen: "",
+                                  title: "Embedded post ".concat(t + 1),
+                                  style: c.iframe,
                                 }),
-                                (0, st.jsx)("p", {
-                                  style: s.paragraph,
-                                  children: e.description,
-                                }),
-                                n[t] &&
-                                  (0, st.jsx)("iframe", {
-                                    src: e.embedUrl,
-                                    height: "1310",
-                                    width: "504",
-                                    allowFullScreen: "",
-                                    title: "Embedded post ".concat(t + 1),
-                                    style: s.iframe,
-                                  }),
-                                (0, st.jsx)(Hn, {
-                                  onClick: function () {
-                                    return (function (e) {
-                                      r(function (t) {
-                                        return at(
-                                          at({}, t),
-                                          {},
-                                          nt({}, e, !t[e])
-                                        );
-                                      });
-                                    })(t);
-                                  },
-                                  "aria-expanded": n[t],
-                                  className: "btn-custom btn-block btn-lg",
-                                  children: n[t] ? "Hide" : "Show",
-                                }),
-                              ],
-                            }),
-                          },
-                          t
-                        );
-                      }),
+                              (0, st.jsx)(Hn, {
+                                onClick: function () {
+                                  return (function (e) {
+                                    r(function (t) {
+                                      return at(
+                                        at({}, t),
+                                        {},
+                                        nt({}, e, !t[e])
+                                      );
+                                    });
+                                  })(t);
+                                },
+                                "aria-expanded": n[t],
+                                className: "btn-custom btn-block btn-lg",
+                                children: n[t] ? "Hide" : "Show",
+                              }),
+                            ],
+                          }),
+                        },
+                        t
+                      );
+                    }),
                   }),
                 ],
               }),
@@ -18418,4 +18419,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.3a1e698d.js.map
+//# sourceMappingURL=main.b94d7a69.js.map
