@@ -19,6 +19,8 @@ const TechContent = () => {
     fetchArticles();
   }, []);
 
+  const sortedArticles = [...articles].sort((a, b) => a.priority - b.priority);
+
   const styles = {
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
@@ -57,7 +59,7 @@ const TechContent = () => {
             </h2>
           </Card.Header>
           <Card.Body>
-            {[...articles].reverse().map((article, index) => (
+            {sortedArticles.map((article, index) => (
               <Card key={index} className="article-card">
                 <Card.Body>
                   <img

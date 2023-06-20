@@ -20,7 +20,8 @@ POST http://localhost:3001/api/techcontents
 Content-Type: application/json
 
 {
-    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7072432151614382080",
-    "description":"Disruptor or enabler? The artificial intelligence revolution OMFIF",
-    "thumbnailImageUrl":"https://www.omfif.org/wp-content/uploads/2023/06/AI-revolution.png"
+    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7072867588149501952",
+    "description":"The Pool Marbella: The Uberization of Money",
+    "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4E22AQGpe2c1U_wpvg/feedshare-shrink_2048_1536/0/1686303041078?e=1690416000&v=beta&t=qDw303ZCcxPcn1kBPHZjM_tjPZscBgKuAJp0-s2jgJo",
+    "priority": 1
 }

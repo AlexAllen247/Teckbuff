@@ -13,6 +13,10 @@ const schema = mongoose.Schema({
     type: String,
     required: true,
   },
+  priority: {
+    type: Number,
+    default: 0,
+  },
 });
 
 schema.set("toJSON", {
