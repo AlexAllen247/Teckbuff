@@ -46,12 +46,12 @@ describe("addition of a contact form", () => {
 
     const contactFormsAtEnd = await helper.contactFormsInDb();
     expect(contactFormsAtEnd).toHaveLength(
-      helper.initialContactForms.length + 1
+      helper.initialContactForms.length + 1,
     );
 
     const messages = contactFormsAtEnd.map((cf) => cf.message);
     expect(messages).toContain(
-      "This is an example message that everything works."
+      "This is an example message that everything works.",
     );
   });
 

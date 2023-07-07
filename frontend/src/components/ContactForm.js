@@ -24,7 +24,7 @@ const ContactForm = () => {
       .catch((error) => {
         notify(
           "Creating a message failed: " + error.response.data.error,
-          "alert"
+          "alert",
         );
       });
   };
