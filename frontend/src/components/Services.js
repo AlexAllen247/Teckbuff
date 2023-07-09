@@ -1,6 +1,7 @@
 import React from "react";
 import WebApplications from "./WebApplications";
 import Consultation from "./Consultation";
+import AiServices from "./AiServices";
 
 const Services = () => {
   const styles = {
@@ -14,6 +15,7 @@ const Services = () => {
   return (
     <section style={styles.services} className="services">
       <WebApplications />
+      <AiServices />
       <Consultation />
     </section>
   );

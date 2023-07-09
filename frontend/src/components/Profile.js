@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import ProfilePicture from "../images/ProfilePicture.JPG";
-import { Container, Button, Card } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 import About from "./About";
 
 const Profile = () => {
-  const [isAboutVisible, setAboutVisible] = useState(false);
-
-  const handleAboutToggle = () => {
-    setAboutVisible((prevState) => !prevState);
-  };
-
   const styles = {
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
@@ -54,31 +48,16 @@ const Profile = () => {
             </div>
             <div>
               <p style={styles.paragraph}>
-                Hi, I'm Alex, full stack developer, multi award winning Master
-                Trainer and TeckBuff.
+                Hi, I'm Alex, Full Stack Developer and TeckBuff.
               </p>
               <p style={styles.paragraph}>
                 Why TeckBuff? That's what my friends and family call me.
               </p>
               <p style={styles.paragraph}>
-                I am a motivated professional with a unique combination of
-                expertise in web development and the health and fitness
-                industry.
-              </p>
-              <p style={styles.paragraph}>
                 I am driven by commitment to create innovative and user-friendly
                 web applications tailored to the needs of diverse clients.
               </p>
-              <Button
-                variant="primary"
-                onClick={handleAboutToggle}
-                style={styles.button}
-                aria-label="About section for Alex Allen"
-                className="btn-custom"
-              >
-                More
-              </Button>
-              {isAboutVisible ? <About /> : null}
+              <About />
             </div>
           </Card.Body>
         </Card>

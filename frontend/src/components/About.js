@@ -3,12 +3,11 @@ import React from "react";
 const About = () => {
   const styles = {
     h2: {
-      marginBottom: "5px",
-      marginTop: "20px",
-      textDecoration: "underline",
+      marginBottom: 10,
+      marginTop: 20,
     },
     ul: {
-      marginBottom: "10px",
+      marginBottom: 15,
       listStyleType: "none",
       padding: 10,
       fontSize: 20,
@@ -30,11 +29,6 @@ const About = () => {
           <strong>Problem Solving and Adaptability:</strong> Adept at tackling
           complex challenges and adapting to new situations with creativity and
           resourcefulness.
-        </li>
-        <li style={styles.li}>
-          <strong>Health and Fitness Expertise:</strong> Over a decade of
-          experience in personal training, health management, and wellness
-          program development.
         </li>
       </ul>
     </section>
