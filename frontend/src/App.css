@@ -4,28 +4,7 @@
   color: #0047ab;
 }
 
-.animated-image {
-  animation: wipe 5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes wipe {
-  from {
-    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-    opacity: 0;
-  }
-
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    opacity: 1;
-  }
-}
-
-.animated-line {
-  animation: wipe 5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
+.line {
   height: 5px;
   background-color: #0047ab;
   margin-top: 20px;

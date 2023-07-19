@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import CookieConsent from "react-cookie-consent";
-
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certifications";

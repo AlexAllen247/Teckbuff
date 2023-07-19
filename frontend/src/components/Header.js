@@ -36,12 +36,11 @@ const Header = () => {
             src={Banner}
             alt="My Banner"
             style={styles.image}
-            className="animated-image"
             aria-label="Banner for TeckBuff.com"
           />
         )}
       </div>
-      <div className="animated-line"></div>
+      <div className="line"></div>
     </section>
   );
 };
