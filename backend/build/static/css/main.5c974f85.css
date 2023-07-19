@@ -1,0 +1,15 @@
+.app {
+  color: #0047ab;
+}
+.line {
+  height: 5px;
+  margin-top: 20px;
+}
+.btn-custom,
+.line {
+  background-color: #0047ab;
+}
+.btn-custom {
+  color: #fff;
+}
+/*# sourceMappingURL=main.5c974f85.css.map*/

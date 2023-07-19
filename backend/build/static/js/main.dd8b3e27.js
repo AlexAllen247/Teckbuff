@@ -1,4 +1,4 @@
-/*! For license information please see main.8594508c.js.LICENSE.txt */
+/*! For license information please see main.dd8b3e27.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -16305,11 +16305,10 @@
                     src: ci,
                     alt: "My Banner",
                     style: l.image,
-                    className: "animated-image",
                     "aria-label": "Banner for TeckBuff.com",
                   }),
               }),
-              (0, ct.jsx)("div", { className: "animated-line" }),
+              (0, ct.jsx)("div", { className: "line" }),
             ],
           });
         },
@@ -18746,4 +18745,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.8594508c.js.map
+//# sourceMappingURL=main.dd8b3e27.js.map
