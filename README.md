@@ -25,31 +25,31 @@ To have this app running on your local computer, please follow the next steps:
 
 Clone repository:
 
-'$ git clone https://github.com/AlexAllen247/Teckbuff.git'
+`$ git clone https://github.com/AlexAllen247/Teckbuff.git`
 
 Navigate to the backend folder:
 
-'$ cd backend'
+`$ cd backend`
 
 Install project dependencies:
 
-'$ npm install'
+`$ npm install`
 
 Start the backend:
 
-'$ npm run dev'
+`$ npm run dev`
 
 Now, the backend should be running locally on port 3001. Then in another terminal window navigate to the frontend folder:
 
-'$ cd frontend'
+`$ cd frontend`
 
 Install project dependencies:
 
-'$ npm install'
+`$ npm install`
 
 Start the app:
 
-'$ npm start'
+`$ npm start`
 
 Now, the frontend should be running locally on port 3000.
 
