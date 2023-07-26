@@ -90,7 +90,7 @@ const Navigation = () => {
                 Contact
               </NavLink>
               <a
-                href="https://www.linkedin.com/in/alexander-allen-392225251/"
+                href="https://www.linkedin.com/in/alex-allen-392225251/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"
