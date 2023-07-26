@@ -1,4 +1,4 @@
-/*! For license information please see main.dd8b3e27.js.LICENSE.txt */
+/*! For license information please see main.6d089a2b.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -15955,12 +15955,13 @@
             a = {
               section: { textAlign: "center", padding: 15 },
               button: { margin: 10 },
-            };
+            },
+            o = new Date().getFullYear();
           return (0, ct.jsxs)("section", {
             className: "footer",
             style: a.section,
             children: [
-              (0, ct.jsx)("h4", { children: "Copyright Alex Allen 2023" }),
+              (0, ct.jsxs)("h4", { children: ["Copyright Alex Allen ", o] }),
               (0, ct.jsx)(Vn, {
                 variant: "primary",
                 onClick: function () {
@@ -18172,7 +18173,7 @@
                           children: "Contact",
                         }),
                         (0, ct.jsx)("a", {
-                          href: "https://www.linkedin.com/in/alexander-allen-392225251/",
+                          href: "https://www.linkedin.com/in/alex-allen-392225251/",
                           target: "_blank",
                           rel: "noreferrer",
                           "aria-label": "LinkedIn Profile",
@@ -18745,4 +18746,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.dd8b3e27.js.map
+//# sourceMappingURL=main.6d089a2b.js.map
