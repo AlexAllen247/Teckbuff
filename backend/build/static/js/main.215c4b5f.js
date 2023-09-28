@@ -1,4 +1,4 @@
-/*! For license information please see main.6d089a2b.js.LICENSE.txt */
+/*! For license information please see main.215c4b5f.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -500,17 +500,17 @@
             ? e
             : null;
         }
-        var z,
-          F = Object.assign;
+        var F,
+          z = Object.assign;
         function I(e) {
-          if (void 0 === z)
+          if (void 0 === F)
             try {
               throw Error();
             } catch (n) {
               var t = n.stack.trim().match(/\n( *(at )?)/);
-              z = (t && t[1]) || "";
+              F = (t && t[1]) || "";
             }
-          return "\n" + z + e;
+          return "\n" + F + e;
         }
         var B = !1;
         function M(e, t) {
@@ -795,7 +795,7 @@
         }
         function G(e, t) {
           var n = t.checked;
-          return F({}, t, {
+          return z({}, t, {
             defaultChecked: void 0,
             defaultValue: void 0,
             value: void 0,
@@ -883,7 +883,7 @@
         }
         function re(e, t) {
           if (null != t.dangerouslySetInnerHTML) throw Error(o(91));
-          return F({}, t, {
+          return z({}, t, {
             value: void 0,
             defaultValue: void 0,
             children: "" + e._wrapperState.initialValue,
@@ -1045,7 +1045,7 @@
               (pe[t] = pe[e]);
           });
         });
-        var ye = F(
+        var ye = z(
           { menuitem: !0 },
           {
             area: !0,
@@ -1199,17 +1199,17 @@
             this.onError(c);
           }
         }
-        var ze = !1,
-          Fe = null,
+        var Fe = !1,
+          ze = null,
           Ie = !1,
           Be = null,
           Me = {
             onError: function (e) {
-              (ze = !0), (Fe = e);
+              (Fe = !0), (ze = e);
             },
           };
         function Ue(e, t, n, r, a, o, i, l, u) {
-          (ze = !1), (Fe = null), De.apply(Me, arguments);
+          (Fe = !1), (ze = null), De.apply(Me, arguments);
         }
         function We(e) {
           var t = e,
@@ -1514,7 +1514,7 @@
               _t.delete(t.pointerId);
           }
         }
-        function zt(e, t, n, r, a, o) {
+        function Ft(e, t, n, r, a, o) {
           return null === e || e.nativeEvent !== o
             ? ((e = {
                 blockedOn: t,
@@ -1530,7 +1530,7 @@
               null !== a && -1 === t.indexOf(a) && t.push(a),
               e);
         }
-        function Ft(e) {
+        function zt(e) {
           var t = ga(e.target);
           if (null !== t) {
             var n = We(t);
@@ -1604,7 +1604,7 @@
           )
             (r = Lt[n]).blockedOn === e && (r.blockedOn = null);
           for (; 0 < Lt.length && null === (n = Lt[0]).blockedOn; )
-            Ft(n), null === n.blockedOn && Lt.shift();
+            zt(n), null === n.blockedOn && Lt.shift();
         }
         var Ht = w.ReactCurrentBatchConfig,
           Vt = !0;
@@ -1636,18 +1636,18 @@
               (function (e, t, n, r, a) {
                 switch (t) {
                   case "focusin":
-                    return (jt = zt(jt, e, t, n, r, a)), !0;
+                    return (jt = Ft(jt, e, t, n, r, a)), !0;
                   case "dragenter":
-                    return (Pt = zt(Pt, e, t, n, r, a)), !0;
+                    return (Pt = Ft(Pt, e, t, n, r, a)), !0;
                   case "mouseover":
-                    return (Rt = zt(Rt, e, t, n, r, a)), !0;
+                    return (Rt = Ft(Rt, e, t, n, r, a)), !0;
                   case "pointerover":
                     var o = a.pointerId;
-                    return Tt.set(o, zt(Tt.get(o) || null, e, t, n, r, a)), !0;
+                    return Tt.set(o, Ft(Tt.get(o) || null, e, t, n, r, a)), !0;
                   case "gotpointercapture":
                     return (
                       (o = a.pointerId),
-                      _t.set(o, zt(_t.get(o) || null, e, t, n, r, a)),
+                      _t.set(o, Ft(_t.get(o) || null, e, t, n, r, a)),
                       !0
                     );
                 }
@@ -1831,7 +1831,7 @@
             );
           }
           return (
-            F(t.prototype, {
+            z(t.prototype, {
               preventDefault: function () {
                 this.defaultPrevented = !0;
                 var e = this.nativeEvent;
@@ -1871,9 +1871,9 @@
             isTrusted: 0,
           },
           cn = an(sn),
-          fn = F({}, sn, { view: 0, detail: 0 }),
+          fn = z({}, sn, { view: 0, detail: 0 }),
           dn = an(fn),
-          pn = F({}, fn, {
+          pn = z({}, fn, {
             screenX: 0,
             screenY: 0,
             clientX: 0,
@@ -1910,12 +1910,12 @@
             },
           }),
           hn = an(pn),
-          mn = an(F({}, pn, { dataTransfer: 0 })),
-          vn = an(F({}, fn, { relatedTarget: 0 })),
+          mn = an(z({}, pn, { dataTransfer: 0 })),
+          vn = an(z({}, fn, { relatedTarget: 0 })),
           yn = an(
-            F({}, sn, { animationName: 0, elapsedTime: 0, pseudoElement: 0 }),
+            z({}, sn, { animationName: 0, elapsedTime: 0, pseudoElement: 0 }),
           ),
-          gn = F({}, sn, {
+          gn = z({}, sn, {
             clipboardData: function (e) {
               return "clipboardData" in e
                 ? e.clipboardData
@@ -1923,7 +1923,7 @@
             },
           }),
           bn = an(gn),
-          wn = an(F({}, sn, { data: 0 })),
+          wn = an(z({}, sn, { data: 0 })),
           xn = {
             Esc: "Escape",
             Spacebar: " ",
@@ -1991,7 +1991,7 @@
         function Cn() {
           return En;
         }
-        var Nn = F({}, fn, {
+        var Nn = z({}, fn, {
             key: function (e) {
               if (e.key) {
                 var t = xn[e.key] || e.key;
@@ -2030,7 +2030,7 @@
           }),
           On = an(Nn),
           jn = an(
-            F({}, pn, {
+            z({}, pn, {
               pointerId: 0,
               width: 0,
               height: 0,
@@ -2044,7 +2044,7 @@
             }),
           ),
           Pn = an(
-            F({}, fn, {
+            z({}, fn, {
               touches: 0,
               targetTouches: 0,
               changedTouches: 0,
@@ -2056,9 +2056,9 @@
             }),
           ),
           Rn = an(
-            F({}, sn, { propertyName: 0, elapsedTime: 0, pseudoElement: 0 }),
+            z({}, sn, { propertyName: 0, elapsedTime: 0, pseudoElement: 0 }),
           ),
-          Tn = F({}, pn, {
+          Tn = z({}, pn, {
             deltaX: function (e) {
               return "deltaX" in e
                 ? e.deltaX
@@ -2083,8 +2083,8 @@
           An = c && "CompositionEvent" in window,
           Dn = null;
         c && "documentMode" in document && (Dn = document.documentMode);
-        var zn = c && "TextEvent" in window && !Dn,
-          Fn = c && (!An || (Dn && 8 < Dn && 11 >= Dn)),
+        var Fn = c && "TextEvent" in window && !Dn,
+          zn = c && (!An || (Dn && 8 < Dn && 11 >= Dn)),
           In = String.fromCharCode(32),
           Bn = !1;
         function Mn(e, t) {
@@ -2463,17 +2463,17 @@
             "abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting".split(
               " ",
             ),
-          zr = new Set(
+          Fr = new Set(
             "cancel close invalid load scroll toggle".split(" ").concat(Dr),
           );
-        function Fr(e, t, n) {
+        function zr(e, t, n) {
           var r = e.type || "unknown-event";
           (e.currentTarget = n),
             (function (e, t, n, r, a, i, l, u, s) {
-              if ((Ue.apply(this, arguments), ze)) {
-                if (!ze) throw Error(o(198));
-                var c = Fe;
-                (ze = !1), (Fe = null), Ie || ((Ie = !0), (Be = c));
+              if ((Ue.apply(this, arguments), Fe)) {
+                if (!Fe) throw Error(o(198));
+                var c = ze;
+                (Fe = !1), (ze = null), Ie || ((Ie = !0), (Be = c));
               }
             })(r, t, void 0, e),
             (e.currentTarget = null);
@@ -2493,7 +2493,7 @@
                     s = l.currentTarget;
                   if (((l = l.listener), u !== o && a.isPropagationStopped()))
                     break e;
-                  Fr(a, l, s), (o = u);
+                  zr(a, l, s), (o = u);
                 }
               else
                 for (i = 0; i < r.length; i++) {
@@ -2504,7 +2504,7 @@
                     u !== o && a.isPropagationStopped())
                   )
                     break e;
-                  Fr(a, l, s), (o = u);
+                  zr(a, l, s), (o = u);
                 }
             }
           }
@@ -2526,7 +2526,7 @@
             (e[Ur] = !0),
               i.forEach(function (t) {
                 "selectionchange" !== t &&
-                  (zr.has(t) || Mr(t, !1, e), Mr(t, !0, e));
+                  (Fr.has(t) || Mr(t, !1, e), Mr(t, !0, e));
               });
             var t = 9 === e.nodeType ? e : e.ownerDocument;
             null === t || t[Ur] || ((t[Ur] = !0), Mr("selectionchange", !1, t));
@@ -2830,7 +2830,7 @@
                     229 === n.keyCode &&
                     (b = "onCompositionStart");
               b &&
-                (Fn &&
+                (zn &&
                   "ko" !== n.locale &&
                   (Wn || "onCompositionStart" !== b
                     ? "onCompositionEnd" === b && Wn && (g = en())
@@ -2840,7 +2840,7 @@
                   ((b = new wn(b, e, null, n, a)),
                   i.push({ event: b, listeners: y }),
                   g ? (b.data = g) : null !== (g = Un(n)) && (b.data = g))),
-                (g = zn
+                (g = Fn
                   ? (function (e, t) {
                       switch (e) {
                         case "compositionend":
@@ -2872,7 +2872,7 @@
                           }
                           return null;
                         case "compositionend":
-                          return Fn && "ko" !== t.locale ? null : t.data;
+                          return zn && "ko" !== t.locale ? null : t.data;
                       }
                     })(e, n)) &&
                   0 < (r = qr(r, "onBeforeInput")).length &&
@@ -3090,9 +3090,9 @@
             return n;
           for (var a in (r = r.getChildContext()))
             if (!(a in t)) throw Error(o(108, H(e) || "Unknown", a));
-          return F({}, n, r);
+          return z({}, n, r);
         }
-        function za(e) {
+        function Fa(e) {
           return (
             (e =
               ((e = e.stateNode) &&
@@ -3104,7 +3104,7 @@
             !0
           );
         }
-        function Fa(e, t, n) {
+        function za(e, t, n) {
           var r = e.stateNode;
           if (!r) throw Error(o(169));
           n
@@ -3319,7 +3319,7 @@
         var vo = w.ReactCurrentBatchConfig;
         function yo(e, t) {
           if (e && e.defaultProps) {
-            for (var n in ((t = F({}, t)), (e = e.defaultProps)))
+            for (var n in ((t = z({}, t)), (e = e.defaultProps)))
               void 0 === t[n] && (t[n] = e[n]);
             return t;
           }
@@ -3441,7 +3441,7 @@
             Ro(e, n)
           );
         }
-        function zo(e, t, n) {
+        function Fo(e, t, n) {
           if (
             null !== (t = t.updateQueue) &&
             ((t = t.shared), 0 !== (4194240 & n))
@@ -3450,7 +3450,7 @@
             (n |= r &= e.pendingLanes), (t.lanes = n), gt(e, n);
           }
         }
-        function Fo(e, t) {
+        function zo(e, t) {
           var n = e.updateQueue,
             r = e.alternate;
           if (null !== r && n === (r = r.updateQueue)) {
@@ -3542,7 +3542,7 @@
                         void 0 === d
                       )
                         break e;
-                      f = F({}, f, d);
+                      f = z({}, f, d);
                       break e;
                     case 2:
                       To = !0;
@@ -3583,7 +3583,7 @@
                 (i |= a.lane), (a = a.next);
               } while (a !== t);
             } else null === o && (a.shared.lanes = 0);
-            (Fu |= i), (e.lanes = i), (e.memoizedState = f);
+            (zu |= i), (e.lanes = i), (e.memoizedState = f);
           }
         }
         function Bo(e, t, n) {
@@ -3603,7 +3603,7 @@
           (n =
             null === (n = n(r, (t = e.memoizedState))) || void 0 === n
               ? t
-              : F({}, t, n)),
+              : z({}, t, n)),
             (e.memoizedState = n),
             0 === e.lanes && (e.updateQueue.baseState = n);
         }
@@ -3618,7 +3618,7 @@
               o = Ao(r, a);
             (o.payload = t),
               void 0 !== n && null !== n && (o.callback = n),
-              null !== (t = Do(e, o, a)) && (rs(t, e, a, r), zo(t, e, a));
+              null !== (t = Do(e, o, a)) && (rs(t, e, a, r), Fo(t, e, a));
           },
           enqueueReplaceState: function (e, t, n) {
             e = e._reactInternals;
@@ -3628,7 +3628,7 @@
             (o.tag = 1),
               (o.payload = t),
               void 0 !== n && null !== n && (o.callback = n),
-              null !== (t = Do(e, o, a)) && (rs(t, e, a, r), zo(t, e, a));
+              null !== (t = Do(e, o, a)) && (rs(t, e, a, r), Fo(t, e, a));
           },
           enqueueForceUpdate: function (e, t) {
             e = e._reactInternals;
@@ -3637,7 +3637,7 @@
               a = Ao(n, r);
             (a.tag = 2),
               void 0 !== t && null !== t && (a.callback = t),
-              null !== (t = Do(e, a, r)) && (rs(t, e, r, n), zo(t, e, r));
+              null !== (t = Do(e, a, r)) && (rs(t, e, r, n), Fo(t, e, r));
           },
         };
         function Ho(e, t, n, r, a, o, i) {
@@ -3822,7 +3822,7 @@
           }
           function f(e, t, n, r, o) {
             return null === t || 7 !== t.tag
-              ? (((t = zs(n, e.mode, r, o)).return = e), t)
+              ? (((t = Fs(n, e.mode, r, o)).return = e), t)
               : (((t = a(t, n)).return = e), t);
           }
           function d(e, t, n) {
@@ -3846,7 +3846,7 @@
                   return d(e, (0, t._init)(t._payload), n);
               }
               if (te(t) || D(t))
-                return ((t = zs(t, e.mode, n, null)).return = e), t;
+                return ((t = Fs(t, e.mode, n, null)).return = e), t;
               Qo(e, t);
             }
             return null;
@@ -4028,7 +4028,7 @@
                       t(r, c), (c = c.sibling);
                     }
                     i.type === S
-                      ? (((o = zs(i.props.children, r.mode, u, i.key)).return =
+                      ? (((o = Fs(i.props.children, r.mode, u, i.key)).return =
                           r),
                         (r = o))
                       : (((u = Ds(
@@ -4283,7 +4283,7 @@
                 };
                 null === s ? ((u = s = d), (l = r)) : (s = s.next = d),
                   (mi.lanes |= f),
-                  (Fu |= f);
+                  (zu |= f);
               }
               c = c.next;
             } while (null !== c && c !== i);
@@ -4297,7 +4297,7 @@
           if (null !== (e = n.interleaved)) {
             a = e;
             do {
-              (i = a.lane), (mi.lanes |= i), (Fu |= i), (a = a.next);
+              (i = a.lane), (mi.lanes |= i), (zu |= i), (a = a.next);
             } while (a !== e);
           } else null === a && (n.lanes = 0);
           return [t.memoizedState, n.dispatch];
@@ -4359,14 +4359,14 @@
               : n.push(e);
         }
         function Ai(e, t, n, r) {
-          (t.value = n), (t.getSnapshot = r), zi(t) && Fi(e);
+          (t.value = n), (t.getSnapshot = r), Fi(t) && zi(e);
         }
         function Di(e, t, n) {
           return n(function () {
-            zi(t) && Fi(e);
+            Fi(t) && zi(e);
           });
         }
-        function zi(e) {
+        function Fi(e) {
           var t = e.getSnapshot;
           e = e.value;
           try {
@@ -4376,7 +4376,7 @@
             return !0;
           }
         }
-        function Fi(e) {
+        function zi(e) {
           var t = Ro(e, 1);
           null !== t && rs(t, e, 1, -1);
         }
@@ -4485,7 +4485,7 @@
             ? (e.baseState && ((e.baseState = !1), (wl = !0)),
               (e.memoizedState = n))
             : (lr(n, t) ||
-                ((n = mt()), (mi.lanes |= n), (Fu |= n), (e.baseState = !0)),
+                ((n = mt()), (mi.lanes |= n), (zu |= n), (e.baseState = !0)),
               t);
         }
         function Zi(e, t) {
@@ -4976,7 +4976,7 @@
         function jl(e, t, n, r, a) {
           if (_a(n)) {
             var o = !0;
-            za(t);
+            Fa(t);
           } else o = !1;
           if ((Co(t, a), null === t.stateNode))
             Vl(e, t), Vo(t, n, r), qo(t, n, r, a), (r = !0);
@@ -5089,7 +5089,7 @@
         function Pl(e, t, n, r, a, o) {
           Nl(e, t);
           var i = 0 !== (128 & t.flags);
-          if (!r && !i) return a && Fa(t, n, !1), $l(e, t, o);
+          if (!r && !i) return a && za(t, n, !1), $l(e, t, o);
           (r = t.stateNode), (bl.current = t);
           var l =
             i && "function" !== typeof n.getDerivedStateFromError
@@ -5102,7 +5102,7 @@
                 (t.child = Yo(t, null, l, o)))
               : xl(e, t, l, o),
             (t.memoizedState = r.state),
-            a && Fa(t, n, !0),
+            a && za(t, n, !0),
             t.child
           );
         }
@@ -5120,8 +5120,8 @@
           Ll,
           Al,
           Dl,
-          zl = { dehydrated: null, treeContext: null, retryLane: 0 };
-        function Fl(e) {
+          Fl = { dehydrated: null, treeContext: null, retryLane: 0 };
+        function zl(e) {
           return { baseLanes: e, cachePool: null, transitions: null };
         }
         function Il(e, t, n) {
@@ -5156,14 +5156,14 @@
                       (u = { mode: "hidden", children: u }),
                       0 === (1 & a) && null !== l
                         ? ((l.childLanes = 0), (l.pendingProps = u))
-                        : (l = Fs(u, a, 0, null)),
-                      (e = zs(e, a, n, null)),
+                        : (l = zs(u, a, 0, null)),
+                      (e = Fs(e, a, n, null)),
                       (l.return = t),
                       (e.return = t),
                       (l.sibling = e),
                       (t.child = l),
-                      (t.child.memoizedState = Fl(n)),
-                      (t.memoizedState = zl),
+                      (t.child.memoizedState = zl(n)),
+                      (t.memoizedState = Fl),
                       e)
                     : Bl(t, u))
             );
@@ -5176,20 +5176,20 @@
                   ? ((t.child = e.child), (t.flags |= 128), null)
                   : ((i = r.fallback),
                     (a = t.mode),
-                    (r = Fs(
+                    (r = zs(
                       { mode: "visible", children: r.children },
                       a,
                       0,
                       null,
                     )),
-                    ((i = zs(i, a, l, null)).flags |= 2),
+                    ((i = Fs(i, a, l, null)).flags |= 2),
                     (r.return = t),
                     (i.return = t),
                     (r.sibling = i),
                     (t.child = r),
                     0 !== (1 & t.mode) && Yo(t, e.child, null, l),
-                    (t.child.memoizedState = Fl(l)),
-                    (t.memoizedState = zl),
+                    (t.child.memoizedState = zl(l)),
+                    (t.memoizedState = Fl),
                     i);
               if (0 === (1 & t.mode)) return Ml(e, t, l, null);
               if ("$!" === a.data) {
@@ -5276,7 +5276,7 @@
                 : ((a = As(i, s)).subtreeFlags = 14680064 & i.subtreeFlags),
               null !== r
                 ? (l = As(r, l))
-                : ((l = zs(l, u, n, null)).flags |= 2),
+                : ((l = Fs(l, u, n, null)).flags |= 2),
               (l.return = t),
               (a.return = t),
               (a.sibling = l),
@@ -5285,7 +5285,7 @@
               (l = t.child),
               (u =
                 null === (u = e.child.memoizedState)
-                  ? Fl(n)
+                  ? zl(n)
                   : {
                       baseLanes: u.baseLanes | n,
                       cachePool: null,
@@ -5293,7 +5293,7 @@
                     }),
               (l.memoizedState = u),
               (l.childLanes = e.childLanes & ~n),
-              (t.memoizedState = zl),
+              (t.memoizedState = Fl),
               a
             );
           }
@@ -5314,7 +5314,7 @@
         }
         function Bl(e, t) {
           return (
-            ((t = Fs(
+            ((t = zs(
               { mode: "visible", children: t },
               e.mode,
               0,
@@ -5417,7 +5417,7 @@
         function $l(e, t, n) {
           if (
             (null !== e && (t.dependencies = e.dependencies),
-            (Fu |= t.lanes),
+            (zu |= t.lanes),
             0 === (n & t.childLanes))
           )
             return null;
@@ -5650,7 +5650,7 @@
                         break;
                       case "select":
                         (e._wrapperState = { wasMultiple: !!r.multiple }),
-                          (a = F({}, r, { value: void 0 })),
+                          (a = z({}, r, { value: void 0 })),
                           Br("invalid", e);
                         break;
                       case "textarea":
@@ -5986,8 +5986,8 @@
                   (a = G(e, a)), (r = G(e, r)), (i = []);
                   break;
                 case "select":
-                  (a = F({}, a, { value: void 0 })),
-                    (r = F({}, r, { value: void 0 })),
+                  (a = z({}, a, { value: void 0 })),
+                    (r = z({}, r, { value: void 0 })),
                     (i = []);
                   break;
                 case "textarea":
@@ -6801,8 +6801,8 @@
           Lu = 0,
           Au = Ea(0),
           Du = 0,
-          zu = null,
-          Fu = 0,
+          Fu = null,
+          zu = 0,
           Iu = 0,
           Bu = 0,
           Mu = null,
@@ -6935,7 +6935,7 @@
               (2 === t && 0 !== (a = ht(e)) && ((r = a), (t = is(e, a))),
               1 === t)
             )
-              throw ((n = zu), ps(e, 0), us(e, r), as(e, Ye()), n);
+              throw ((n = Fu), ps(e, 0), us(e, r), as(e, Ye()), n);
             if (6 === t) us(e, r);
             else {
               if (
@@ -6975,7 +6975,7 @@
                     ((r = i), (t = is(e, i))),
                   1 === t))
               )
-                throw ((n = zu), ps(e, 0), us(e, r), as(e, Ye()), n);
+                throw ((n = Fu), ps(e, 0), us(e, r), as(e, Ye()), n);
               switch (((e.finishedWork = a), (e.finishedLanes = r), t)) {
                 case 0:
                 case 1:
@@ -7071,7 +7071,7 @@
             var r = ht(e);
             0 !== r && ((t = r), (n = is(e, r)));
           }
-          if (1 === n) throw ((n = zu), ps(e, 0), us(e, t), as(e, Ye()), n);
+          if (1 === n) throw ((n = Fu), ps(e, 0), us(e, t), as(e, Ye()), n);
           if (6 === n) throw Error(o(345));
           return (
             (e.finishedWork = e.current.alternate),
@@ -7144,8 +7144,8 @@
             (Tu = e = As(e.current, null)),
             (_u = Lu = t),
             (Du = 0),
-            (zu = null),
-            (Bu = Iu = Fu = 0),
+            (Fu = null),
+            (Bu = Iu = zu = 0),
             (Uu = Mu = null),
             null !== Oo)
           ) {
@@ -7183,7 +7183,7 @@
                 (Ou.current = null),
                 null === n || null === n.return)
               ) {
-                (Du = 1), (zu = t), (Tu = null);
+                (Du = 1), (Fu = t), (Tu = null);
                 break;
               }
               e: {
@@ -7246,7 +7246,7 @@
                       (i.flags |= 65536),
                         (t &= -t),
                         (i.lanes |= t),
-                        Fo(i, hl(0, s, t));
+                        zo(i, hl(0, s, t));
                       break e;
                     case 1:
                       u = s;
@@ -7262,7 +7262,7 @@
                         (i.flags |= 65536),
                           (t &= -t),
                           (i.lanes |= t),
-                          Fo(i, ml(i, u, t));
+                          zo(i, ml(i, u, t));
                         break e;
                       }
                   }
@@ -7284,7 +7284,7 @@
         function vs() {
           (0 !== Du && 3 !== Du && 2 !== Du) || (Du = 4),
             null === Ru ||
-              (0 === (268435455 & Fu) && 0 === (268435455 & Iu)) ||
+              (0 === (268435455 & zu) && 0 === (268435455 & Iu)) ||
               us(Ru, _u);
         }
         function ys(e, t) {
@@ -7832,7 +7832,7 @@
           else
             e: switch (e) {
               case S:
-                return zs(n.children, a, i, t);
+                return Fs(n.children, a, i, t);
               case E:
                 (l = 8), (a |= 8);
                 break;
@@ -7849,7 +7849,7 @@
                   ((e = _s(19, n, t, a)).elementType = R), (e.lanes = i), e
                 );
               case L:
-                return Fs(n, a, i, t);
+                return zs(n, a, i, t);
               default:
                 if ("object" === typeof e && null !== e)
                   switch (e.$$typeof) {
@@ -7878,10 +7878,10 @@
             t
           );
         }
-        function zs(e, t, n, r) {
+        function Fs(e, t, n, r) {
           return ((e = _s(7, e, r, t)).lanes = n), e;
         }
-        function Fs(e, t, n, r) {
+        function zs(e, t, n, r) {
           return (
             ((e = _s(22, e, r, t)).elementType = L),
             (e.lanes = n),
@@ -8001,7 +8001,7 @@
             null === t.context ? (t.context = n) : (t.pendingContext = n),
             ((t = Ao(o, i)).payload = { element: e }),
             null !== (r = void 0 === r ? null : r) && (t.callback = r),
-            null !== (e = Do(a, t, i)) && (rs(e, a, i, o), zo(e, a, i)),
+            null !== (e = Do(a, t, i)) && (rs(e, a, i, o), Fo(e, a, i)),
             i
           );
         }
@@ -8035,7 +8035,7 @@
                         ii(t);
                         break;
                       case 1:
-                        _a(t.type) && za(t);
+                        _a(t.type) && Fa(t);
                         break;
                       case 4:
                         ai(t, t.stateNode.containerInfo);
@@ -8099,7 +8099,7 @@
                   ? ((t.tag = 1),
                     (t.memoizedState = null),
                     (t.updateQueue = null),
-                    _a(r) ? ((i = !0), za(t)) : (i = !1),
+                    _a(r) ? ((i = !0), Fa(t)) : (i = !1),
                     (t.memoizedState =
                       null !== a.state && void 0 !== a.state ? a.state : null),
                     _o(t),
@@ -8345,7 +8345,7 @@
                 (a = t.elementType === r ? a : yo(r, a)),
                 Vl(e, t),
                 (t.tag = 1),
-                _a(r) ? ((e = !0), za(t)) : (e = !1),
+                _a(r) ? ((e = !0), Fa(t)) : (e = !1),
                 Co(t, n),
                 Vo(t, r, a),
                 qo(t, r, a, n),
@@ -8466,7 +8466,7 @@
                 n < Lt.length && 0 !== t && t < Lt[n].priority;
                 n++
               );
-              Lt.splice(n, 0, e), 0 === n && Ft(e);
+              Lt.splice(n, 0, e), 0 === n && zt(e);
             }
           }),
           (xt = function (e) {
@@ -9986,7 +9986,7 @@
         void 0 === n && (n = "/");
         var r = G(("string" === typeof t ? L(t) : t).pathname || "/", n);
         if (null == r) return null;
-        var a = z(e);
+        var a = F(e);
         !(function (e) {
           e.sort(function (e, t) {
             return e.score !== t.score
@@ -10012,7 +10012,7 @@
           o = q(a[i], Q(r));
         return o;
       }
-      function z(e, t, n, r) {
+      function F(e, t, n, r) {
         void 0 === t && (t = []),
           void 0 === n && (n = []),
           void 0 === r && (r = "");
@@ -10043,7 +10043,7 @@
                 l +
                 '".',
             ),
-            z(e.children, t, u, l)),
+            F(e.children, t, u, l)),
             (null != e.path || e.index) &&
               t.push({ path: l, score: $(l, e.index), routesMeta: u });
         };
@@ -10104,7 +10104,7 @@
                       }
                     },
                   };
-                })(F(e.path));
+                })(z(e.path));
               try {
                 for (o.s(); !(r = o.n()).done; ) {
                   var i = r.value;
@@ -10120,7 +10120,7 @@
           t
         );
       }
-      function F(e) {
+      function z(e) {
         var t = e.split("/");
         if (0 === t.length) return [];
         var n,
@@ -10130,7 +10130,7 @@
           s = a.endsWith("?"),
           c = a.replace(/\?$/, "");
         if (0 === o.length) return s ? [c, ""] : [c];
-        var f = F(o.join("/")),
+        var f = z(o.join("/")),
           d = [];
         return (
           d.push.apply(
@@ -10842,7 +10842,7 @@
       function Ae(e) {
         var t = e.children,
           n = e.location;
-        return we(ze(t), n);
+        return we(Fe(t), n);
       }
       !(function (e) {
         (e[(e.pending = 0)] = "pending"),
@@ -10851,7 +10851,7 @@
       })(Te || (Te = {}));
       var De = new Promise(function () {});
       t.Component;
-      function ze(e, n) {
+      function Fe(e, n) {
         void 0 === n && (n = []);
         var r = [];
         return (
@@ -10879,16 +10879,16 @@
                   handle: e.props.handle,
                   lazy: e.props.lazy,
                 };
-                e.props.children && (i.children = ze(e.props.children, o)),
+                e.props.children && (i.children = Fe(e.props.children, o)),
                   r.push(i);
-              } else r.push.apply(r, ze(e.props.children, o));
+              } else r.push.apply(r, Fe(e.props.children, o));
             }
           }),
           r
         );
       }
-      var Fe = n(143),
-        Ie = n.n(Fe),
+      var ze = n(143),
+        Ie = n.n(ze),
         Be = function (e) {
           var t = e.condition,
             n = e.wrapper,
@@ -11170,17 +11170,17 @@
                 L = {},
                 A = {},
                 D = {},
-                z = {};
+                F = {};
               switch (
                 (u
                   ? ((_ = Object.assign({}, a)),
                     (L = Object.assign({}, o)),
                     (A = Object.assign({}, i)),
                     (D = Object.assign({}, l)),
-                    (z = Object.assign({}, E)))
+                    (F = Object.assign({}, E)))
                   : ((_ = Object.assign({}, Me({}, this.state.style, a))),
                     (D = Object.assign({}, Me({}, this.state.contentStyle, l))),
-                    (z = Object.assign({}, Me({}, this.state.overlayStyle, E))),
+                    (F = Object.assign({}, Me({}, this.state.overlayStyle, E))),
                     g
                       ? ((L = Object.assign({}, o)), (A = Object.assign({}, i)))
                       : ((L = Object.assign(
@@ -11199,10 +11199,10 @@
                 case Ve:
                   _.bottom = "0";
               }
-              var F = [];
+              var z = [];
               return (
                 b &&
-                  F.push(
+                  z.push(
                     t.createElement(
                       x,
                       Object.assign(
@@ -11221,7 +11221,7 @@
                       c,
                     ),
                   ),
-                F.push(
+                z.push(
                   t.createElement(
                     x,
                     Object.assign(
@@ -11240,7 +11240,7 @@
                     s,
                   ),
                 ),
-                w && F.reverse(),
+                w && z.reverse(),
                 t.createElement(
                   Be,
                   {
@@ -11249,7 +11249,7 @@
                       return t.createElement(
                         "div",
                         {
-                          style: z,
+                          style: F,
                           className: S,
                           onClick: function () {
                             e.overlayClick();
@@ -11270,7 +11270,7 @@
                     t.createElement(
                       "div",
                       Object.assign({ className: "" + h }, T),
-                      F.map(function (e) {
+                      z.map(function (e) {
                         return e;
                       }),
                     ),
@@ -11923,8 +11923,8 @@
         Lt = wt("card-body"),
         At = wt("card-title", { Component: Tt }),
         Dt = wt("card-subtitle", { Component: _t }),
-        zt = wt("card-link", { Component: "a" }),
-        Ft = wt("card-text", { Component: "p" }),
+        Ft = wt("card-link", { Component: "a" }),
+        zt = wt("card-text", { Component: "p" }),
         It = wt("card-footer"),
         Bt = wt("card-img-overlay"),
         Mt = t.forwardRef(function (e, t) {
@@ -11964,8 +11964,8 @@
           Title: At,
           Subtitle: Dt,
           Body: Lt,
-          Link: zt,
-          Text: Ft,
+          Link: Ft,
+          Text: zt,
           Header: Pt,
           Footer: It,
           ImgOverlay: Bt,
@@ -12470,7 +12470,7 @@
       var Ln = _n,
         An = ["className", "validated", "as"],
         Dn = { _ref: Ht().any, validated: Ht().bool, as: Ht().elementType },
-        zn = t.forwardRef(function (e, t) {
+        Fn = t.forwardRef(function (e, t) {
           var n = e.className,
             r = e.validated,
             a = e.as,
@@ -12485,8 +12485,8 @@
             ),
           );
         });
-      (zn.displayName = "Form"), (zn.propTypes = Dn);
-      var Fn = Object.assign(zn, {
+      (Fn.displayName = "Form"), (Fn.propTypes = Dn);
+      var zn = Object.assign(Fn, {
           Group: fn,
           Control: ln,
           Floating: un,
@@ -13158,7 +13158,7 @@
             }
           : e;
       };
-      var zr = function (e, n) {
+      var Fr = function (e, n) {
         return (0, t.useMemo)(
           function () {
             return (function (e, t) {
@@ -13172,7 +13172,7 @@
           [e, n],
         );
       };
-      var Fr,
+      var zr,
         Ir = [
           "onEnter",
           "onEntering",
@@ -13196,7 +13196,7 @@
             f = e.childRef,
             d = lt(e, Ir),
             p = (0, t.useRef)(null),
-            h = zr(p, f),
+            h = Fr(p, f),
             m = function (e) {
               var t;
               h(
@@ -13244,7 +13244,7 @@
           );
         }),
         Mr = ["className", "children", "transitionClasses", "onEnter"],
-        Ur = (rt((Fr = {}), cr, "show"), rt(Fr, fr, "show"), Fr),
+        Ur = (rt((zr = {}), cr, "show"), rt(zr, fr, "show"), zr),
         Wr = t.forwardRef(function (e, n) {
           var r = e.className,
             a = e.children,
@@ -13778,7 +13778,7 @@
             return e && (ha(e) || da(e)) && da(e.then) && da(e.catch);
           },
         };
-      function za(e, t, n, r, a) {
+      function Fa(e, t, n, r, a) {
         Error.call(this),
           Error.captureStackTrace
             ? Error.captureStackTrace(this, this.constructor)
@@ -13790,7 +13790,7 @@
           r && (this.request = r),
           a && (this.response = a);
       }
-      Da.inherits(za, Error, {
+      Da.inherits(Fa, Error, {
         toJSON: function () {
           return {
             message: this.message,
@@ -13810,7 +13810,7 @@
           };
         },
       });
-      var Fa = za.prototype,
+      var za = Fa.prototype,
         Ia = {};
       [
         "ERR_BAD_OPTION_VALUE",
@@ -13828,10 +13828,10 @@
       ].forEach(function (e) {
         Ia[e] = { value: e };
       }),
-        Object.defineProperties(za, Ia),
-        Object.defineProperty(Fa, "isAxiosError", { value: !0 }),
-        (za.from = function (e, t, n, r, a, o) {
-          var i = Object.create(Fa);
+        Object.defineProperties(Fa, Ia),
+        Object.defineProperty(za, "isAxiosError", { value: !0 }),
+        (Fa.from = function (e, t, n, r, a, o) {
+          var i = Object.create(za);
           return (
             Da.toFlatObject(
               e,
@@ -13843,14 +13843,14 @@
                 return "isAxiosError" !== e;
               },
             ),
-            za.call(i, e.message, t, n, r, a),
+            Fa.call(i, e.message, t, n, r, a),
             (i.cause = e),
             (i.name = e.name),
             o && Object.assign(i, o),
             i
           );
         });
-      var Ba = za,
+      var Ba = Fa,
         Ma = null;
       function Ua(e) {
         return Da.isPlainObject(e) || Da.isArray(e);
@@ -15227,8 +15227,8 @@
           }
           (Do.prototype[e] = t()), (Do.prototype[e + "Form"] = t(!0));
         });
-      var zo = Do,
-        Fo = (function () {
+      var Fo = Do,
+        zo = (function () {
           function e(t) {
             if ((s(this, e), "function" !== typeof t))
               throw new TypeError("executor must be a function.");
@@ -15307,7 +15307,7 @@
             e
           );
         })(),
-        Io = Fo;
+        Io = zo;
       var Bo = {
         Continue: 100,
         SwitchingProtocols: 101,
@@ -15381,10 +15381,10 @@
       });
       var Mo = Bo;
       var Uo = (function e(t) {
-        var n = new zo(t),
-          r = ta(zo.prototype.request, n);
+        var n = new Fo(t),
+          r = ta(Fo.prototype.request, n);
         return (
-          Da.extend(r, zo.prototype, n, { allOwnKeys: !0 }),
+          Da.extend(r, Fo.prototype, n, { allOwnKeys: !0 }),
           Da.extend(r, n, null, { allOwnKeys: !0 }),
           (r.create = function (n) {
             return e(Po(t, n));
@@ -15392,7 +15392,7 @@
           r
         );
       })(oo);
-      (Uo.Axios = zo),
+      (Uo.Axios = Fo),
         (Uo.CanceledError = yo),
         (Uo.CancelToken = Io),
         (Uo.isCancel = mo),
@@ -15541,7 +15541,7 @@
                           "If you have any questions or inquiries, please don't hesitate to reach out using the contact form below. We'll get back to you as soon as possible.",
                       }),
                       (0, ct.jsx)(ea, { notification: u }),
-                      (0, ct.jsxs)(Fn, {
+                      (0, ct.jsxs)(zn, {
                         onSubmit: function (e) {
                           e.preventDefault();
                           /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n)
@@ -15552,15 +15552,15 @@
                             : c("Please enter a valid email address.", "alert");
                         },
                         children: [
-                          (0, ct.jsxs)(Fn.Group, {
+                          (0, ct.jsxs)(zn.Group, {
                             className: "mb-3",
                             children: [
-                              (0, ct.jsx)(Fn.Label, {
+                              (0, ct.jsx)(zn.Label, {
                                 htmlFor: "email",
                                 style: d.label,
                                 children: "Email",
                               }),
-                              (0, ct.jsx)(Fn.Control, {
+                              (0, ct.jsx)(zn.Control, {
                                 value: n,
                                 onChange: function (e) {
                                   var t = e.target;
@@ -15573,15 +15573,15 @@
                               }),
                             ],
                           }),
-                          (0, ct.jsxs)(Fn.Group, {
+                          (0, ct.jsxs)(zn.Group, {
                             className: "mb-3",
                             children: [
-                              (0, ct.jsx)(Fn.Label, {
+                              (0, ct.jsx)(zn.Label, {
                                 htmlFor: "message",
                                 style: d.label,
                                 children: "Message",
                               }),
-                              (0, ct.jsx)(Fn.Control, {
+                              (0, ct.jsx)(zn.Control, {
                                 as: "textarea",
                                 rows: 5,
                                 value: o,
@@ -15955,24 +15955,99 @@
             a = {
               section: { textAlign: "center", padding: 15 },
               button: { margin: 10 },
+              navbarSvg: { margin: 10 },
+              space: { margin: 10 },
             },
             o = new Date().getFullYear();
           return (0, ct.jsxs)("section", {
             className: "footer",
             style: a.section,
             children: [
-              (0, ct.jsxs)("h4", { children: ["Copyright Alex Allen ", o] }),
-              (0, ct.jsx)(Vn, {
-                variant: "primary",
-                onClick: function () {
-                  r(function (e) {
-                    return !e;
-                  });
-                },
-                style: a.button,
-                "aria-label": "Privacy Policy",
-                className: "btn-custom",
-                children: "Privacy Policy",
+              (0, ct.jsx)("div", {
+                style: a.space,
+                children: (0, ct.jsxs)("h4", {
+                  children: ["Copyright Alex Allen ", o],
+                }),
+              }),
+              (0, ct.jsx)("div", {
+                children: (0, ct.jsx)("h5", {
+                  style: a.space,
+                  children: "Connect with us on these platforms:",
+                }),
+              }),
+              (0, ct.jsxs)("div", {
+                style: a.space,
+                children: [
+                  (0, ct.jsx)("a", {
+                    href: "https://www.linkedin.com/in/alex-allen-392225251/",
+                    target: "_blank",
+                    rel: "noreferrer",
+                    "aria-label": "LinkedIn Profile",
+                    children: (0, ct.jsx)("svg", {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "28",
+                      height: "28",
+                      fill: "#0E76A8",
+                      className: "bi bi-linkedin",
+                      viewBox: "0 0 16 16",
+                      style: a.navbarSvg,
+                      children: (0, ct.jsx)("path", {
+                        d: "M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z",
+                      }),
+                    }),
+                  }),
+                  (0, ct.jsx)("a", {
+                    href: "https://github.com/AlexAllen247",
+                    target: "_blank",
+                    rel: "noreferrer",
+                    "aria-label": "Github Profile",
+                    children: (0, ct.jsx)("svg", {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "28",
+                      height: "28",
+                      fill: "#000000",
+                      className: "bi bi-github",
+                      viewBox: "0 0 16 16",
+                      style: a.navbarSvg,
+                      children: (0, ct.jsx)("path", {
+                        d: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z",
+                      }),
+                    }),
+                  }),
+                  (0, ct.jsx)("a", {
+                    href: "https://twitter.com/AlexAllen247",
+                    target: "_blank",
+                    rel: "noreferrer",
+                    "aria-label": "Twitter Profile",
+                    children: (0, ct.jsx)("svg", {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "28",
+                      height: "28",
+                      fill: "#000000",
+                      className: "bi bi-twitter-x",
+                      viewBox: "0 0 16 16",
+                      style: a.navbarSvg,
+                      children: (0, ct.jsx)("path", {
+                        d: "M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z",
+                      }),
+                    }),
+                  }),
+                ],
+              }),
+              (0, ct.jsx)("div", {
+                style: a.space,
+                children: (0, ct.jsx)(Vn, {
+                  variant: "primary",
+                  onClick: function () {
+                    r(function (e) {
+                      return !e;
+                    });
+                  },
+                  style: a.button,
+                  "aria-label": "Privacy Policy",
+                  className: "btn-custom",
+                  children: "Privacy Policy",
+                }),
               }),
               n ? (0, ct.jsx)(ai, {}) : null,
             ],
@@ -16623,7 +16698,7 @@
           o
         );
       }
-      var zi = (function (e) {
+      var Fi = (function (e) {
         var n = Object.keys(e);
         function r(e, t) {
           return e === t ? t : e ? e + " and " + t : t;
@@ -16678,7 +16753,7 @@
           );
         };
       })({ xs: 0, sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400 });
-      function Fi(e) {
+      function zi(e) {
         void 0 === e && (e = vr());
         try {
           var t = e.activeElement;
@@ -16858,7 +16933,7 @@
           },
           [r, s],
         );
-        var c = zr(l, n.ref),
+        var c = Fr(l, n.ref),
           f = (0, t.cloneElement)(n, { ref: c });
         return r ? f : i || (!u.current && o) ? null : f;
       };
@@ -16926,7 +17001,7 @@
               );
             },
           }),
-          f = zr(c, n.ref);
+          f = Fr(c, n.ref);
         return u && !r ? null : (0, t.cloneElement)(n, { ref: f });
       }
       function Ji(e, t, n) {
@@ -17038,8 +17113,8 @@
           L = e.onShow,
           A = e.onHide,
           D = void 0 === A ? function () {} : A,
-          z = e.onExit,
-          F = e.onExited,
+          F = e.onExit,
+          z = e.onExited,
           I = e.onExiting,
           B = e.onEnter,
           M = e.onEntering,
@@ -17123,7 +17198,7 @@
           },
           [V],
         ),
-          Sr && !q && a && (J.current = Fi()),
+          Sr && !q && a && (J.current = zi()),
           a && Q && G(!1);
         var Y = Zn(function () {
             if (
@@ -17140,7 +17215,7 @@
               L && L(),
               x)
             ) {
-              var e = Fi(document);
+              var e = zi(document);
               V.dialog &&
                 e &&
                 !Ii(V.dialog, e) &&
@@ -17173,7 +17248,7 @@
           });
         var Z = Zn(function () {
             if (S && $() && V.isTopModal()) {
-              var e = Fi();
+              var e = zi();
               V.dialog && e && !Ii(V.dialog, e) && V.dialog.focus();
             }
           }),
@@ -17214,10 +17289,10 @@
           mountOnEnter: !0,
           appear: !0,
           in: !!a,
-          onExit: z,
+          onExit: F,
           onExiting: I,
           onExited: function () {
-            G(!0), null == F || F.apply(void 0, arguments);
+            G(!0), null == z || z.apply(void 0, arguments);
           },
           onEnter: B,
           onEntering: M,
@@ -17592,8 +17667,8 @@
           L = e.onEnter,
           A = e.onEntering,
           D = e.onExited,
-          z = e.backdropClassName,
-          F = e.manager,
+          F = e.backdropClassName,
+          z = e.manager,
           I = e.renderStaticNode,
           B = void 0 !== I && I,
           M = lt(e, Nl),
@@ -17603,7 +17678,7 @@
           H = E((0, t.useState)(!1), 2),
           V = H[0],
           $ = H[1],
-          q = zi(s || "xs", "up");
+          q = Fi(s || "xs", "up");
         (0, t.useEffect)(
           function () {
             $(s ? f && !q : f);
@@ -17626,11 +17701,11 @@
                 ot(
                   ot({}, e),
                   {},
-                  { className: st()("".concat(r, "-backdrop"), z) },
+                  { className: st()("".concat(r, "-backdrop"), F) },
                 ),
               );
             },
-            [z, r],
+            [F, r],
           ),
           J = function (e) {
             return (0, ct.jsx)(
@@ -17697,7 +17772,7 @@
                   null == D || D.apply(void 0, n);
                 },
                 manager:
-                  F ||
+                  z ||
                   (y
                     ? (U.current ||
                         (U.current = new Cl({ handleContainerOverflow: !1 })),
@@ -17813,7 +17888,7 @@
           });
         });
       Dl.displayName = "Navbar";
-      var zl = Object.assign(Dl, {
+      var Fl = Object.assign(Dl, {
         Brand: yi,
         Collapse: Pi,
         Offcanvas: _l,
@@ -17821,9 +17896,9 @@
         Toggle: _i,
       });
       n(573);
-      var Fl = t.createContext(null);
-      Fl.displayName = "NavContext";
-      var Il = Fl,
+      var zl = t.createContext(null);
+      zl.displayName = "NavContext";
+      var Il = zl,
         Bl = t.createContext(null),
         Ml = ["as", "active", "eventKey"];
       function Ul(e) {
@@ -17946,7 +18021,7 @@
             }
             p.current = !1;
           });
-          var b = zr(n, v);
+          var b = Fr(n, v);
           return (0, ct.jsx)(hi.Provider, {
             value: g,
             children: (0, ct.jsx)(Il.Provider, {
@@ -18098,14 +18173,10 @@
             n = e[0],
             r = e[1],
             a = {
-              navbarSvg: {
-                margin: 10,
-                boxShadow: "0 5px 10px rgba(0, 0, 0, 0.15)",
-              },
               navStyle: { fontSize: 26, color: "#0047ab", margin: 15 },
               navbar: { marginBottom: 60, marginTop: 15 },
             };
-          return (0, ct.jsx)(zl, {
+          return (0, ct.jsx)(Fl, {
             expanded: n,
             onToggle: r,
             collapseOnSelect: !0,
@@ -18115,7 +18186,7 @@
             children: (0, ct.jsxs)("div", {
               className: "container-fluid",
               children: [
-                (0, ct.jsx)(zl.Toggle, {
+                (0, ct.jsx)(Fl.Toggle, {
                   "aria-controls": "navbar",
                   "aria-expanded": "false",
                   "aria-label": "Toggle navigation",
@@ -18131,7 +18202,7 @@
                     }),
                   }),
                 }),
-                (0, ct.jsx)(zl.Collapse, {
+                (0, ct.jsx)(Fl.Collapse, {
                   id: "basic-navbar-nav justify-content-center",
                   onClick: function () {
                     return r(!1);
@@ -18171,60 +18242,6 @@
                           style: a.navStyle,
                           "aria-label": "Link to Contact page",
                           children: "Contact",
-                        }),
-                        (0, ct.jsx)("a", {
-                          href: "https://www.linkedin.com/in/alex-allen-392225251/",
-                          target: "_blank",
-                          rel: "noreferrer",
-                          "aria-label": "LinkedIn Profile",
-                          children: (0, ct.jsx)("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "24",
-                            height: "24",
-                            fill: "currentColor",
-                            className: "bi bi-linkedin",
-                            viewBox: "0 0 16 16",
-                            style: a.navbarSvg,
-                            children: (0, ct.jsx)("path", {
-                              d: "M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z",
-                            }),
-                          }),
-                        }),
-                        (0, ct.jsx)("a", {
-                          href: "https://github.com/AlexAllen247",
-                          target: "_blank",
-                          rel: "noreferrer",
-                          "aria-label": "Github Profile",
-                          children: (0, ct.jsx)("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "24",
-                            height: "24",
-                            fill: "currentColor",
-                            className: "bi bi-github",
-                            viewBox: "0 0 16 16",
-                            style: a.navbarSvg,
-                            children: (0, ct.jsx)("path", {
-                              d: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z",
-                            }),
-                          }),
-                        }),
-                        (0, ct.jsx)("a", {
-                          href: "https://twitter.com/AlexAllen247",
-                          target: "_blank",
-                          rel: "noreferrer",
-                          "aria-label": "Twitter Profile",
-                          children: (0, ct.jsx)("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "24",
-                            height: "24",
-                            fill: "currentColor",
-                            className: "bi bi-twitter",
-                            viewBox: "0 0 16 16",
-                            style: a.navbarSvg,
-                            children: (0, ct.jsx)("path", {
-                              d: "M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z",
-                            }),
-                          }),
                         }),
                       ],
                     }),
@@ -18746,4 +18763,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.6d089a2b.js.map
+//# sourceMappingURL=main.215c4b5f.js.map
