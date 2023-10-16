@@ -12,6 +12,15 @@ const errorHandler = (error, request, response, next) => {
   next(error);
 };
 
+const setPermissionsPolicy = (req, res, next) => {
+  res.setHeader(
+    "Permissions-Policy",
+    "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()",
+  );
+  next();
+};
+
 module.exports = {
   errorHandler,
+  setPermissionsPolicy,
 };
