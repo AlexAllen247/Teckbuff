@@ -87,7 +87,7 @@ app.use("/api/contactforms", contactFormsRouter);
 app.use("/api/techcontents", techContentsRouter);
 
 app.all("*", (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 if (process.env.NODE_ENV === "test") {
