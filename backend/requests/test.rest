@@ -25,3 +25,19 @@ Content-Type: application/json
     "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4E22AQG1IAI3oPitHQ/feedshare-shrink_1280/0/1688709749512?e=1691625600&v=beta&t=Oi18gxqWvk32eXqaLxpATB1SFYnBpcohQK1tIlm90Gs",
     "priority": 1
 }
+
+###
+GET http://localhost:3001/api/portfolioitems
+
+
+###
+
+POST http://localhost:3001/api/portfolioitems
+Content-Type: application/json
+
+{
+    "iframeUrl":"https://pueblodelrio.es/",
+    "title":"Pueblo Del Rio",
+    "description":"Pueblo del Rio Urbanization's website stands as a central portal for residents, offering an in-depth look into the vibrant life of the community. It serves as an informative hub where residents can stay abreast of the latest developments within the urbanization, understand the community guidelines, and get acquainted with the dedicated members of the committee. Crafted with the MERN stack—MongoDB, Express.js, React.js, Node.js—the website is not only a testament to modern web development practices but also a reflection of the community's commitment to accessibility and transparent communication.",
+    "liveSiteUrl":"https://pueblodelrio.es/"
+}

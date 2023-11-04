@@ -12,6 +12,7 @@ import Navigation from "./components/Navigation";
 import NotFound from "./components/NotFound";
 import Services from "./components/Services";
 import TechContent from "./components/TechContent";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
   const styles = {
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/" element={<Services />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/articles" element={<TechContent />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="/contactforms" element={<ContactForm />} />
           <Route path="*" element={<NotFound />} />

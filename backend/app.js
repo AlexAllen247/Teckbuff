@@ -11,6 +11,7 @@ require("express-async-errors");
 
 const contactFormsRouter = require("./controllers/contactForms");
 const techContentsRouter = require("./controllers/techContents");
+const portfolioItemsRouter = require("./controllers/portfolioItems");
 const { errorHandler, setPermissionsPolicy } = require("./utils/middleware");
 
 logger.info("connecting to", config.MONGODB_URI);
@@ -55,6 +56,8 @@ app.use(
         "'self'",
         "https://www.linkedin.com",
         "https://www.googletagmanager.com",
+        "https://bulletpointfitness.com/",
+        "https://pueblodelrio.es/",
       ],
       connectSrc: [
         "'self'",
@@ -63,6 +66,7 @@ app.use(
         "www.google-analytics.com",
         "https://stats.g.doubleclick.net",
       ],
+      frameAncestors: ["'self'", "https://teckbuff.com/"],
     },
   }),
 );
@@ -85,6 +89,7 @@ app.use(cookieParser());
 
 app.use("/api/contactforms", contactFormsRouter);
 app.use("/api/techcontents", techContentsRouter);
+app.use("/api/portfolioitems", portfolioItemsRouter);
 
 app.all("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));

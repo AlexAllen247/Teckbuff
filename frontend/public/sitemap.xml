@@ -13,6 +13,12 @@
       <priority>0.8</priority>
    </url>
    <url>
+      <loc>https://www.teckbuff.com/portfolio</loc>
+      <lastmod>2023-05-25</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
       <loc>https://www.teckbuff.com/profile</loc>
       <lastmod>2023-05-25</lastmod>
       <changefreq>monthly</changefreq>
