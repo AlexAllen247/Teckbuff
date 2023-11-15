@@ -1,4 +1,4 @@
-/*! For license information please see main.bc4a5a78.js.LICENSE.txt */
+/*! For license information please see main.f569c3c7.js.LICENSE.txt */
 !(function () {
   var e = {
       694: function (e, t) {
@@ -18779,8 +18779,12 @@
         }),
         gu = yu,
         bu = function (e) {
-          var t = e.portfolioItem,
-            n = {
+          var n = e.portfolioItem,
+            r = E((0, t.useState)(!1), 2),
+            a = r[0],
+            o = r[1],
+            i = (0, t.useRef)(null),
+            l = {
               cardStyle: {
                 boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
                 textAlign: "center",
@@ -18798,59 +18802,76 @@
                 marginBottom: 20,
               },
             };
-          return (0, ct.jsx)(vt, {
-            children: (0, ct.jsxs)(Ut, {
-              className: "my-3",
-              style: n.cardStyle,
-              children: [
-                (0, ct.jsx)(Ut.Header, {
-                  children: (0, ct.jsx)("h2", {
-                    style: n.header,
-                    children: t.title,
+          return (
+            (0, t.useEffect)(function () {
+              var e = new IntersectionObserver(
+                function (t) {
+                  E(t, 1)[0].isIntersecting && (o(!0), e.disconnect());
+                },
+                { threshold: 0.1 },
+              );
+              return (
+                i.current && e.observe(i.current),
+                function () {
+                  e.disconnect();
+                }
+              );
+            }, []),
+            (0, ct.jsx)(vt, {
+              children: (0, ct.jsxs)(Ut, {
+                className: "my-3",
+                style: l.cardStyle,
+                children: [
+                  (0, ct.jsx)(Ut.Header, {
+                    children: (0, ct.jsx)("h2", {
+                      style: l.header,
+                      children: n.title,
+                    }),
                   }),
-                }),
-                (0, ct.jsxs)(Ut.Body, {
-                  children: [
-                    (0, ct.jsx)(gu, {
-                      aspectRatio: "1x1",
-                      children: (0, ct.jsx)("iframe", {
-                        title: t.title,
-                        src: t.iframeUrl,
-                        frameBorder: "0",
-                        allow:
-                          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;",
-                        allowFullScreen: !0,
-                        loading: "lazy",
-                        style: n.iframe,
-                      }),
-                    }),
-                    (0, ct.jsx)("p", {
-                      style: n.paragraph,
-                      children: t.description,
-                    }),
-                    (0, ct.jsxs)("div", {
-                      children: [
-                        t.githubUrl &&
-                          (0, ct.jsx)(Vn, {
-                            variant: "outline-secondary",
-                            href: t.githubUrl,
-                            target: "_blank",
-                            className: "mr-2",
-                            children: "GitHub",
-                          }),
-                        (0, ct.jsx)(Vn, {
-                          variant: "primary",
-                          href: t.liveSiteUrl,
-                          target: "_blank",
-                          children: "Visit the Live Site",
+                  (0, ct.jsxs)(Ut.Body, {
+                    children: [
+                      (0, ct.jsx)(gu, {
+                        aspectRatio: "1x1",
+                        children: (0, ct.jsx)("iframe", {
+                          ref: i,
+                          title: n.title,
+                          src: a ? n.iframeUrl : "",
+                          frameBorder: "0",
+                          allow:
+                            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;",
+                          allowFullScreen: !0,
+                          loading: "lazy",
+                          style: l.iframe,
                         }),
-                      ],
-                    }),
-                  ],
-                }),
-              ],
-            }),
-          });
+                      }),
+                      (0, ct.jsx)("p", {
+                        style: l.paragraph,
+                        children: n.description,
+                      }),
+                      (0, ct.jsxs)("div", {
+                        children: [
+                          n.githubUrl &&
+                            (0, ct.jsx)(Vn, {
+                              variant: "outline-secondary",
+                              href: n.githubUrl,
+                              target: "_blank",
+                              className: "mr-2",
+                              children: "GitHub",
+                            }),
+                          (0, ct.jsx)(Vn, {
+                            variant: "primary",
+                            href: n.liveSiteUrl,
+                            target: "_blank",
+                            children: "Visit the Live Site",
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            })
+          );
         },
         xu = function () {
           var e = E((0, t.useState)([]), 2),
@@ -18966,4 +18987,4 @@
       );
     })();
 })();
-//# sourceMappingURL=main.bc4a5a78.js.map
+//# sourceMappingURL=main.f569c3c7.js.map

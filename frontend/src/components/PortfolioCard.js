@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Card, Ratio, Button, Container } from "react-bootstrap";
 
 const PortfolioItemCard = ({ portfolioItem }) => {
+  const [isInView, setIsInView] = useState(false);
+  const iframeRef = useRef(null);
+
   const styles = {
     cardStyle: {
       boxShadow: "10px 10px 10px 10px rgba(0, 71, 171, 0.15)",
@@ -24,6 +27,27 @@ const PortfolioItemCard = ({ portfolioItem }) => {
     },
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 },
+    );
+
+    if (iframeRef.current) {
+      observer.observe(iframeRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <Container>
       <Card className="my-3" style={styles.cardStyle}>
@@ -33,8 +57,9 @@ const PortfolioItemCard = ({ portfolioItem }) => {
         <Card.Body>
           <Ratio aspectRatio="1x1">
             <iframe
+              ref={iframeRef}
               title={portfolioItem.title}
-              src={portfolioItem.iframeUrl}
+              src={isInView ? portfolioItem.iframeUrl : ""}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
               allowFullScreen
