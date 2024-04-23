@@ -20,10 +20,10 @@ POST http://localhost:3001/api/techcontents
 Content-Type: application/json
 
 {
-    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7082962062577950720",
-    "description":"AI and implications for Central Banking",
-    "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4E22AQG1IAI3oPitHQ/feedshare-shrink_1280/0/1688709749512?e=1691625600&v=beta&t=Oi18gxqWvk32eXqaLxpATB1SFYnBpcohQK1tIlm90Gs",
-    "priority": 1
+    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7188428750722670595",
+    "description":"AI - an expert strips out the hype",
+    "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4E22AQFHqekTWgmIwQ/feedshare-shrink_800/0/1713854968126?e=1717027200&v=beta&t=nemtaBJOKWehDD0PGhUZj-J3WiUbhFqxFW1rrXwknFo",
+    "priority": 0
 }
 
 ###
