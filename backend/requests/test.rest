@@ -20,9 +20,9 @@ POST http://localhost:3001/api/techcontents
 Content-Type: application/json
 
 {
-    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7188428750722670595",
-    "description":"AI - an expert strips out the hype",
-    "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4E22AQFHqekTWgmIwQ/feedshare-shrink_800/0/1713854968126?e=1717027200&v=beta&t=nemtaBJOKWehDD0PGhUZj-J3WiUbhFqxFW1rrXwknFo",
+    "embedUrl":"https://www.linkedin.com/embed/feed/update/urn:li:share:7189503940613324801",
+    "description":"Explore the New Reality of AI and Business Innovations",
+    "thumbnailImageUrl":"https://media.licdn.com/dms/image/D4D22AQER5ZAUsrRlUA/feedshare-shrink_800/0/1714111313401?e=1717027200&v=beta&t=rHnKIcv7qJYn0-bB9hEnahS-DVEAQbtFd2fA-CiMC1c",
     "priority": 0
 }
 
