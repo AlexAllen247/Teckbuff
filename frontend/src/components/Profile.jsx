@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePicture from "../images/ProfilePicture.JPG";
+import ProfilePicture from "../images/ProfilePicture.jpg";
 import { Container, Card } from "react-bootstrap";
 import About from "./About";
 
