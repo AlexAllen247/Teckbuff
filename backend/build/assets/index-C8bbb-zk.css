@@ -3,13 +3,10 @@
 }
 .line {
   height: 5px;
+  background-color: #0047ab;
   margin-top: 20px;
 }
-.btn-custom,
-.line {
-  background-color: #0047ab;
-}
 .btn-custom {
+  background-color: #0047ab;
   color: #fff;
 }
-/*# sourceMappingURL=main.5c974f85.css.map*/
